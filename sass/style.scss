@@ -23,10 +23,26 @@ html {
 body {
     background: $background-primary;
     width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .container {
     border: 2px solid #fff000;
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
+
+    main {
+        min-height: 100vh;
+        width: 100%;
+        border: 2px solid white;
+
+        section {
+            min-height: 100vh;
+            width: 100%;
+            padding: 5vh 5vw;
+            background: skyblue;
+            border-bottom: .15rem dashed black;
+        }
+    }
 }

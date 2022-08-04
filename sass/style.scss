@@ -9,10 +9,11 @@
 @import 'about';
 @import 'footer';
 *, ::before, ::after {
+    // border: 1px solid red;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    // border: 1px solid red;
+    scroll-padding-top: 7vh;
 }
 
 

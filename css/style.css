@@ -169,7 +169,7 @@ html {
 
 body {
   background: radial-gradient(#050505, #000);
-  width: 100vw;
+  width: 100%;
   position: relative;
   font-family: sans-serif;
 }

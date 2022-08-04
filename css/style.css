@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap");
 .hamburger {
   border: 2px solid #fff;
   border: none;
@@ -299,7 +300,7 @@ body {
   background: radial-gradient(#050505, #000);
   width: 100%;
   position: relative;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {

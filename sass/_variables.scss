@@ -3,21 +3,21 @@ $font-title:  serif ;
 $font-content:  sans-serif;
 
 // TEXT-COLORS 
-$text-primary: #000;
-$text-primary-trans: #000a;
-$text-secondary-: #fff;
-$text-secondary-trans: #fffa;
+$text-light: #fff;
+$text-light-trans: #000a;
+$text-dark-: #000;
+$text-dark-trans: #000a;
 
 // SPAN COLORS
-$gold-gold: #ead2a1;
+$span-gold: #ead2a1;
 $span-crimson: #dc143c;
 $span-crimson-dark:#b60f30;
 $span-crimson-trans: #dc143c8c;
 $span-orange: tomato;
 
 // BACKGROUND COLORS
-$background-primary: #000;
-$background-secondary: #f4f4f4;
+$background-primary: radial-gradient(hsl(0, 0%, 2%), #000);
+$background-secondary: radial-gradient(#f4f4f4, #fff);
 
 // BRAND OVERLAY
 $overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
@@ -35,6 +35,11 @@ $crimson-btn-: linear-gradient(0deg, #3f0d0d, #dc134c);
 $crimson-btn-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
 $button-gold: linear-gradient(0deg, hsl(40, 63%, 65%), #ead2a1);
 
+// BORDER-RADIUS
+$border-radius-xsm: .25rem;
+$border-radius-sm: .5rem;
+$border-radius-md: 1rem;
+$border-radius-lg: 2rem;
 // BOX SHADOWS
 $box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.250),
                     inset -2px -2px 3px rgba(0, 0, 0, .250),
@@ -48,4 +53,5 @@ $box-shadow-hover: inset 2px 2px 3px rgba(0, 0, 0, .250),
 $screen-xsm-max: 390px;
 $screen-sm-min: 576px;
 $screen-md-min: 768px;
-$screen-lg-min: 1024px;
+$screen-lg-min: 820px;
+$screen-xlg-min: 1024px;

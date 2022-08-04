@@ -1,0 +1,48 @@
+@import 'mixin';
+
+.hamburger {
+    @include lg {
+        display: none;
+    }
+    border: 2px solid #fff;
+    border: none;
+    height: 1rem;
+    width: 1.5rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    .bar {
+        height: .125rem;
+        width: 100%;
+        background: #fff;
+        position: relative;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #ffff;
+            transition: .25s;
+            z-index: -1;
+        }
+        &::before {
+            transform: translateY(-.5rem);
+        }
+        &::after {
+            transform: translateY(.5rem);
+        }
+    }
+
+    // ACTIVE CLASS
+    &.active {
+        .bar {
+            background: $span-gold;
+            &::before, &::after {
+                transform: translateY(0);
+            }
+        }
+    }
+}

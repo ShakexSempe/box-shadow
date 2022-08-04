@@ -26,8 +26,8 @@
 }
 
 //EXTRA LARGE DEVICES 
-@mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
+@mixin xlg {
+    @media (min-width: #{$screen-xlg-min}) {
         @content;
     }
 }

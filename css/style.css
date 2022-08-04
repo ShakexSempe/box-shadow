@@ -176,7 +176,6 @@ body {
 
 .container {
   overflow-x: hidden;
-  border: 2px solid #fff000;
   width: 100%;
   min-height: 200vh;
   position: relative;

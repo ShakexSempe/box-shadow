@@ -1,8 +1,8 @@
 .hamburger {
   border: 2px solid #fff;
   border: none;
-  height: 1rem;
-  width: 1.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -16,7 +16,9 @@
   height: 0.125rem;
   width: 100%;
   background: #fff;
+  border-radius: 0.5rem;
   position: relative;
+  border: none;
 }
 .hamburger .bar::before, .hamburger .bar::after {
   content: "";
@@ -24,15 +26,16 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ffff;
+  background: #fff;
+  border-radius: 0.5rem;
   transition: 0.25s;
   z-index: -1;
 }
 .hamburger .bar::before {
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.4rem);
 }
 .hamburger .bar::after {
-  transform: translateY(0.5rem);
+  transform: translateY(0.4rem);
 }
 .hamburger.active .bar {
   background: #ead2a1;
@@ -82,7 +85,7 @@ header aside {
   left: 100vw;
   overflow: hidden;
   padding: 5vh 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   header aside {

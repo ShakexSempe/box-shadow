@@ -1,0 +1,45 @@
+// FONTS 
+$font-title:  serif ;
+$font-content:  sans-serif;
+
+// TEXT-COLORS 
+$text-primary: #000;
+$text-primary-trans: #000a;
+$text-secondary-: #fff;
+$text-secondary-trans: #fffa;
+
+// SPAN COLORS
+$gold-gold: #ead2a1;
+$span-crimson: #dc143c;
+$span-crimson-dark:#b60f30;
+$span-crimson-trans: #dc143c8c;
+$span-orange: tomato;
+
+// BACKGROUND COLORS
+$background-primary: #000;
+$background-secondary: #f4f4f4;
+
+// BRAND OVERLAY
+$overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
+$overlay: linear-gradient(0deg, #29323c 0%, #485563 100%);
+$overlay-dark: linear-gradient(0deg, hsl(214, 18%, 15%) 30% , hsl(212, 19%, 25%) 70%);
+$overlay-blue-dark:#29323c;
+$overlay-blue-dark-trans:rgba(34, 41, 49, 0.9);
+$overlay-blue-darker:#20262e;
+$overlay-blue-light: #485563;
+
+// BUTTON COLORS
+$btn-overlay: linear-gradient(0deg, #20262e, #485563 );
+$btn-overlay-hover: linear-gradient(0deg , #485563, #20262e );
+$crimson-btn-: linear-gradient(0deg, #3f0d0d, #dc134c);
+$crimson-btn-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
+$button-gold: linear-gradient(0deg, hsl(40, 63%, 65%), #ead2a1);
+
+// BOX SHADOWS
+$box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.250),
+                    inset -2px -2px 3px rgba(0, 0, 0, .250),
+                    4px 4px 2px rgba(0, 0, 0, .150);
+
+$box-shadow-hover: inset 2px 2px 3px rgba(0, 0, 0, .250),
+                    inset -2px -2px 3px rgba(221, 221, 221, 0.250),
+                    0px 4px 1px rgba(0, 0, 0, .150);

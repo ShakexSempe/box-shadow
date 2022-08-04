@@ -1,0 +1,22 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  width: 100%;
+}
+
+.container {
+  border: 2px solid #fff000;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

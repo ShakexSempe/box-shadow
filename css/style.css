@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Taviraj:wght@200;300;500;600;700&display=swap");
 .hamburger {
   border: 2px solid #fff;
   border: none;
@@ -260,8 +260,9 @@ header .navbar ul li a:hover {
   }
 }
 .hero .banner .title {
-  top: 15vh;
   padding: 0.5rem;
+  margin: 5vh auto 0;
+  width: max-content;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   text-align: center;
@@ -279,6 +280,8 @@ header .navbar ul li a:hover {
 .hero .banner .title h1 {
   font-size: 2.5rem;
   margin-bottom: 0.25rem;
+  line-height: 1;
+  font-family: "Taviraj", serif;
 }
 @media (min-width: 768px) {
   .hero .banner .title h1 {
@@ -287,7 +290,9 @@ header .navbar ul li a:hover {
 }
 .hero .banner .title h2 {
   font-size: 1.5rem;
-  color: #ead2a1;
+  letter-spacing: 0.1rem;
+  color: #fffa;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .hero .banner .title h2 {
@@ -295,7 +300,11 @@ header .navbar ul li a:hover {
   }
 }
 .hero .banner .title .btn {
-  width: 10rem;
+  width: 15rem;
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .hero .banner .title .btn::before {
   background: linear-gradient(0deg, #20262e, #485563);

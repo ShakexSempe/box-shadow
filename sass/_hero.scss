@@ -47,6 +47,7 @@
                 margin-bottom: .25rem;
                 line-height: 1;
                 font-family: $font-title;
+                color: $text-light;
                 @include md {
                     font-size: 4rem;
                 }

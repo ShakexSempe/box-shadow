@@ -35,7 +35,7 @@ $btn-overlay: linear-gradient(0deg, #20262e, #485563 );
 $btn-overlay-hover: linear-gradient(0deg , #485563, #20262e );
 $crimson-btn: linear-gradient(0deg, #3f0d0d, #dc134c);
 $crimson-btn-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
-$button-gold: linear-gradient(0deg, hsl(40, 63%, 65%), #ead2a1);
+$button-gold: linear-gradient(0deg, hsl(40, 63%, 60%), hsl(40, 63%, 70%));
 
 // BORDER-RADIUS
 $border-radius-xsm: .25rem;
@@ -43,8 +43,8 @@ $border-radius-sm: .5rem;
 $border-radius-md: 1rem;
 $border-radius-lg: 2rem;
 // BOX SHADOWS
-$box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.250),
-                    inset -2px -2px 3px rgba(0, 0, 0, .250),
+$box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.300),
+                    inset -2px -2px 3px rgba(0, 0, 0, .30),
                     4px 4px 2px rgba(0, 0, 0, .150);
 
 $box-shadow-hover: inset 2px 2px 3px rgba(0, 0, 0, .250),

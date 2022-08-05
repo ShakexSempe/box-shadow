@@ -2,7 +2,7 @@
     // border: 2px solid blue;
     width: 100%;
     min-height: 100vh;
-    // background: $background-primary;
+    background: $background-primary;
 
     .banner {
         min-height: 100vh;
@@ -20,7 +20,7 @@
             background-position: 10% 30%;
             background-position: left;
             background-repeat: no-repeat;
-            background-size: 60%;
+            background-size: 50%;
 
         }
 
@@ -58,19 +58,27 @@
                 color: $text-light-trans;
                 font-weight: 500;
                 @include md {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
+                    letter-spacing: .35rem;
                 }
             }
 
             .btn {
                 width: 15rem;
+                padding: 1rem;
                 // width: 100%;
+                color: #000;
+                font-weight: 500;
                 position: absolute;
                 bottom: 10vh;
                 left: 50%;
                 transform: translateX(-50%);
-                &::before {background: $btn-overlay;}
+                &::before {background: $button-gold;}
                 &::after {background: $btn-overlay-hover;}
+
+                @include md {
+                    bottom: -15vh;
+                }
             }
         }
     }

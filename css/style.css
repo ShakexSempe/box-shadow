@@ -323,7 +323,7 @@ header .navbar ul li a:hover {
   background: linear-gradient(0deg, #d9ae59, #e3c382);
 }
 .hero .banner .title .btn::after {
-  background: linear-gradient(0deg, #485563, #20262e);
+  background: linear-gradient(0deg, #e3c382, #d9ae59);
 }
 @media (min-width: 768px) {
   .hero .banner .title .btn {

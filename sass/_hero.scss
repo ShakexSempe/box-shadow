@@ -74,7 +74,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 &::before {background: $button-gold;}
-                &::after {background: $btn-overlay-hover;}
+                &::after {background: $button-gold-hover;}
 
                 @include md {
                     bottom: -15vh;

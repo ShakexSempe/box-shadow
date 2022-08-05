@@ -176,7 +176,13 @@ header {
         }
     }
     
-
+    // ASIDE ACTIVE HEADER
+    &.aside-header {
+        background: $overlay-blue-dark;
+        .logo {
+            transform: translateY(0);
+        }
+    }
     // INTERSECTION CLASSES
     &.hero-header {
         background: transparent;

@@ -246,6 +246,12 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
   color: #ead2a1;
 }
+header.aside-header {
+  background: #29323c;
+}
+header.aside-header .logo {
+  transform: translateY(0);
+}
 header.hero-header {
   background: transparent;
 }

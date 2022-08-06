@@ -191,8 +191,8 @@ header {
     // INTERSECTION CLASSES
     &.hero-header {
         background: transparent;
-        // .logo {
-        //     transform: translateY(-10vh);
-        // }
+        .logo {
+            transform: translateY(-10vh);
+        }
     } 
 }

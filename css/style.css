@@ -259,6 +259,9 @@ header.aside-header .logo {
 header.hero-header {
   background: transparent;
 }
+header.hero-header .logo {
+  transform: translateY(-10vh);
+}
 
 .hero {
   width: 100%;

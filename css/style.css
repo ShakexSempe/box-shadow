@@ -110,7 +110,7 @@
 header {
   position: fixed;
   top: 0;
-  background: #29323c;
+  background: #20262e;
   height: 7vh;
   width: 100vw;
   margin: 0;
@@ -127,8 +127,8 @@ header {
   }
 }
 header .logo {
-  background-color: #20262e;
-  border: 0.1rem solid #ead2a1;
+  background: linear-gradient(90deg, #000 50%, #20262e);
+  border: 0.105rem solid #ead2a1;
   padding: 0 0.5rem;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -137,7 +137,7 @@ header .logo {
 header .logo a {
   color: #ead2a1;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.05rem;
   text-decoration: none;
   font-family: "Taviraj", serif;
 }

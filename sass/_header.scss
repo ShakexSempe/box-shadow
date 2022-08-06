@@ -3,7 +3,7 @@ header {
     // border: 1px solid red;
     position: fixed;
     top: 0;
-    background: $overlay-blue-dark;
+    background: $overlay-blue-darker;
     height: 7vh;
     width: 100vw;
     margin: 0;
@@ -18,8 +18,9 @@ header {
     transition: .5s;
 
     .logo {
-        background-color: $overlay-blue-darker;
-        border: .1rem solid $span-gold;
+        // background-color: $overlay-blue-darker;
+        background: linear-gradient( 90deg, #000 50%, $overlay-blue-darker);
+        border: .105rem solid $span-gold;
         padding: 0 .5rem;
         border-radius: $border-radius-sm;
         overflow: hidden;
@@ -28,7 +29,7 @@ header {
         a {
             color: $span-gold;
             text-transform: capitalize;
-            font-size: 1rem;
+            font-size: 1.05rem;
             text-decoration: none;
             font-family: $font-title;
             span{

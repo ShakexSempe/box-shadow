@@ -291,7 +291,7 @@ header.hero-header {
 }
 .hero .banner .title {
   padding: 0.5rem;
-  margin: 10vh 0 0;
+  margin: 5vh 0 0;
   width: 100%;
   height: auto;
   background: rgba(0, 0, 0, 0.5);
@@ -300,15 +300,16 @@ header.hero-header {
   text-transform: capitalize;
   border-radius: 0.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .hero .banner .title {
     width: max-content;
     padding: 5vh 0.5rem;
+    margin: 10vh 0 0;
   }
 }
 .hero .banner .title h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   line-height: 1;
   font-family: "Taviraj", serif;
   color: #f4f4f4;
@@ -316,13 +317,19 @@ header.hero-header {
 @media (min-width: 768px) {
   .hero .banner .title h1 {
     font-size: 2.8rem;
+    margin-bottom: 5vh;
   }
 }
 .hero .banner .title p {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.6;
-  color: #bbb;
+  color: #f4f4f4;
   font-weight: 500;
+}
+.hero .banner .title p a {
+  color: #ead2a1;
+  text-decoration: none;
+  display: block;
 }
 @media (min-width: 768px) {
   .hero .banner .title p {
@@ -336,15 +343,21 @@ header.hero-header {
   text-transform: capitalize;
   color: #000;
   font-weight: 500;
-  position: absolute;
-  bottom: 10vh;
-  left: 5vw;
   display: flex;
 }
-@media (min-width: 768px) {
+@media (max-width: 820px) {
+  .hero .banner .btn {
+    position: absolute;
+    bottom: 10vh;
+    left: 5vw;
+  }
+}
+@media (min-width: 820px) {
   .hero .banner .btn {
     width: 15rem;
     font-size: 1.05rem;
+    position: relative;
+    margin: 0;
   }
 }
 .hero .banner .btn i::before, .hero .banner .btn i::after {
@@ -370,11 +383,6 @@ header.hero-header {
 }
 .hero .banner .btn::after {
   background: linear-gradient(0deg, #e3c382, #d9ae59);
-}
-@media (min-width: 768px) {
-  .hero .banner .btn {
-    bottom: 40%;
-  }
 }
 
 footer {

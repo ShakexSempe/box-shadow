@@ -405,8 +405,8 @@ header.hero-header {
 }
 .hero .banner .btn::before {
   background: linear-gradient(0deg, #0a0c0f 20%, #20262e);
-  box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.3), 4px 4px 2px rgba(0, 0, 0, 0.15);
-  border: 0.15rem solid rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  border: 0.15rem solid rgba(234, 210, 161, 0.6);
 }
 .hero .banner .btn::after {
   background: linear-gradient(180deg, black 20%, #20262e);

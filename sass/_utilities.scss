@@ -15,7 +15,7 @@
     .bar {
         height: .125rem;
         width: 100%;
-        background: #fff;
+        background: $span-gold;
         border-radius: $border-radius-sm;
         position: relative;
         border: none;
@@ -26,7 +26,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: $span-gold;
+            background: $text-light;
             border-radius: $border-radius-sm;
             transition: .25s;
             z-index: -1;
@@ -43,8 +43,11 @@
     &.active {
         .bar {
             background: $span-gold;
-            &::before, &::after {
-                transform: translateY(0);
+            &::before {
+                transform: translateY(-.4rem) translateX(-.4rem);
+            }
+            &::after {
+                transform: translateY(.4rem) translateX(.4rem);
             }
         }
     }

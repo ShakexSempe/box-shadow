@@ -65,6 +65,7 @@ header {
             width: 90%;
             padding: 5vh .5rem;
             list-style: none;
+            overflow: hidden;
 
             li {
                 text-transform: capitalize;
@@ -92,21 +93,39 @@ header {
 
                 a {
                     text-decoration: none;
+                    text-transform: capitalize;
                     color: $text-light;
                     transition: .25s;
                     padding: .5rem 0;
                     letter-spacing: .025rem;
                     // border: 2px solid red;
-                    width: 70%;
+                    width: 50%;
                     display: block;
+                    position: relative;
+
+                    &::after {
+                        content: attr(data-after);
+                        position: absolute;
+                        top: -50%;
+                        left: 30%;
+                        color: $span-gold;
+                        font-size: 2.8rem;
+                        opacity: .0;
+                        letter-spacing: .5rem;
+                        transform: 1s;
+
+                    } 
                 }
 
                 &:hover {
-                    background: #333;
+                    // background: #333;
                     border: none;
-
                     a {
-                        letter-spacing: normal;
+                        // letter-spacing: normal;
+                        &::after {
+                            opacity: .2;
+                            letter-spacing: normal;
+                        }
                     }
                 }
             }
@@ -118,6 +137,12 @@ header {
 
             ul {
                 li {
+                    // LINK BACKGROUND AFTER TRANSITION TIMING
+                    a {
+                        &::after {
+                            transition: .25s;
+                        }
+                    }
                     &::after {
                         transform: translateX(0);
                         opacity: 1;
@@ -147,6 +172,7 @@ header {
                         }
                     }
                 }
+                
             }
         }
     }

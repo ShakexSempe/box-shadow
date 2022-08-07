@@ -42,9 +42,20 @@ body {
         section {
             min-height: 100vh;
             width: 100%;
-            padding: 5vh 5vw;
+            padding: 7vh 5vw;
             background: $background-secondary;
             border-bottom: .15rem dashed black;
+
+            .section-title {
+                h1 {
+                    // border: 1px solid red;
+                    text-transform: capitalize;
+                    font-family: $font-title;
+                    font-size: 2rem;
+                    color: $overlay-blue-darker;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }

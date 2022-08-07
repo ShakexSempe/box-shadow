@@ -21,6 +21,7 @@
   border-radius: 0.5rem;
   position: relative;
   border: none;
+  transition: 0.25s;
 }
 .hamburger .bar::before, .hamburger .bar::after {
   content: "";
@@ -41,12 +42,13 @@
 }
 .hamburger.active .bar {
   background: #ead2a1;
+  transform: translateX(-0.25rem);
 }
 .hamburger.active .bar::before {
-  transform: translateY(-0.4rem) translateX(-0.4rem);
+  transform: translateY(-0.4rem) translateX(0.25rem);
 }
 .hamburger.active .bar::after {
-  transform: translateY(0.4rem) translateX(0.4rem);
+  transform: translateY(0.4rem) translateX(-0.25rem);
 }
 
 .btn {
@@ -132,6 +134,7 @@ header {
 }
 header .logo {
   background: linear-gradient(90deg, #000 20%, #20262e);
+  background: #000;
   border: 0.105rem solid rgba(255, 255, 255, 0.2);
   padding: 0 0.5rem;
   border-radius: 0.5rem;

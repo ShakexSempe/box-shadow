@@ -19,6 +19,7 @@
         border-radius: $border-radius-sm;
         position: relative;
         border: none;
+        transition: .25s;
 
         &::before, &::after {
             content: '';
@@ -43,11 +44,12 @@
     &.active {
         .bar {
             background: $span-gold;
+            transform: translateX(-.25rem);
             &::before {
-                transform: translateY(-.4rem) translateX(-.4rem);
+                transform: translateY(-.4rem) translateX(.25rem);
             }
             &::after {
-                transform: translateY(.4rem) translateX(.4rem);
+                transform: translateY(.4rem) translateX(-.25rem);
             }
         }
     }

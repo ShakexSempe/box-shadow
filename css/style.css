@@ -411,7 +411,7 @@ header.hero-header {
 .hero .banner .btn::after {
   background: linear-gradient(180deg, black 20%, #20262e);
   box-shadow: none;
-  border: 0.15rem solid rgba(234, 210, 161, 0.6);
+  border: 0.15rem solid rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 820px) {
   .hero .banner .btn:hover i::before {

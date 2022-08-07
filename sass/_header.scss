@@ -4,6 +4,7 @@ header {
     position: fixed;
     top: 0;
     background: $overlay-blue-darker;
+    background: $overlay-blue-darkest;
     height: 7vh;
     width: 100vw;
     margin: 0;
@@ -19,8 +20,9 @@ header {
 
     .logo {
         // background-color: $overlay-blue-darker;
-        background: linear-gradient( 90deg, #000 50%, $overlay-blue-darker);
+        background: linear-gradient( 90deg, #000 20%, $overlay-blue-darker);
         border: .105rem solid $span-gold;
+        border: $border-light-sm;
         padding: 0 .5rem;
         border-radius: $border-radius-sm;
         overflow: hidden;
@@ -192,7 +194,7 @@ header {
     &.hero-header {
         background: transparent;
         .logo {
-            transform: translateY(-10vh);
+            // transform: translateY(-10vh);
         }
     } 
 }

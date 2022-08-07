@@ -45,15 +45,30 @@ body {
             padding: 7vh 5vw;
             background: $background-secondary;
             border-bottom: .15rem dashed black;
+            position: relative;
 
             .section-title {
+                position: sticky;
+                top: 8vh;
                 h1 {
-                    // border: 1px solid red;
+                    border: $border-dark-sm;
+                    border-radius: $border-radius-sm;
                     text-transform: capitalize;
                     font-family: $font-title;
                     font-size: 2rem;
                     color: $overlay-blue-darker;
+                    background-color: #fffa;
                     font-weight: 600;
+                    width: max-content;
+                    padding: .25rem .5rem;
+                    // margin-left: 45%;
+                    transition: .5s;
+                }
+
+                &.active-title {
+                    h1 {
+                        font-size: 1.25rem;
+                    }
                 }
             }
         }

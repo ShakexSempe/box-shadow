@@ -42,3 +42,28 @@ const heroObserver = new IntersectionObserver(
     }, heroOptions
 );
 heroObserver.observe(hero);
+
+// SECTION TITLE INTERSECTION OBSERVERS
+const titles = document.querySelectorAll(".section-title");
+const titlesOptions = {
+    rootMargin: '00% 0px -50% 0px',
+}
+
+titles.forEach(title => {
+    const titleObserver = new IntersectionObserver(
+        function(entries, titleObserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting) {
+                    console.log("title NOT io");
+                    title.classList.remove("active-title");
+                } else {
+                    console.log("title is io");
+                    title.classList.add("active-title");
+                }
+            });
+        }, titlesOptions
+    );
+
+    titleObserver.observe(title);
+});
+ 

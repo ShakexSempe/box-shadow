@@ -479,13 +479,27 @@ body {
   padding: 7vh 5vw;
   background: radial-gradient(#f4f4f4, #fff);
   border-bottom: 0.15rem dashed black;
+  position: relative;
+}
+.container main section .section-title {
+  position: sticky;
+  top: 8vh;
 }
 .container main section .section-title h1 {
+  border: 0.105rem solid rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
   text-transform: capitalize;
   font-family: "Taviraj", serif;
   font-size: 2rem;
   color: #20262e;
+  background-color: #fffa;
   font-weight: 600;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  transition: 0.5s;
+}
+.container main section .section-title.active-title h1 {
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

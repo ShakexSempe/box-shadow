@@ -115,8 +115,8 @@
 header {
   position: fixed;
   top: 0;
-  background: #20262e;
   background: #0a0c0f;
+  background: #20262e;
   height: 7vh;
   width: 100vw;
   margin: 0;
@@ -416,7 +416,7 @@ header.hero-header {
   }
 }
 .hero .banner .btn::before {
-  background: linear-gradient(0deg, #0a0c0f 20%, #20262e);
+  background: linear-gradient(90deg, #0a0c0f, #20262e);
   box-shadow: none;
   border: 0.15rem solid rgba(234, 210, 161, 0.6);
 }

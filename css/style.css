@@ -120,7 +120,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 @media (min-width: 768px) {
   header {
@@ -392,6 +392,12 @@ header.hero-header {
   background: linear-gradient(180deg, black 20%, #20262e);
   box-shadow: none;
   border: 0.15rem solid rgba(234, 210, 161, 0.6);
+}
+.hero .banner .btn:hover i::before {
+  opacity: 0;
+}
+.hero .banner .btn:hover i::after {
+  opacity: 1;
 }
 
 footer {

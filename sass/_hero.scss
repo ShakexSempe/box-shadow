@@ -148,7 +148,17 @@
                 border: $border-brand-md;
             }
 
-            
+            &:hover {
+                i {
+                    &::before {
+                        // transform: translateY(-50%) translateX(-.05rem);
+                        opacity: 0;
+                    }
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }

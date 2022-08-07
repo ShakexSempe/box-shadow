@@ -114,23 +114,31 @@
                     transform: translateY(-50%);
                     right: 1rem;
                     transition: .25s;
-                    // animation: arrow 1.5s infinite;
                 }
                 &::before {
                     content: '\f101';
                     font-family: "Font Awesome 6 Free";
                     // opacity: 0;
-                    animation-delay: .2s;
+                    animation: arrow 1.5s infinite;
                 }
                 &::after {
                     content: '\f105';
                     font-family: "Font Awesome 6 Free";
-                    // opacity: 0;
+                    opacity: .5;
+                    animation: arrow-2 1.5s infinite;
                 }
 
                 @keyframes arrow {
+                    
                     50% {
-                        transform: translateY(-50%) translateX(.25rem);
+                        transform: translateY(-50%) translateX(.15rem);
+                        opacity: 0;
+                    }
+                }
+                @keyframes arrow-2 {
+                    50% {
+                        opacity: 1;
+                        color: $span-gold;
                     }
                 }
             }

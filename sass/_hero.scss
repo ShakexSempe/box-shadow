@@ -114,6 +114,7 @@
                     font-size: 1rem;
                     transform: translateY(-50%);
                     right: 1rem;
+                    transition: .25s;
                     // animation: arrow 1.5s infinite;
                 }
                 &::before {
@@ -147,14 +148,27 @@
                 border: $border-brand-md;
             }
 
-            &:hover {
-                i {
-                    &::before {
-                        // transform: translateY(-50%) translateX(-.05rem);
-                        opacity: 0;
+            // DESKTOP
+            @media (min-width: 820px) {
+                &:hover {
+                    i {
+                        &::before {
+                            // transform: translateY(-50%) translateX(-.05rem);
+                            opacity: 0;
+                        }
+
+                        &::after {
+                            opacity: 1;
+                        }
                     }
-                    &::after {
-                        opacity: 1;
+                }
+            }
+            // MOBILE
+            @media (max-width: 820px) {
+                &:active {
+                    i {
+                        &::before {opacity: 0;}
+                        &::after {opacity: 1;}
                     }
                 }
             }

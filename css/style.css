@@ -139,7 +139,14 @@ header .logo {
   padding: 0 0.5rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 7rem;
   transition: 1s;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  header .logo {
+    width: 10rem;
+  }
 }
 header .logo a {
   color: #ead2a1;
@@ -283,6 +290,10 @@ header.aside-header .logo {
 header.hero-header {
   background: transparent;
 }
+header.hero-header .logo {
+  border: 0.105rem solid rgba(255, 255, 255, 0.2);
+}
+
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -487,10 +498,16 @@ body {
 }
 .container main section .section-title {
   position: sticky;
-  top: 8vh;
+  top: 7vh;
+}
+@media (min-width: 768px) {
+  .container main section .section-title {
+    top: 9vh;
+  }
 }
 .container main section .section-title h1 {
   border: 0.105rem solid rgba(0, 0, 0, 0.7);
+  border-color: transparent;
   border-radius: 0.5rem;
   text-transform: capitalize;
   font-family: "Taviraj", serif;
@@ -499,10 +516,18 @@ body {
   background-color: #fffa;
   font-weight: 600;
   width: max-content;
+  width: 7rem;
   padding: 0.25rem 0.5rem;
   transition: 0.5s;
 }
+@media (min-width: 576px) {
+  .container main section .section-title h1 {
+    width: 10rem;
+    font-size: 2.5rem;
+  }
+}
 .container main section .section-title.active-title h1 {
+  border: 0.105rem solid rgba(0, 0, 0, 0.7);
   font-size: 1.25rem;
 }
 

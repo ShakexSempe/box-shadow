@@ -25,8 +25,12 @@ header {
         padding: 0 .5rem;
         border-radius: $border-radius-sm;
         overflow: hidden;
-        // transform: translateY(-10vh);
+        width: 7rem;
         transition: 1s;
+        text-align: center;
+        @include sm {
+            width: 10rem;
+        }
         a {
             color: $span-gold;
             text-transform: capitalize;
@@ -220,7 +224,7 @@ header {
     &.hero-header {
         background: transparent;
         .logo {
-            // transform: translateY(-10vh);
+            border: $border-light-sm;
         }
     } 
 }

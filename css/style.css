@@ -116,7 +116,7 @@ header {
   position: fixed;
   top: 0;
   background: #0a0c0f;
-  background: #20262e;
+  background: #29323c;
   height: 7vh;
   width: 100vw;
   margin: 0;
@@ -275,7 +275,7 @@ header .navbar ul li a:hover {
   color: #ead2a1;
 }
 header.aside-header {
-  background: #0a0c0f;
+  background: #29323c;
 }
 header.aside-header .logo {
   transform: translateY(0);

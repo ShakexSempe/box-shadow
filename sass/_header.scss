@@ -4,7 +4,7 @@ header {
     position: fixed;
     top: 0;
     background: $overlay-blue-darkest;
-    background: $overlay-blue-darker;
+    background: $overlay-blue-dark;
     height: 7vh;
     width: 100vw;
     margin: 0;
@@ -211,7 +211,7 @@ header {
     
     // ASIDE ACTIVE HEADER
     &.aside-header {
-        background: $overlay-blue-darkest;
+        background: $overlay-blue-dark;
         .logo {
             transform: translateY(0);
         }

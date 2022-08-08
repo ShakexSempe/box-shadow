@@ -498,7 +498,7 @@ body {
 }
 .container main section .section-title {
   position: sticky;
-  top: 7vh;
+  top: 8vh;
 }
 @media (min-width: 768px) {
   .container main section .section-title {
@@ -517,7 +517,7 @@ body {
   font-weight: 600;
   width: max-content;
   width: 7rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem;
   transition: 0.5s;
 }
 @media (min-width: 576px) {
@@ -528,7 +528,12 @@ body {
 }
 .container main section .section-title.active-title h1 {
   border: 0.105rem solid rgba(0, 0, 0, 0.7);
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .container main section .section-title.active-title h1 {
+    font-size: 1.25rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

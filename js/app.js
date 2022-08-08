@@ -9,8 +9,8 @@ hamburger.addEventListener("click", () => {
     aside.classList.toggle("active");
     hamburger.classList.toggle("active");
     if(header.classList.contains("hero-header")){
-        header.classList.remove('hero-header');
-        header.classList.add('aside-header');
+        header.classList.toggle('hero-header');
+        header.classList.toggle('aside-header');
     }
 });
 
@@ -46,7 +46,7 @@ heroObserver.observe(hero);
 // SECTION TITLE INTERSECTION OBSERVERS
 const titles = document.querySelectorAll(".section-title");
 const titlesOptions = {
-    rootMargin: '00% 0px -70% 0px',
+    rootMargin: '00% 0px -80% 0px',
 }
 
 titles.forEach(title => {

@@ -182,7 +182,7 @@ header aside {
 }
 header aside ul {
   width: 90%;
-  padding: 5vh 0.5rem;
+  padding: 0vh 0.5rem 5vh;
   list-style: none;
   overflow: hidden;
 }
@@ -235,6 +235,27 @@ header aside ul li:hover a::after {
   opacity: 0.2;
   letter-spacing: normal;
 }
+header aside .contact-links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  gap: 1rem;
+}
+header aside .contact-links a {
+  color: #ead2a1;
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 0.025rem;
+  opacity: 0;
+  transition: 1s;
+}
+header aside .contact-links a i {
+  padding-right: 0.5rem;
+  color: #f4f4f4;
+  transform: translateX(-1rem);
+  opacity: 0;
+  transition: 1s;
+}
 header aside.active {
   left: 5vw;
 }
@@ -256,6 +277,23 @@ header aside.active ul li:nth-child(3)::after {
 }
 header aside.active ul li:nth-child(4)::after {
   transition-delay: 0.4s;
+}
+header aside.active .contact-links a {
+  opacity: 1;
+  transition-delay: 0.8s;
+}
+header aside.active .contact-links a i {
+  opacity: 1;
+  transform: translateX(0);
+}
+header aside.active .contact-links a:nth-child(1) i {
+  transition-delay: 0.5s;
+}
+header aside.active .contact-links a:nth-child(2) i {
+  transition-delay: 0.6s;
+}
+header aside.active .contact-links a:nth-child(3) i {
+  transition-delay: 0.7s;
 }
 @media (max-width: 820px) {
   header .navbar {
@@ -455,9 +493,9 @@ header.hero-header .logo {
 }
 
 footer {
-  min-height: 50vh;
+  min-height: 70vh;
   width: 100%;
-  background: #20262e;
+  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
 }
 
 *, ::before, ::after {

@@ -46,7 +46,7 @@ heroObserver.observe(hero);
 // SECTION TITLE INTERSECTION OBSERVERS
 const titles = document.querySelectorAll(".section-title");
 const titlesOptions = {
-    rootMargin: '00% 0px -80% 0px',
+    rootMargin: '00% 0px -85% 0px',
 }
 
 titles.forEach(title => {

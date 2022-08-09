@@ -155,7 +155,7 @@ header {
                     padding-right: .5rem;
                     color: $text-light;
                     transform: translateX(-1rem);
-                    opacity: 0;
+                    // opacity: 0;
                     transition: 1s;
                 }
             }
@@ -207,7 +207,7 @@ header {
             .contact-links {
                 a {
                     opacity: 1;
-                    transition-delay: .8s;
+                    transition-delay: 1s;
                     i {
                         opacity: 1;
                         transform: translateX(0);
@@ -215,17 +215,17 @@ header {
                     // TRANSITION DELAYS
                     &:nth-child(1){
                         i {
-                        transition-delay: .5s;
+                        transition-delay: .7s;
                         }
                     }
                     &:nth-child(2){
                         i {
-                        transition-delay: .6s;
+                        transition-delay: 1s;
                         }
                     }
                     &:nth-child(3){
                         i {
-                        transition-delay: .7s;
+                        transition-delay: 1.3s;
                         }
                     }
                 }

@@ -50,6 +50,7 @@ body {
             .section-title {
                 position: sticky;
                 top: 8vh;
+                overflow: hidden;
                 @include md {
                     top: 9vh;
                 }
@@ -60,12 +61,15 @@ body {
                     text-transform: capitalize;
                     font-family: $font-title;
                     font-size: 2rem;
-                    color: $overlay-blue-darker;
+                    color: $overlay-blue-dark;
                     background-color: #fffa;
                     font-weight: 600;
-                    width: max-content;
                     width: 7rem;
-                    padding: .25rem;
+                    width: max-content;
+                    padding: 0 .5rem;
+                    // margin: 0 auto;
+                    // float: right;
+                    // text-align: right;
                     // margin-left: 45%;
                     transition: .5s;
                     @include sm {

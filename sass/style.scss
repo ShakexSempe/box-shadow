@@ -51,6 +51,8 @@ body {
                 position: sticky;
                 top: 8vh;
                 overflow: hidden;
+
+                // background: #fff;
                 @include md {
                     top: 9vh;
                 }
@@ -60,13 +62,13 @@ body {
                     border-radius: $border-radius-sm;
                     text-transform: capitalize;
                     font-family: $font-title;
-                    font-size: 2rem;
+                    font-size: 3rem;
                     color: $overlay-blue-dark;
-                    background-color: #fffa;
                     font-weight: 600;
+                    padding: 0 .5rem;
                     width: 7rem;
                     width: max-content;
-                    padding: 0 .5rem;
+                    // padding: 0 .5rem;
                     // margin: 0 auto;
                     // float: right;
                     // text-align: right;
@@ -81,7 +83,9 @@ body {
                 &.active-title {
                     h1 {
                         border: $border-dark-sm;
-                        font-size: 1rem;
+                        font-size: 1.25rem;
+                    background: $background-secondary;
+                        // opacity: .5;
                         @include md {
                             font-size: 1.25rem;
                         }

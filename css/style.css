@@ -286,7 +286,7 @@ header aside.active .contact-links a i {
   transform: translateX(0);
 }
 header aside.active .contact-links a:nth-child(1) i {
-  transition-delay: 0.7s;
+  transition-delay: 0.6s;
 }
 header aside.active .contact-links a:nth-child(2) i {
   transition-delay: 1s;
@@ -491,6 +491,24 @@ header.hero-header .logo {
   }
 }
 
+.about .about-article {
+  margin: 5vh 0;
+}
+.about .about-article p {
+  line-height: 1.5;
+}
+.about .about-article p::first-letter {
+  color: #ead2a1;
+  font-size: 2rem;
+  float: left;
+  margin-right: 0.1rem;
+  border-radius: 0.25rem;
+  padding: 0 0.05rem;
+  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
+  text-shadow: 2px 2px 0px #000;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
 footer {
   min-height: 70vh;
   width: 100%;
@@ -549,13 +567,12 @@ body {
   border-radius: 0.5rem;
   text-transform: capitalize;
   font-family: "Taviraj", serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #29323c;
-  background-color: #fffa;
   font-weight: 600;
+  padding: 0 0.5rem;
   width: 7rem;
   width: max-content;
-  padding: 0 0.5rem;
   transition: 0.5s;
 }
 @media (min-width: 576px) {
@@ -566,7 +583,8 @@ body {
 }
 .container main section .section-title.active-title h1 {
   border: 0.105rem solid rgba(0, 0, 0, 0.7);
-  font-size: 1rem;
+  font-size: 1.25rem;
+  background: radial-gradient(#f4f4f4, #fff);
 }
 @media (min-width: 768px) {
   .container main section .section-title.active-title h1 {

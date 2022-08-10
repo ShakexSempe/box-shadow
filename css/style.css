@@ -504,6 +504,7 @@ header.hero-header .logo {
 }
 .about .about-article p {
   line-height: 1.5;
+  font-size: 0.95rem;
 }
 .about .about-article p::first-letter {
   color: #ead2a1;

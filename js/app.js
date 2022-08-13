@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const aside = document.querySelector('.aside');
 const links = document.querySelectorAll('header a');
 const header = document.querySelector('.header');
+const container = document.querySelector('.container');
 console.log(links);
 
 // HAMBURGER TOGGLE
@@ -12,7 +13,9 @@ hamburger.addEventListener("click", () => {
         header.classList.toggle('hero-header');
         header.classList.toggle('aside-header');
     }
+    container.classList.toggle("active-container");
 });
+
 
 // REMOVE HAMBURGER ON LINK CLICK
 links.forEach(link => {
@@ -20,6 +23,7 @@ links.forEach(link => {
         hamburger.classList.remove("active");
         aside.classList.remove("active");
         header.classList.remove("aside-header");
+        container.classList.remove("active-container");
     });
 });
 

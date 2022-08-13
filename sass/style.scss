@@ -33,7 +33,23 @@ body {
     width: 100%;
     min-height: 200vh;
     position: relative;
+    // SIDEBAR OVERLAY
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 100%;
+        height: 100%;
+        background: #000a;
+    }
 
+    // ACTIVE SIDEBAR CLASS
+    &.active-container {
+        &::after {
+            left: 0;
+        }
+    }
     main {
         min-height: 100vh;
         width: 100%;

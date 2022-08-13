@@ -1,5 +1,23 @@
 footer {
-    min-height: 70vh;
+    min-height: 50vh;
     width: 100%;
     background: $overlay-dark;
+    padding: 10vh 5vw;
+    .copyright {
+        border: 2px solid $brand;
+        border-radius: 1rem;
+        color: #fff;
+        height: 50vh;
+        width: 100%;
+        padding: 1rem;
+        text-transform: capitalize;
+
+        p {
+            line-height: 1.6;
+            span{
+                display: block;
+                color: #f4f4f4;
+            }
+        }
+    }
 }

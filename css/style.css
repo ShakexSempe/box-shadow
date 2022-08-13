@@ -519,9 +519,26 @@ header.hero-header .logo {
 }
 
 footer {
-  min-height: 70vh;
+  min-height: 50vh;
   width: 100%;
   background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
+  padding: 10vh 5vw;
+}
+footer .copyright {
+  border: 2px solid #ead2a1;
+  border-radius: 1rem;
+  color: #fff;
+  height: 50vh;
+  width: 100%;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+footer .copyright p {
+  line-height: 1.6;
+}
+footer .copyright p span {
+  display: block;
+  color: #f4f4f4;
 }
 
 *, ::before, ::after {

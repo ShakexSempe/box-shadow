@@ -128,8 +128,21 @@
         </div>
       </section>
     </main>
-    <footer id="footer" class="footer"></footer>
+    <footer id="footer" class="footer">
+      <div class="logo"></div>
+      <div class="copyright">
+        <p>All rights reserved</p>
+        <p>copyright&copy;: Box shadow</p>
+        <p><span id="date"></span></p>
+      </div>
+    </footer>
   </div>
+
+  <!-- DATE -->
+  <script>
+    const date = document.getElementById('date');
+    date.innerHTML = new Date().getFullYear()
+  </script>
 <!-- PRELOADER SCRIPT -->
 <!-- <script>
   setTimeout(function () {

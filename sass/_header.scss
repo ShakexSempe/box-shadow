@@ -26,10 +26,12 @@ header {
         border-radius: $border-radius-sm;
         overflow: hidden;
         width: 7rem;
+        width: max-content;
         transition: 1s;
-        text-align: center;
+        text-align: left;
         @include sm {
-            width: 10rem;
+            // width: 10rem;
+            text-align: left;
         }
         a {
             color: $span-gold;

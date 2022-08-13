@@ -13,12 +13,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    scroll-padding-top: 7vh;
+    // scroll-padding-top: 7vh;
 }
 
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 body {
     background: $background-primary;
@@ -48,8 +48,8 @@ body {
             position: relative;
 
             .section-title {
-                position: sticky;
-                top: 8vh;
+                // position: sticky;
+                // top: 8vh;
                 overflow: hidden;
 
                 // background: #fff;
@@ -82,7 +82,7 @@ body {
 
                 &.active-title {
                     h1 {
-                        border: $border-dark-sm;
+                        // border: $border-dark-sm;
                         font-size: 1.25rem;
                     background: $background-secondary;
                         // opacity: .5;

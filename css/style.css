@@ -140,12 +140,13 @@ header .logo {
   border-radius: 0.5rem;
   overflow: hidden;
   width: 7rem;
+  width: max-content;
   transition: 1s;
-  text-align: center;
+  text-align: left;
 }
 @media (min-width: 576px) {
   header .logo {
-    width: 10rem;
+    text-align: left;
   }
 }
 header .logo a {
@@ -342,7 +343,6 @@ header.hero-header .logo {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
 }
 .hero .banner {
   min-height: 100vh;
@@ -498,6 +498,71 @@ header.hero-header .logo {
     opacity: 1;
   }
 }
+.hero .menu {
+  min-height: 100vh;
+  padding: 10vh 5vw;
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  position: relative;
+}
+.hero .menu .menu-section {
+  isolation: isolate;
+  text-align: center;
+}
+.hero .menu .menu-section .menu-title {
+  color: #f4f4f4;
+}
+.hero .menu .menu-section .menu-title h1 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-family: "Taviraj", serif;
+}
+.hero .menu .menu-section .menu-arrow {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  overflow: hidden;
+}
+.hero .menu .menu-section .menu-arrow a {
+  color: #ead2a1;
+  border: 2px solid #fffa;
+  display: block;
+  text-decoration: none;
+  transition: 0.25s;
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+.hero .menu .menu-section .menu-arrow a i {
+  padding: 0.5rem;
+  font-size: 1rem;
+  animation: menu-arrow 2s infinite ease-in-out;
+}
+@keyframes menu-arrow {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.hero .menu .menu-section .menu-arrow a:hover {
+  transform: scale(0.9);
+}
+.hero .menu .menu-section .menu-arrow a:hover i {
+  animation: none;
+}
 
 .about .about-article {
   margin: 5vh 0;
@@ -505,6 +570,7 @@ header.hero-header .logo {
 .about .about-article p {
   line-height: 1.5;
   font-size: 0.95rem;
+  font-weight: 500;
 }
 .about .about-article p::first-letter {
   color: #ead2a1;
@@ -545,7 +611,6 @@ footer .copyright p span {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-padding-top: 7vh;
 }
 
 html {
@@ -578,8 +643,6 @@ body {
   position: relative;
 }
 .container main section .section-title {
-  position: sticky;
-  top: 8vh;
   overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -608,7 +671,6 @@ body {
   }
 }
 .container main section .section-title.active-title h1 {
-  border: 0.105rem solid rgba(0, 0, 0, 0.7);
   font-size: 1.25rem;
   background: radial-gradient(#f4f4f4, #fff);
 }

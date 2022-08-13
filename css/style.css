@@ -500,13 +500,19 @@ header.hero-header .logo {
 }
 .hero .menu {
   min-height: 100vh;
-  padding: 10vh 5vw;
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  position: relative;
+  padding: 0 0 0;
 }
 .hero .menu .menu-section {
+  position: relative;
   isolation: isolate;
   text-align: center;
+  min-height: 100vh;
+  padding: 10vh 5vw;
+  background: #20262e;
+}
+.hero .menu .menu-section:nth-of-type(even) {
+  background: green;
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 .hero .menu .menu-section .menu-title {
   color: #f4f4f4;

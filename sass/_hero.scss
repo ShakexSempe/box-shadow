@@ -185,14 +185,20 @@
     // MENU 
     .menu {
         min-height: 100vh;
-        padding: 10vh 5vw;
-        background: $overlay;
+        padding: 0 0 0;
         // border: 2px solid yellow;
-        position: relative;
         // MENU ITEM
         .menu-section {
+            position: relative;
             isolation: isolate;
             text-align: center;
+            min-height: 100vh;
+            padding: 10vh 5vw;
+            background: $overlay-blue-darker;
+            &:nth-of-type(even) {
+                background: green;
+                background: $overlay;
+            }
             // MENU TITLE
             .menu-title {
                 color: #f4f4f4;

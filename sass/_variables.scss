@@ -44,7 +44,7 @@ $button-gold: linear-gradient(0deg, hsl(40, 63%, 60%), hsl(40, 63%, 70%));
 $button-gold-hover: linear-gradient(0deg, hsl(40, 63%, 70%), hsl(40, 63%, 60%));
 $btn-brand: linear-gradient(90deg, hsl(40, 63%, 50%), hsl(40, 63%, 60%));
 $btn-brand: linear-gradient( 90deg, #0a0c0f, $overlay-blue-darker);
-$btn-brand-hover: linear-gradient( 180deg, hsl(214, 18%, 0%) 20%, $overlay-blue-darker);
+$btn-brand-hover: linear-gradient( -90deg, hsl(214, 18%, 0%) 20%, $overlay-blue-darker);
 
 // BORDER-RADIUS
 $border-radius-xsm: .25rem;

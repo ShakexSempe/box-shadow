@@ -627,6 +627,7 @@ header.hero-header .logo {
   display: block;
   font-weight: 300;
   padding-top: 0.05rem;
+  color: #fffa;
 }
 @media (min-width: 576px) {
   .hero .menu .menu-section .device-grid .device figure figcaption {

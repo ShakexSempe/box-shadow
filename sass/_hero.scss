@@ -194,7 +194,7 @@
             text-align: center;
             min-height: 100vh;
             padding: 10vh 5vw;
-            background: $overlay-dark;
+            background: $overlay-blue-darkest;
             &:nth-of-type(even) {
                 background: green;
                 background: $overlay;
@@ -236,7 +236,7 @@
                     i {
                         padding: .5rem;
                         font-size: 1rem;
-                        animation: menu-arrow 2s infinite ease-in-out;
+                        // animation: menu-arrow 2s infinite ease-in-out;
 
                         @keyframes menu-arrow {
                             0% {
@@ -287,7 +287,7 @@
                 }
 
                 .device {
-                    border: $border-brand-sm;
+                    border: $border-light-sm;
                     width: 100%;
                     padding: .5rem;
                     background: $overlay-dark;

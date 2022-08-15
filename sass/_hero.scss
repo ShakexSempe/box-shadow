@@ -295,10 +295,11 @@
                 }
 
                 .device {
-                    // border: $border-light-sm;
                     width: 100%;
                     padding: .5rem;
                     background: $overlay-dark;
+                    border-left: $border-light-sm;
+                    border-bottom: $border-light-sm;
                     border-radius: $border-radius-sm;
                     @include sm{
                         display: grid;

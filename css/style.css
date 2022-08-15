@@ -594,6 +594,8 @@ header.hero-header .logo {
   width: 100%;
   padding: 0.5rem;
   background: linear-gradient(60deg, #1f252d, #343f4c);
+  border-left: 0.105rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.105rem solid rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
 }
 @media (min-width: 576px) {

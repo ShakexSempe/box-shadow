@@ -520,6 +520,12 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .menu-title {
   color: #f4f4f4;
+  text-align: left;
+}
+@media (min-width: 576px) {
+  .hero .menu .menu-section .menu-title {
+    text-align: center;
+  }
 }
 .hero .menu .menu-section .menu-title h1 {
   text-transform: capitalize;

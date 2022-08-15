@@ -570,7 +570,7 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .device-grid {
   overflow: hidden;
-  margin: 5vh 0;
+  margin: 10vh 0 5vh;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -587,7 +587,6 @@ header.hero-header .logo {
   }
 }
 .hero .menu .menu-section .device-grid .device {
-  border: 0.105rem solid rgba(255, 255, 255, 0.2);
   width: 100%;
   padding: 0.5rem;
   background: linear-gradient(60deg, #1f252d, #343f4c);

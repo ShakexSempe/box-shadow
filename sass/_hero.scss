@@ -363,6 +363,10 @@
                 width: 100%;
                 overflow: hidden;
                 margin: 1rem auto;
+                @include md {
+                    height: 50vh;
+                    margin: 10vh auto;
+                }
 
                 img {
                     width: 100%;

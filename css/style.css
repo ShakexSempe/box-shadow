@@ -534,6 +534,12 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .menu-title p {
   font-size: 0.9rem;
+  width: 85%;
+}
+@media (min-width: 576px) {
+  .hero .menu .menu-section .menu-title p {
+    width: 100%;
+  }
 }
 .hero .menu .menu-section .menu-arrow {
   width: 100%;

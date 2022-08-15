@@ -223,6 +223,10 @@
 
                 p {
                     font-size: .9rem;
+                    width: 85%;
+                    @include sm {
+                        width: 100%;
+                    }
                 }
             }
             

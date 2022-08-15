@@ -7,7 +7,7 @@ $font-content:  'Montserrat',sans-serif;
 // TEXT-COLORS 
 $text-light: #f4f4f4;
 $text-light-trans: #bbb;
-$text-dark-: #000;
+$text-dark: #000;
 $text-dark-trans: #000a;
 
 // BRAND COLORS
@@ -42,9 +42,10 @@ $crimson-btn: linear-gradient(0deg, #3f0d0d, #dc134c);
 $crimson-btn-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
 $button-gold: linear-gradient(0deg, hsl(40, 63%, 60%), hsl(40, 63%, 70%));
 $button-gold-hover: linear-gradient(0deg, hsl(40, 63%, 70%), hsl(40, 63%, 60%));
-$btn-brand: linear-gradient(90deg, hsl(40, 63%, 50%), hsl(40, 63%, 60%));
 $btn-brand: linear-gradient( 90deg, #0a0c0f, $overlay-blue-darker);
+$btn-brand: linear-gradient(90deg, hsl(40, 63%, 50%), hsl(40, 63%, 60%));
 $btn-brand-hover: linear-gradient( -90deg, hsl(214, 18%, 0%) 20%, $overlay-blue-darker);
+$btn-brand-hover: linear-gradient( -90deg, hsl(40, 63%, 60%) 20%, hsl(40, 63%, 50%));
 
 // BORDER-RADIUS
 $border-radius-xsm: .25rem;
@@ -56,10 +57,10 @@ $border-dark-sm: .105rem solid rgba(0, 0, 0, .7);
 $border-light-md: .15rem solid rgba(255, 255, 255, .2);
 $border-dark-md: .15rem solid rgba(0, 0, 0, .2);
 $border-brand-sm: .105rem solid rgba(234, 210, 161, .4);
-$border-brand-md: .15rem solid rgba(234, 210, 161, .6);
+$border-brand-md: .15rem solid rgba(234, 210, 161, 1);
 // BOX SHADOWS
-$box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.100),
-                    inset -2px -2px 3px rgba(0, 0, 0, .30),
+$box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.300),
+                    inset -2px -2px 3px rgba(0, 0, 0, .350),
                     4px 4px 2px rgba(0, 0, 0, .150);
 
 $box-shadow-hover: inset 2px 2px 2px rgba(0, 0, 0, .250),

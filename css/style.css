@@ -709,9 +709,11 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .device-grid .device.active-item:hover .device-caption h2 {
   opacity: 0.5;
+  transition: 0.25s 0.25s;
 }
 .hero .menu .menu-section .device-grid .device.active-item:hover .device-caption p {
   color: #ead2a1;
+  transition: 0.25s 0.25s;
 }
 .hero .menu .menu-section .device-grid .device.active-item:hover .device-img::before {
   opacity: 0;

@@ -207,12 +207,29 @@
                 background: green;
                 background: $overlay-blue-darker;
             }
+
+            // MENU FLEX CONTAINER
+            .menu-content {
+                // border: 2px solid yellow;
+                display: flex;
+                flex-direction: column;
+                @include lg {
+                    flex-direction: row;
+                    align-items: center;
+                    // position: sticky;
+                    // top: 20vh;
+                }
+            }
             // MENU TITLE
             .menu-title {
                 color: #f4f4f4;
                 text-align: left;
                 @include sm {
                     text-align: center;
+                }
+                @include lg {
+                    text-align: left;
+                    width: 50%;
                 }
                 h1 {
                     text-transform: capitalize;

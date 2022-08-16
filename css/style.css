@@ -519,6 +519,16 @@ header.hero-header .logo {
   background: green;
   background: #20262e;
 }
+.hero .menu .menu-section .menu-content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 820px) {
+  .hero .menu .menu-section .menu-content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .hero .menu .menu-section .menu-title {
   color: #f4f4f4;
   text-align: left;
@@ -526,6 +536,12 @@ header.hero-header .logo {
 @media (min-width: 576px) {
   .hero .menu .menu-section .menu-title {
     text-align: center;
+  }
+}
+@media (min-width: 820px) {
+  .hero .menu .menu-section .menu-title {
+    text-align: left;
+    width: 50%;
   }
 }
 .hero .menu .menu-section .menu-title h1 {
@@ -677,14 +693,14 @@ header.hero-header .logo {
 }
 .about .about-article p {
   line-height: 1.5;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .about .about-article p::first-letter {
   color: #ead2a1;
   font-size: 2rem;
   float: left;
-  margin-right: 0.1rem;
+  margin-right: 0.2rem;
   border-radius: 0.25rem;
   padding: 0 0.05rem;
   background: linear-gradient(60deg, #1f252d, #343f4c);

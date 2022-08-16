@@ -70,4 +70,26 @@ titles.forEach(title => {
 
     titleObserver.observe(title);
 });
- 
+
+
+const ioItem = document.querySelectorAll('.io-item');
+const itemOptions = {
+    rootMargin: '0px 0px -30% 0px', 
+} 
+
+ioItem.forEach(item => {
+    const itemObserver = new IntersectionObserver(
+        function(entries, itemObserver) {
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    console.log("Item NOT io");
+                    item.classList.remove("active-item");
+                } else {
+                    console.log("Item IS io");
+                    item.classList.add("active-item");
+                }
+            })
+        }, itemOptions
+    );
+    itemObserver.observe(item);
+})

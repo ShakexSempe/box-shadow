@@ -337,6 +337,7 @@
                         height: 100%;
                         width: 5rem;
                         position: relative;
+                        transition: .25s;
 
                         &::before, &::after {
                             content: '';
@@ -403,17 +404,67 @@
                             font-size: 1.1rem;
                             margin-bottom: .2rem;
                             font-weight: 600;
+                            transition: .25s;
                         }
 
                         p {
                             color: $text-light-trans;
+                            transition: .25s;
                         }
                     }
 
-                    &:hover {
+                    
+
+                    // IO CLASS
+                    &.io-item {
                         .device-img {
-                            &::before {opacity: 0;}
-                            &::after {opacity: 1;}
+                            opacity: .5;
+                        }
+                        .device-caption {
+                            h2 {
+                                letter-spacing: .05rem;
+                            }
+                            p {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    // ACTIVE IO
+                    &.active-item {
+                        .device-caption {
+                            h2 {
+                                letter-spacing: normal;
+                                transition: .5s .25s;
+                            }
+                            p {
+                                opacity: 1;
+                                transition: .5s .5s;
+                            }
+                        }
+                        .device-img {
+                            opacity: 1;
+                            transition: .5s;
+                        }
+                        // ACTIVE HOVER STATE
+                        &:hover {
+                            .device-caption {
+                                h2 {
+                                    opacity: .5;
+                                }
+                                p {
+                                    color: $span-gold;
+                                }
+                            }
+                            .device-img {
+                                &::before {
+                                    opacity: 0;
+                                    transition: .5s;
+                                }
+                                &::after {
+                                    opacity: 1;
+                                    transition: .5s;
+                                }
+                            }
                         }
                     }
                 }

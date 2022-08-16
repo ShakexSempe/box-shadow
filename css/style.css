@@ -631,6 +631,7 @@ header.hero-header .logo {
   height: 100%;
   width: 5rem;
   position: relative;
+  transition: 0.25s;
 }
 .hero .menu .menu-section .device-grid .device .device-img::before, .hero .menu .menu-section .device-grid .device .device-img::after {
   content: "";
@@ -679,15 +680,46 @@ header.hero-header .logo {
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
   font-weight: 600;
+  transition: 0.25s;
 }
 .hero .menu .menu-section .device-grid .device .device-caption p {
   color: #bbb;
+  transition: 0.25s;
 }
-.hero .menu .menu-section .device-grid .device:hover .device-img::before {
+.hero .menu .menu-section .device-grid .device.io-item .device-img {
+  opacity: 0.5;
+}
+.hero .menu .menu-section .device-grid .device.io-item .device-caption h2 {
+  letter-spacing: 0.05rem;
+}
+.hero .menu .menu-section .device-grid .device.io-item .device-caption p {
   opacity: 0;
 }
-.hero .menu .menu-section .device-grid .device:hover .device-img::after {
+.hero .menu .menu-section .device-grid .device.active-item .device-caption h2 {
+  letter-spacing: normal;
+  transition: 0.5s 0.25s;
+}
+.hero .menu .menu-section .device-grid .device.active-item .device-caption p {
   opacity: 1;
+  transition: 0.5s 0.5s;
+}
+.hero .menu .menu-section .device-grid .device.active-item .device-img {
+  opacity: 1;
+  transition: 0.5s;
+}
+.hero .menu .menu-section .device-grid .device.active-item:hover .device-caption h2 {
+  opacity: 0.5;
+}
+.hero .menu .menu-section .device-grid .device.active-item:hover .device-caption p {
+  color: #ead2a1;
+}
+.hero .menu .menu-section .device-grid .device.active-item:hover .device-img::before {
+  opacity: 0;
+  transition: 0.5s;
+}
+.hero .menu .menu-section .device-grid .device.active-item:hover .device-img::after {
+  opacity: 1;
+  transition: 0.5s;
 }
 .hero .menu .menu-section .css-image {
   height: 60vh;

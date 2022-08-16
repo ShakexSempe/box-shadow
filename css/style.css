@@ -724,7 +724,7 @@ header.hero-header .logo {
   transition: 0.5s;
 }
 .hero .menu .menu-section .css-image {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   overflow: hidden;
   margin: 1rem auto;
@@ -739,7 +739,23 @@ header.hero-header .logo {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 0.5rem 0.15rem #000);
+  filter: drop-shadow(0.5rem 0.5rem 0.15rem #000a);
+  transition: 0.5s;
+}
+.hero .menu .menu-section .css-image.io-item img {
+  transform: scale(0.8);
+}
+.hero .menu .menu-section .css-image.active-item img {
+  transform: scale(1);
+}
+.hero .menu .menu-section .css-image.active-item:hover img {
+  animation: cssImage 2s infinite;
+}
+@keyframes cssImage {
+  50% {
+    transform: rotateY(-10deg);
+    filter: drop-shadow(0.25rem 0.25rem 0.15rem #000);
+  }
 }
 
 .about .about-article {

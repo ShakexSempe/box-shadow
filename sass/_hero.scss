@@ -474,7 +474,7 @@
             // CSS IMAGE 
             .css-image {
                 // border: 2px solid red;
-                height: 60vh;
+                height: 50vh;
                 width: 100%;
                 overflow: hidden;
                 margin: 1rem auto;
@@ -487,7 +487,32 @@
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
-                    filter: drop-shadow(0 .5rem .15rem #000);
+                    filter: drop-shadow(.5rem .5rem .15rem #000a);
+                    transition: .5s;
+                }
+
+                &.io-item {
+                    img {
+                        transform: scale(.8);
+                    }
+                }
+                &.active-item {
+                    img {
+                        transform: scale(1);
+                    }
+
+                    &:hover {
+                        img {
+                            animation: cssImage 2s infinite;
+                            
+                            @keyframes cssImage {
+                                50% {
+                                    transform: rotateY(-10deg);
+                                    filter: drop-shadow(.25rem .25rem .15rem #000);
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

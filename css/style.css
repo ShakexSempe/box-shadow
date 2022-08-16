@@ -552,6 +552,7 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .menu-title p {
   font-size: 0.9rem;
+  line-height: 1.6;
   width: 85%;
 }
 @media (min-width: 576px) {
@@ -677,6 +678,7 @@ header.hero-header .logo {
   color: #f4f4f4;
   font-size: 1.25rem;
   margin-bottom: 0.2rem;
+  font-weight: 500;
 }
 .hero .menu .menu-section .device-grid .device .device-caption p {
   color: #bbb;

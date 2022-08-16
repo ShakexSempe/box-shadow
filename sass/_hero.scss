@@ -239,6 +239,7 @@
 
                 p {
                     font-size: .9rem;
+                    line-height: 1.6;
                     width: 85%;
                     @include sm {
                         width: 100%;
@@ -401,6 +402,7 @@
                             color: $text-light;
                             font-size: 1.25rem;
                             margin-bottom: .2rem;
+                            font-weight: 500;
                         }
 
                         p {

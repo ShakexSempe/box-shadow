@@ -418,7 +418,8 @@
                     // IO CLASS
                     &.io-item {
                         .device-img {
-                            opacity: .5;
+                            opacity: .2;
+                            transform: translateX(-2rem);
                         }
                         .device-caption {
                             h2 {
@@ -443,6 +444,7 @@
                         }
                         .device-img {
                             opacity: 1;
+                            transform: translateX(0);
                             transition: .5s;
                         }
                         // ACTIVE HOVER STATE
@@ -499,6 +501,7 @@
                 &.active-item {
                     img {
                         transform: scale(1);
+                        transition: 1s;
                     }
 
                     &:hover {

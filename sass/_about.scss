@@ -7,18 +7,24 @@
             line-height: 1.5;
             font-size: 1rem;
             font-weight: 500;
-            &::first-letter {
-                color: $brand;
-                font-size: 2rem;
-                float: left;
-                margin-right: .2rem;
-                // border: 1px solid blue;
-                border-radius: .25rem;
-                padding: 0 .05rem;
-                background: $overlay-dark;
-                text-shadow: 2px 2px 0px #000;
-                box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+            color: $overlay-blue-darker;
+            margin-bottom: 1rem;
+            &.article-intro {
+                font-weight: 600;
 
+                &::first-letter {
+                    color: $brand;
+                    font-family: $font-title;
+                    font-size: 2rem;
+                    float: left;
+                    margin-right: .2rem;
+                    // border: 1px solid blue;
+                    border-radius: .25rem;
+                    padding: 0 .3rem 0 .25rem;
+                    background: $overlay-dark;
+                    text-shadow: 2px 2px 0px #000;
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+                }
             }
         }
     }

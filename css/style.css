@@ -687,7 +687,8 @@ header.hero-header .logo {
   transition: 0.25s;
 }
 .hero .menu .menu-section .device-grid .device.io-item .device-img {
-  opacity: 0.5;
+  opacity: 0.2;
+  transform: translateX(-2rem);
 }
 .hero .menu .menu-section .device-grid .device.io-item .device-caption h2 {
   letter-spacing: 0.05rem;
@@ -705,6 +706,7 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .device-grid .device.active-item .device-img {
   opacity: 1;
+  transform: translateX(0);
   transition: 0.5s;
 }
 .hero .menu .menu-section .device-grid .device.active-item:hover .device-caption h2 {
@@ -747,6 +749,7 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .css-image.active-item img {
   transform: scale(1);
+  transition: 1s;
 }
 .hero .menu .menu-section .css-image.active-item:hover img {
   animation: cssImage 2s infinite;
@@ -765,14 +768,20 @@ header.hero-header .logo {
   line-height: 1.5;
   font-size: 1rem;
   font-weight: 500;
+  color: #20262e;
+  margin-bottom: 1rem;
 }
-.about .about-article p::first-letter {
+.about .about-article p.article-intro {
+  font-weight: 600;
+}
+.about .about-article p.article-intro::first-letter {
   color: #ead2a1;
+  font-family: "Taviraj", serif;
   font-size: 2rem;
   float: left;
   margin-right: 0.2rem;
   border-radius: 0.25rem;
-  padding: 0 0.05rem;
+  padding: 0 0.3rem 0 0.25rem;
   background: linear-gradient(60deg, #1f252d, #343f4c);
   text-shadow: 2px 2px 0px #000;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
@@ -876,7 +885,7 @@ body {
   }
 }
 .container main section .section-title.active-title h1 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   background: radial-gradient(#f4f4f4, #fff);
 }
 @media (min-width: 768px) {

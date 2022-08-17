@@ -9,6 +9,7 @@
     .about-article {
         // border: 1px solid red;
         margin: 5vh 0;
+        overflow: hidden;
 
         p {
             line-height: 1.5;
@@ -56,6 +57,7 @@
     .about-img {
         // border: 2px solid red;
         overflow: hidden;
+        border-radius: $border-radius-sm;
 
         img {
             width: 100%;

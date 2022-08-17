@@ -78,11 +78,8 @@ body {
                     border-radius: $border-radius-sm;
                     text-transform: capitalize;
                     font-family: $font-title;
-<<<<<<< HEAD
                     font-size: 2rem;
-=======
                     font-size: 3rem;
->>>>>>> f4e17b6327e68f8c8fe9e9f7718c9626d11f8216
                     color: $overlay-blue-dark;
                     font-weight: 600;
                     padding: 0 .5rem;
@@ -97,26 +94,7 @@ body {
 
                 &.active-title {
                     h1 {
-                        // border: $border-dark-sm;
-<<<<<<< HEAD
-                        // font-size: 2rem;
-
                         opacity: .6;
-                        @include md {
-                            font-size: 2rem;
-                        }
-=======
-                        font-size: 2rem;
-                        background: $background-secondary;
-
-                        // opacity: .5;
-                        @include md {
-                            font-size: 2rem;
-                        }
-
-                        // border-bottom-left-radius: .5rem;
-                        // border-bottom-right-radius: .5rem;
->>>>>>> f4e17b6327e68f8c8fe9e9f7718c9626d11f8216
                     }
                 }
             }

@@ -551,7 +551,7 @@ header.hero-header .logo {
   font-family: "Taviraj", serif;
 }
 .hero .menu .menu-section .menu-title p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.6;
   width: 85%;
 }
@@ -687,8 +687,8 @@ header.hero-header .logo {
   transition: 0.25s;
 }
 .hero .menu .menu-section .device-grid .device.io-item .device-img {
-  opacity: 0.2;
-  transform: translateX(-2rem);
+  opacity: 0;
+  transform: translateX(-0.5rem);
 }
 .hero .menu .menu-section .device-grid .device.io-item .device-caption h2 {
   letter-spacing: 0.05rem;
@@ -778,11 +778,7 @@ header.hero-header .logo {
   line-height: 1.5;
   font-size: 1rem;
   font-weight: 500;
-<<<<<<< HEAD
   color: #29323c;
-=======
-  color: #20262e;
->>>>>>> f4e17b6327e68f8c8fe9e9f7718c9626d11f8216
   margin-bottom: 1rem;
   transition: 0.5s;
 }
@@ -926,11 +922,8 @@ body {
   border-radius: 0.5rem;
   text-transform: capitalize;
   font-family: "Taviraj", serif;
-<<<<<<< HEAD
   font-size: 2rem;
-=======
   font-size: 3rem;
->>>>>>> f4e17b6327e68f8c8fe9e9f7718c9626d11f8216
   color: #29323c;
   font-weight: 600;
   padding: 0 0.5rem;
@@ -945,17 +938,7 @@ body {
   }
 }
 .container main section .section-title.active-title h1 {
-<<<<<<< HEAD
   opacity: 0.6;
-=======
-  font-size: 2rem;
-  background: radial-gradient(#f4f4f4, #fff);
->>>>>>> f4e17b6327e68f8c8fe9e9f7718c9626d11f8216
-}
-@media (min-width: 768px) {
-  .container main section .section-title.active-title h1 {
-    font-size: 2rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

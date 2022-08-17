@@ -761,6 +761,15 @@ header.hero-header .logo {
   }
 }
 
+.about .flex-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .about .flex-container {
+    flex-direction: row;
+  }
+}
 .about .about-article {
   margin: 5vh 0;
 }
@@ -770,6 +779,12 @@ header.hero-header .logo {
   font-weight: 500;
   color: #20262e;
   margin-bottom: 1rem;
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  .about .about-article p {
+    font-size: 1.05rem;
+  }
 }
 .about .about-article p.article-intro {
   font-weight: 600;
@@ -785,6 +800,41 @@ header.hero-header .logo {
   background: linear-gradient(60deg, #1f252d, #343f4c);
   text-shadow: 2px 2px 0px #000;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 768px) {
+  .about .about-article p.article-intro::first-letter {
+    font-size: 2.5rem;
+  }
+}
+.about .about-article p.io-item {
+  opacity: 0.5;
+  transform: translateY(1rem);
+}
+.about .about-article p.active-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about .about-img {
+  overflow: hidden;
+}
+.about .about-img img {
+  width: 100%;
+  transition: 1s;
+}
+@media (min-width: 768px) {
+  .about .about-img {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.about .about-img.io-item img {
+  transform: scale(2);
+  opacity: 0;
+}
+.about .about-img.active-item img {
+  transform: scale(1);
+  opacity: 1;
+  transition: 1.5s;
 }
 
 footer {
@@ -853,7 +903,7 @@ body {
   width: 100%;
   padding: 7vh 5vw;
   background: radial-gradient(#f4f4f4, #fff);
-  border-bottom: 0.15rem dashed black;
+  border-bottom: 0.15rem dashed rgba(0, 0, 0, 0.247);
   position: relative;
 }
 .container main section .section-title {
@@ -890,7 +940,7 @@ body {
 }
 @media (min-width: 768px) {
   .container main section .section-title.active-title h1 {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 }
 

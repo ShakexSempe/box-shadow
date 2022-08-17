@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- META CHARSET -->
+  <meta charset="UTF-8" />
+  <!-- META VIEWPORT -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- META THEME COLOR -->
+  <meta name="theme-color" content="#29323c" />
+  <!-- META OG IMAGE -->
+  <meta name="image" property="og:image" content="https://shakexsempe.netlify.app/img/shakex-sempe-logo.png">
+
+  <!-- TITLE -->
+  <title>Box Shadow - Web Design & Development</title>
+  <!--  -->
+  <!-- META DESCRIPTION -->
+  <meta name="description"
+    content="Box Shadow specializes in web design and web development. We code responsive websites and landing pages for small businesses and professionals">
+  <!-- META KEYWORDS -->
+  <meta name="keywords"
+    content="HTML, HTML5, CSS, CSS3, JAVASCRIPT, JS, WEB DEVELOPMENT, SASS, FRONT-END DEVELOPMENT, south africa, react, vanilla javascript, Responsive web design, remote, freelance">
+  <!-- META AUTHOR -->
+  <meta name="author" content="Boitumelo Shakex Sempe">
+  <!-- FAVICON -->
+  <!-- <link rel="shortcut icon" href="icons/favicon.ico"> -->
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- JAVASCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" defer referrerpolicy="no-referrer"></script>
+  <script src="js/app.js" defer></script>
+
+</head>
+
+<body>
+  <!-- LOADER -->
+  <!-- <div class="loader_bg">
+    <div class="spinner">
+      loading
+      <div class="sector sector-1"></div>
+      <div class="sector sector-2"></div>
+      <div class="sector sector-3"></div>
+    </div>
+  </div> -->
+  <div class="container" id="container">
+    <header id="header" class="header">
+      <div class="logo">
+        <a title="Home" href="#">Box<span>Shadow</span></a>
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+      </div>
+      <!-- ASIDE = MOBILE -->
+      <aside id="aside" class="aside">
+        <ul>
+          <li><a href="#about" data-after="about">about</a></li>
+          <li><a href="#services" data-after="services">services</a></li>
+          <li><a href="#products" data-after="products">products</a></li>
+          <li><a href="#contact" data-after="contact">contact</a></li>
+        </ul>
+        <div class="contact-links">
+          <a href="mailto:bshakex@gmail.com"><i class="fa-solid fa-envelope"></i>bshakex@gmail.com</a>
+          <a href="tel:072393947"><i class="fa-brands fa-whatsapp"></i>073736728 (WhatsApp only)</a>
+          <a href="tel:0721234567"><i class="fa-solid fa-phone-volume"></i>0725958372</a>
+        </div>
+      </aside>
+      <!-- NAVBAR = DESKTOP -->
+      <div id="navbar" class="navbar">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#products">products</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="hero" class="hero">
+      <div class="banner">
+        <div class="title">
+          <h1>web design</h1>
+          <p>Accessible, Immersive & Engaging <a href="#menu" class="title-span">responsive webpages<span></span></p>
+        </div>
+        <div class="cta">
+          <a href="#menu" title="Go To Menu" class="btn">get started<i class="fa-solid fa-angles-right"></i></a>
+        </div>
+      </div>
+      <!-- SERVICE MENU -->
+      <div id="menu" class="menu">
+        <!-- MENU ITEM 1 -->
+        <div class="menu-section" id="menu1">
+          <!-- MENU FLEX DISPLAY CONTAINER -->
+          <div class="menu-content">
+            <!-- MENU TITLE -->
+            <div class="menu-title">
+              <h1>Responsive & Accessible</h1>
+              <p>User friendly Web Design that look good on all devices
+                and can be used by individuals with disabilities.
+              </p>
+            </div>
+            <!-- MENU GRID -->
+            <div class="device-grid">
+              <div class="device device-1 io-item">
+                <figure class="device-img sm-img"></figure>
+                <div class="device-caption">
+                  <h2>small screens</h2>
+                  <p>smart phones</p>
+                </div>
+              </div>
+              <div class="device device-2 io-item">
+                <figure class="device-img md-img"></figure>
+                <div class="device-caption">
+                  <h2>medium screens</h2>
+                  <p>tablets</p>
+                </div>
+              </div>
+              <div class="device device-3 io-item">
+                <figure class="device-img lg-img"></figure>
+                <div class="device-caption">
+                  <h2>large screens</h2>
+                  <p>desktops</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MENU NEXT PAGE ARROW -->
+          <div class="menu-arrow">
+            <a href="#menu2"><i class="fas fa-arrow-down"></i></a>
+          </div>
+        </div>
+        <!-- MENU ITEM 2 -->
+        <div class="menu-section" id="menu2">
+          <!-- MENU FLEX DISPLAY CONTAINER -->
+          <div class="menu-content">
+            <!-- MENU TITLE -->
+            <div class="menu-title">
+              <h1>Immersive & Engaging</h1>
+              <p>Interactive User interface and satisfying User Experience</p>
+            </div>
+
+            <figure class="css-image io-item">
+              <img src="img/access.png" alt="css styled webpage">
+            </figure>
+          </div>
+          <!-- MENU NEXT PAGE ARROW -->
+          <div class="menu-arrow">
+            <a href="#main"><i class="fas fa-arrow-down"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <main id="main" class="main">
+      <section id="about" class="about">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+          <h1>about</h1>
+        </div>
+        <!-- SECTION CONTENT -->
+        <div class="flex-container">
+        <div class="about-article">
+          <p class="article-intro io-item">Box Shadow designs & develops responsive websites and landing pages suitable for small businesses and professionals</p>
+          <p class="io-item">We code Landing Pages to make a good impression on your prospective customers using advanced stylesheets to create an immersive user experience. </p>
+          <p class="io-item">An engaging user interface nurtures leads and get more conversions by ensuring visitors access and navigate your website with ease </p>
+        </div>
+        <figure class="about-img io-item">
+          <img src="img/syntex-1.jpg" alt="Responsive Web Design devices">
+        </figure>
+      </div>
+      </section>
+      <section id="services" class="services">
+        <div class="section-title">
+          <h1>services</h1>
+        </div>
+      </section>
+      <section id="products" class="products">
+        <div class="section-title">
+          <h1>products</h1>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="section-title">
+          <h1>contact</h1>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="logo"></div>
+      <div class="copyright">
+        <p>All rights reserved</p>
+        <p>copyright&copy;: Box shadow</p>
+        <p><span id="date"></span></p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- DATE -->
+  <script>
+    const date = document.getElementById('date');
+    date.innerHTML = new Date().getFullYear()
+  </script>
+<!-- PRELOADER SCRIPT -->
+<!-- <script>
+  setTimeout(function () {
+    $('.loader_bg').fadeToggle();
+  }, 8000);
+</script> -->
+<!-- SCROLL SCRIPT -->
+<!-- <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+<script>
+  ScrollOut({
+    onShown(el) {
+      el.classList.add("animated");
+    }
+  });
+</script> -->
+</body>
+
+</html>

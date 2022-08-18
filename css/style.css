@@ -752,6 +752,9 @@ header.hero-header .logo {
   }
 }
 
+.contact .contact-container {
+  margin-top: 5vh;
+}
 @media (min-width: 768px) {
   .contact .contact-container {
     margin-top: 10vh;
@@ -763,8 +766,11 @@ header.hero-header .logo {
 .contact .contact-container .contact-item {
   border: 0.105rem solid rgba(234, 210, 161, 0.4);
   margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   border-radius: 0.5rem;
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .contact .contact-container .contact-item {
@@ -778,17 +784,25 @@ header.hero-header .logo {
 }
 .contact .contact-container .contact-item .contact-icon i {
   font-size: 1.5rem;
-}
-.contact .contact-container .contact-item .contact-info {
-  padding-left: 2rem;
+  color: #ead2a1;
+  opacity: 0.8;
 }
 .contact .contact-container .contact-item .contact-info h2 {
+  font-size: 1.25rem;
   text-transform: capitalize;
-  color: #29323c;
+  font-weight: 500;
+  color: #ead2a1;
+  margin-bottom: 0.25rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-container .contact-item .contact-info h2 {
+    font-size: 1.5rem;
+  }
 }
 .contact .contact-container .contact-item .contact-info a {
   text-decoration: none;
   color: #20262e;
+  color: #f4f4f4;
   letter-spacing: 0.05rem;
 }
 

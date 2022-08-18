@@ -1,6 +1,7 @@
 .contact {
     .contact-container {
         // border: 2px solid blue;
+        margin-top: 5vh;
         @include md {
             // border: 2px solid red;
             margin-top: 10vh;
@@ -11,8 +12,11 @@
         .contact-item {
             border: $border-brand-sm;
             margin-bottom: 1rem;
-            padding: .5rem;
+            padding: 1rem .5rem;
             border-radius: $border-radius-sm;
+            background: $overlay;
+            display: flex;
+            align-items: center;
             @include md {
                 flex-grow: 1;
                 border-color: $overlay-blue-dark;
@@ -24,21 +28,30 @@
                 width: 2.5rem;
                 i {
                     font-size: 1.5rem;
+                    color: $brand;
+                    opacity: .8;
                 }
             }
             
             .contact-info {
                 // border: 2px solid green;
-                padding-left: 2rem;
-
+                // padding-left: 2rem;
+                
                 h2 {
+                    font-size: 1.25rem;
                     text-transform: capitalize;
-                    color: $overlay-blue-dark
+                    font-weight: 500;
+                    color: $brand;
+                    margin-bottom: .25rem;
+                    @include md {
+                        font-size: 1.5rem;
+                    }
                 }
 
                 a {
                     text-decoration: none;
                     color: $overlay-blue-darker;
+                    color: $text-light;
                     letter-spacing: .05rem;
                 }
             }

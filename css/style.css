@@ -752,11 +752,26 @@ header.hero-header .logo {
   }
 }
 
+@media (min-width: 768px) {
+  .contact .contact-container {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+}
 .contact .contact-container .contact-item {
   border: 0.105rem solid rgba(234, 210, 161, 0.4);
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-container .contact-item {
+    flex-grow: 1;
+    border-color: #29323c;
+    padding: 1rem 0.5rem;
+  }
 }
 .contact .contact-container .contact-item .contact-icon {
   width: 2.5rem;

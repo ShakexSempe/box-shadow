@@ -1,12 +1,23 @@
 .contact {
     .contact-container {
         // border: 2px solid blue;
-
+        @include md {
+            // border: 2px solid red;
+            margin-top: 10vh;
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+        }
         .contact-item {
             border: $border-brand-sm;
             margin-bottom: 1rem;
             padding: .5rem;
             border-radius: $border-radius-sm;
+            @include md {
+                flex-grow: 1;
+                border-color: $overlay-blue-dark;
+                padding: 1rem .5rem;
+            }
 
             .contact-icon {
                 // border: 2px solid yellow;

@@ -802,6 +802,7 @@ header.hero-header .logo {
   }
 }
 .contact .contact-container .contact-item .contact-info a {
+  display: block;
   text-decoration: none;
   color: #20262e;
   color: #f4f4f4;
@@ -823,7 +824,15 @@ header.hero-header .logo {
 }
 .contact .contact-container .contact-item.io-item .contact-info h2 {
   color: #f4f4f4;
-  transition: 1s 0.5s;
+  transition: 0.5s 0.5s;
+}
+.contact .contact-container .contact-item.io-item .contact-info a {
+  transform: translateX(1rem);
+  transition: 1s;
+}
+.contact .contact-container .contact-item.io-item .contact-info a::after {
+  transform: scale(0);
+  transition: 0.5s;
 }
 .contact .contact-container .contact-item.active-item .contact-icon i {
   transform: scale(1);
@@ -831,9 +840,8 @@ header.hero-header .logo {
 .contact .contact-container .contact-item.active-item .contact-info h2 {
   color: #ead2a1;
 }
-.contact .contact-container .contact-item.active-item .contact-info a::after {
-  transform: scale(0);
-  transition: 0.5s;
+.contact .contact-container .contact-item.active-item .contact-info a {
+  transform: translateX(0);
 }
 .contact .contact-container .contact-item.active-item:hover .contact-icon i {
   opacity: 0.7;

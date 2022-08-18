@@ -51,6 +51,7 @@
                 }
 
                 a {
+                    display: block;
                     text-decoration: none;
                     color: $overlay-blue-darker;
                     color: $text-light;
@@ -80,7 +81,16 @@
                 .contact-info {
                     h2 {
                         color: $text-light;
-                        transition: 1s .5s;
+                        transition: .5s .5s;
+                    }
+
+                    a {
+                        transform: translateX(1rem);
+                        transition: 1s;
+                        &::after {
+                            transform: scale(0);
+                            transition: .5s;
+                        }
                     }
                 }
             }
@@ -97,10 +107,7 @@
                     }
 
                     a {
-                        &::after {
-                            transform: scale(0);
-                            transition: .5s;
-                        }
+                        transform: translateX(0);
                     }
                 }
 

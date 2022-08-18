@@ -431,6 +431,7 @@ header.hero-header .logo {
   font-size: 2.85rem;
   font-family: "Taviraj", serif;
   color: #f4f4f4;
+  color: #ead2a1;
 }
 @media (min-width: 768px) {
   .hero .banner .title h1 {
@@ -446,6 +447,7 @@ header.hero-header .logo {
 }
 .hero .banner .title p a {
   color: #ead2a1;
+  color: #f4f4f4;
   text-decoration: none;
   display: block;
 }

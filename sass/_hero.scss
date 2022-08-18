@@ -60,6 +60,7 @@
                 font-size: 2.85rem;
                 font-family: $font-title;
                 color: $text-light;
+                color: $brand;
                 @include md {
                     font-size: 2.8rem;
                 margin-bottom: 5vh;
@@ -74,6 +75,7 @@
                 font-weight: 500;
                 a {
                     color: $span-gold;
+                    color: $text-light;
                     text-decoration: none;
                     display: block;
                 }

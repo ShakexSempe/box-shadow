@@ -821,6 +821,17 @@ header.hero-header .logo {
 .contact .contact-container .contact-item.active-item .contact-info h2 {
   color: #ead2a1;
 }
+.contact .contact-container .contact-item.active-item:hover .contact-icon i {
+  opacity: 0.7;
+  transition: 0.25s;
+}
+.contact .contact-container .contact-item.active-item:hover .contact-info h2 {
+  opacity: 0.6;
+  transition: 0.25s;
+}
+.contact .contact-container .contact-item.active-item:hover .contact-info a {
+  text-decoration: underline;
+}
 
 .about .flex-container {
   display: flex;

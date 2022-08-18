@@ -85,6 +85,24 @@
                         color: $brand;
                     }
                 }
+
+                &:hover {
+                    .contact-icon {
+                        i {
+                            opacity: .7;
+                            transition: .25s;
+                        }
+                    }
+                    .contact-info {
+                        h2 {
+                            opacity: .6;
+                            transition: .25s;
+                        }
+                        a {
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
         }
     }

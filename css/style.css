@@ -537,7 +537,6 @@ header.hero-header .logo {
   text-transform: capitalize;
   font-size: 1.5rem;
   font-family: "Taviraj", serif;
-  font-weight: 500;
   color: #ead2a1;
   letter-spacing: 0.05rem;
 }
@@ -670,7 +669,7 @@ header.hero-header .logo {
   color: #f4f4f4;
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
-  font-weight: 600;
+  font-weight: 500;
   transition: 0.25s;
 }
 .hero .menu .menu-section .device-grid .device .device-caption p {

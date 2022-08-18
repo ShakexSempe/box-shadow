@@ -29,11 +29,11 @@ $overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
 $overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
 // $overlay: linear-gradient(-60deg, red 0%, blue 100%);
 $overlay-dark: linear-gradient(60deg, hsl(214, 18%, 15%), hsl(212, 19%, 25%));
+$overlay-blue-light: #485563;
 $overlay-blue-dark:#29323c;
 $overlay-blue-dark-trans:rgba(34, 41, 49, 0.9);
 $overlay-blue-darker:#20262e;
 $overlay-blue-darkest:#0a0c0f;
-$overlay-blue-light: #485563;
 
 // BUTTON COLORS
 $btn-overlay: linear-gradient(0deg, #20262e, #485563 );
@@ -44,6 +44,8 @@ $button-gold: linear-gradient(0deg, hsl(40, 63%, 60%), hsl(40, 63%, 70%));
 $button-gold-hover: linear-gradient(0deg, hsl(40, 63%, 70%), hsl(40, 63%, 60%));
 $btn-brand: linear-gradient(90deg, hsl(40, 63%, 50%), hsl(40, 63%, 60%));
 $btn-brand: linear-gradient( 90deg, #0a0c0f, $overlay-blue-darker);
+$btn-brand-light: linear-gradient( 90deg, $overlay-blue-darkest, $overlay-blue-light);
+$btn-brand-light-hover: linear-gradient( 90deg, $overlay-blue-light, $overlay-blue-darkest);
 $btn-brand-hover: linear-gradient( -90deg, hsl(40, 63%, 60%) 20%, hsl(40, 63%, 50%));
 $btn-brand-hover: linear-gradient( -90deg, hsl(214, 18%, 0%) 20%, $overlay-blue-darker);
 

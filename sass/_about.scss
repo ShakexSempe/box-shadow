@@ -92,11 +92,16 @@
     }
 
         // ABOUT BTN
-        .btn {
+        .about-btn {
             font-size: 1rem;
             margin: 5vh 0 1rem;
             @include md {
                 margin-top: -5vh;
+            }
+
+            &::before {
+                background: $btn-brand-light;
+                border: $border-light-sm;
             }
         }
 }

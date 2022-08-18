@@ -753,7 +753,7 @@ header.hero-header .logo {
 }
 
 .contact .contact-container .contact-item {
-  border: 1px solid #29323c;
+  border: 0.105rem solid rgba(234, 210, 161, 0.4);
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -769,11 +769,11 @@ header.hero-header .logo {
 }
 .contact .contact-container .contact-item .contact-info h2 {
   text-transform: capitalize;
-  color: #20262e;
+  color: #29323c;
 }
 .contact .contact-container .contact-item .contact-info a {
   text-decoration: none;
-  color: #29323c;
+  color: #20262e;
   letter-spacing: 0.05rem;
 }
 

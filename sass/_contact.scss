@@ -3,7 +3,7 @@
         // border: 2px solid blue;
 
         .contact-item {
-            border: 1px solid $overlay-blue-dark;
+            border: $border-brand-sm;
             margin-bottom: 1rem;
             padding: .5rem;
             border-radius: $border-radius-sm;
@@ -22,12 +22,12 @@
 
                 h2 {
                     text-transform: capitalize;
-                    color: $overlay-blue-darker;
+                    color: $overlay-blue-dark
                 }
 
                 a {
                     text-decoration: none;
-                    color: $overlay-blue-dark;
+                    color: $overlay-blue-darker;
                     letter-spacing: .05rem;
                 }
             }

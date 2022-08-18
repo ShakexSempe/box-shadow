@@ -56,20 +56,23 @@
 }
 
 .btn {
-    border: .125rem solid transparent;
-    border-radius: $border-radius-sm;
-    display: block;
-    width: 10rem;
-    width: max-content;
-    padding: .5rem 1rem;
-    margin: 1rem auto;
-    font-size: 1rem;
+    display: flex;
+    position: relative;
+    width: 11rem;
+    padding: 1rem;
+    color: $text-light;
+    font-size: 1.05rem;
+    font-weight: 500;
     text-decoration: none;
-    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
     letter-spacing: .05rem;
     transition: .25s;
-    position: relative;
     isolation: isolate;
+    border: .125rem solid transparent;
+    border-radius: $border-radius-sm;
+
+    
 
 
     &::before, &::after {
@@ -84,13 +87,15 @@
         z-index: -1;
     }
     &::before {
-        background: #333;
-        box-shadow: $box-shadow;
+        background: $btn-brand;
+        box-shadow: none;
+        border: $border-brand-md;
     }
     &::after {
-        background: blue;
-        box-shadow: $box-shadow-hover;
+        background: $btn-brand-hover;
+        box-shadow: none;
         opacity: 0;
+        border: $border-light-md;
     }
 
     @media (max-width: 820px){
@@ -107,6 +112,55 @@
             letter-spacing: normal;
             &::before {opacity: 0;}
             &::after {opacity: 1;}
+
+            i {
+                &::before, &::after {
+                    animation: none;
+                    color: $brand;
+                }
+            }
         }
     }
+
+    // ICON 
+    i {
+        &::before, &::after {
+            position: absolute;
+            color: $text-light;
+            opacity: 1;
+            top: 50%;
+            font-size: 1rem;
+            transform: translateY(-50%);
+            right: 1rem;
+            transition: .25s;
+        }
+        &::before {
+            content: '\f101';
+            font-family: "Font Awesome 6 Free";
+            // opacity: 0;
+            animation: arrow 1.5s infinite;
+        }
+        &::after {
+            content: '\f105';
+            font-family: "Font Awesome 6 Free";
+            // opacity: .5;
+            animation: arrow-2 1.5s infinite;
+        }
+
+        @keyframes arrow {
+            
+            50% {
+                transform: translateY(-50%) translateX(.15rem);
+                opacity: 0;
+            }
+        }
+        @keyframes arrow-2 {
+            50% {
+                opacity: 1;
+                color: $text-dark;
+                color: $span-gold;
+            }
+        }
+    }
+
 }

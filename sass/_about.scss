@@ -102,6 +102,12 @@
             &::before {
                 background: $btn-brand-light;
                 border: $border-light-sm;
+                box-shadow: $box-shadow;
+            }
+            &::after {
+                background: $btn-brand-light-hover;
+                border: $border-light-sm;
+                box-shadow: $box-shadow-hover;
             }
         }
 }

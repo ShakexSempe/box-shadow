@@ -17,6 +17,7 @@
             background: $overlay;
             display: flex;
             align-items: center;
+            overflow: hidden;
             @include md {
                 flex-grow: 1;
                 border-color: $overlay-blue-dark;
@@ -26,6 +27,7 @@
             .contact-icon {
                 // border: 2px solid yellow;
                 width: 2.5rem;
+                overflow: hidden;
                 i {
                     font-size: 1.5rem;
                     color: $brand;
@@ -56,6 +58,34 @@
                 }
             }
 
+            // IO CLASS 
+            &.io-item {
+                .contact-icon {
+                    i {
+                        transform: scale(.5);
+                        transition: 1s;
+                    }
+                }
+                .contact-info {
+                    h2 {
+                        color: $text-light;
+                        transition: 1s .5s;
+                    }
+                }
+            }
+            // IO ACTIVE CLASS 
+            &.active-item {
+                .contact-icon {
+                    i {
+                        transform: scale(1);
+                    }
+                }
+                .contact-info {
+                    h2 {
+                        color: $brand;
+                    }
+                }
+            }
         }
     }
 }

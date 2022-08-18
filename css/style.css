@@ -771,6 +771,7 @@ header.hero-header .logo {
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .contact .contact-container .contact-item {
@@ -781,6 +782,7 @@ header.hero-header .logo {
 }
 .contact .contact-container .contact-item .contact-icon {
   width: 2.5rem;
+  overflow: hidden;
 }
 .contact .contact-container .contact-item .contact-icon i {
   font-size: 1.5rem;
@@ -804,6 +806,20 @@ header.hero-header .logo {
   color: #20262e;
   color: #f4f4f4;
   letter-spacing: 0.05rem;
+}
+.contact .contact-container .contact-item.io-item .contact-icon i {
+  transform: scale(0.5);
+  transition: 1s;
+}
+.contact .contact-container .contact-item.io-item .contact-info h2 {
+  color: #f4f4f4;
+  transition: 1s 0.5s;
+}
+.contact .contact-container .contact-item.active-item .contact-icon i {
+  transform: scale(1);
+}
+.contact .contact-container .contact-item.active-item .contact-info h2 {
+  color: #ead2a1;
 }
 
 .about .flex-container {

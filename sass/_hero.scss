@@ -223,11 +223,8 @@
             .menu-title {
                 color: #f4f4f4;
                 text-align: left;
-                @include sm {
-                    text-align: center;
-                }
                 @include lg {
-                    text-align: left;
+                    // text-align: left;
                     width: 50%;
                 }
                 h1 {
@@ -235,6 +232,9 @@
                     font-size: 1.5rem;
                     // margin-bottom: .25rem;
                     font-family: $font-title;
+                    font-weight: 500;
+                    color: $brand;
+                    letter-spacing: .05rem;
                 }
 
                 p {

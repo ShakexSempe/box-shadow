@@ -164,7 +164,11 @@
                 @include lg {
                     flex-direction: row;
                     align-items: center;
-                    justify-content: space-around;
+                    justify-content: flex-start;
+                }
+
+                &.menu-1-content {
+                    gap: 5vw;
                 }
             }
             // MENU TITLE
@@ -183,6 +187,9 @@
                     // font-weight: 500;
                     color: $brand;
                     letter-spacing: .025rem;
+                    @include lg {
+                        font-size: 2rem;
+                    }
                 }
 
                 p {

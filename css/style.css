@@ -521,8 +521,11 @@ header.hero-header .logo {
   .hero .menu .menu-section .menu-content {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
+}
+.hero .menu .menu-section .menu-content.menu-1-content {
+  gap: 5vw;
 }
 .hero .menu .menu-section .menu-title {
   color: #f4f4f4;
@@ -539,6 +542,11 @@ header.hero-header .logo {
   font-family: "Taviraj", serif;
   color: #ead2a1;
   letter-spacing: 0.025rem;
+}
+@media (min-width: 820px) {
+  .hero .menu .menu-section .menu-title h1 {
+    font-size: 2rem;
+  }
 }
 .hero .menu .menu-section .menu-title p {
   font-size: 0.95rem;

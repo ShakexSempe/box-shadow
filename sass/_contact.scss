@@ -10,11 +10,12 @@
             gap: 1rem;
         }
         .contact-item {
-            border: $border-brand-sm;
+            border: $border-light-sm;
             margin-bottom: 1rem;
             padding: 1rem .5rem;
             border-radius: $border-radius-sm;
             background: $overlay;
+            box-shadow: $box-shadow;
             display: flex;
             align-items: center;
             overflow: hidden;

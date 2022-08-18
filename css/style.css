@@ -538,7 +538,7 @@ header.hero-header .logo {
   font-size: 1.5rem;
   font-family: "Taviraj", serif;
   color: #ead2a1;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.025rem;
 }
 .hero .menu .menu-section .menu-title p {
   font-size: 0.95rem;
@@ -667,13 +667,14 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .device-grid .device .device-caption h2 {
   color: #f4f4f4;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.2rem;
   font-weight: 500;
   transition: 0.25s;
 }
 .hero .menu .menu-section .device-grid .device .device-caption p {
   color: #bbb;
+  font-size: 0.95rem;
   transition: 0.25s;
 }
 .hero .menu .menu-section .device-grid .device.io-item .device-img {

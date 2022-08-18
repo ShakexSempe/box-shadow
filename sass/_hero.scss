@@ -182,7 +182,7 @@
                     font-family: $font-title;
                     // font-weight: 500;
                     color: $brand;
-                    letter-spacing: .05rem;
+                    letter-spacing: .025rem;
                 }
 
                 p {
@@ -349,7 +349,7 @@
 
                         h2 {
                             color: $text-light;
-                            font-size: 1.1rem;
+                            font-size: 1rem;
                             margin-bottom: .2rem;
                             font-weight: 500;
                             transition: .25s;
@@ -357,6 +357,7 @@
 
                         p {
                             color: $text-light-trans;
+                            font-size: .95rem;
                             transition: .25s;
                         }
                     }

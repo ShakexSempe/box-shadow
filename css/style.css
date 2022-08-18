@@ -603,7 +603,6 @@ header.hero-header .logo {
 }
 .hero .menu .menu-section .device-grid {
   overflow: hidden;
-  margin: 5vh 0;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;

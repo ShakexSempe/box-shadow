@@ -806,9 +806,6 @@ header.hero-header .logo {
   opacity: 1;
   transform: translateY(0);
 }
-.about .about-article .btn {
-  font-size: 1rem;
-}
 .about .about-img {
   overflow: hidden;
   border-radius: 0.5rem;
@@ -825,12 +822,21 @@ header.hero-header .logo {
 }
 .about .about-img.io-item img {
   transform: scale(2);
-  opacity: 0;
+  opacity: 1;
 }
 .about .about-img.active-item img {
   transform: scale(1);
   opacity: 1;
   transition: 1.5s;
+}
+.about .btn {
+  font-size: 1rem;
+  margin: 5vh 0 1rem;
+}
+@media (min-width: 768px) {
+  .about .btn {
+    margin-top: -5vh;
+  }
 }
 
 footer {

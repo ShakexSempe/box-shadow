@@ -890,7 +890,7 @@ header.hero-header .logo {
 .contact .contact-form form label input, .contact .contact-form form label textarea {
   display: block;
   border-radius: 0.25rem;
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem;
   width: 100%;
   border-color: #485563;
   resize: none;

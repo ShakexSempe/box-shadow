@@ -883,11 +883,14 @@ header.hero-header .logo {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
-.contact .contact-form form label input {
+.contact .contact-form form label input, .contact .contact-form form label textarea {
   display: block;
   border-radius: 0.25rem;
   padding: 0.25rem;
   width: 100%;
+}
+.contact .contact-form form label textarea {
+  display: block;
 }
 .contact .contact-form form .submit-btn {
   margin-top: 1rem;

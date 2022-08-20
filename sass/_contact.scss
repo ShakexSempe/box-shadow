@@ -162,11 +162,15 @@
                 // border: 2px solid blue;
                 margin-bottom: .5rem;
 
-                input {
+                input, textarea {
                     display: block;
                     border-radius: .25rem;
                     padding: .25rem;
                     width: 100%;
+                }
+
+                textarea {
+                    display: block;
                 }
             }
 

@@ -2,50 +2,57 @@
     .contact-container {
         // border: 2px solid blue;
         margin-top: 5vh;
+        background: $overlay;
+        border-radius: $border-radius-sm;
         @include md {
             // border: 2px solid red;
             margin-top: 10vh;
             display: flex;
             justify-content: space-around;
             gap: 1rem;
+            background: none;
         }
         .contact-item {
-            border: $border-light-sm;
+            border-bottom: $border-light-sm;
             margin-bottom: 1rem;
             padding: 1rem .5rem;
-            border-radius: $border-radius-sm;
-            background: $overlay;
+            // background: $overlay;
             // box-shadow: $box-shadow;
             display: flex;
             align-items: center;
             overflow: hidden;
+
             @include md {
                 flex-grow: 1;
+                border-radius: $border-radius-sm;
                 border-color: $overlay-blue-dark;
                 padding: 1rem .5rem;
+                background: $overlay;
             }
 
             .contact-icon {
                 // border: 2px solid yellow;
                 width: 2.5rem;
                 overflow: hidden;
+
                 i {
                     font-size: 1.5rem;
                     color: $brand;
                     opacity: .8;
                 }
             }
-            
+
             .contact-info {
                 // border: 2px solid green;
                 // padding-left: 2rem;
-                
+
                 h2 {
                     font-size: 1.25rem;
                     text-transform: capitalize;
                     font-weight: 500;
                     color: $brand;
                     margin-bottom: .25rem;
+
                     @include md {
                         // font-size: 1.5rem;
                     }
@@ -58,6 +65,7 @@
                     color: $text-light;
                     letter-spacing: .05rem;
                     position: relative;
+
                     // PSEUDO UNDERLINE
                     &::after {
                         content: '';
@@ -79,6 +87,7 @@
                         transition: 1s;
                     }
                 }
+
                 .contact-info {
                     h2 {
                         color: $text-light;
@@ -88,6 +97,7 @@
                     a {
                         transform: translateX(1rem);
                         transition: 1s;
+
                         &::after {
                             transform: scale(0);
                             transition: .5s;
@@ -95,6 +105,7 @@
                     }
                 }
             }
+
             // IO ACTIVE CLASS 
             &.active-item {
                 .contact-icon {
@@ -102,6 +113,7 @@
                         transform: scale(1);
                     }
                 }
+
                 .contact-info {
                     h2 {
                         color: $brand;
@@ -119,11 +131,13 @@
                             transition: .25s;
                         }
                     }
+
                     .contact-info {
                         h2 {
                             opacity: .6;
                             transition: .25s;
                         }
+
                         a {
                             &::after {
                                 transform: scale(1);
@@ -169,6 +183,8 @@
                     padding: .25rem;
                     width: 100%;
                     border-color: $overlay-blue-light;
+                    resize: none;
+                    margin-top: .25rem;
                 }
             }
 

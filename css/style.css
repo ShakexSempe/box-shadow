@@ -762,6 +762,8 @@ header.hero-header .logo {
 
 .contact .contact-container {
   margin-top: 5vh;
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  border-radius: 0.5rem;
 }
 @media (min-width: 768px) {
   .contact .contact-container {
@@ -769,14 +771,13 @@ header.hero-header .logo {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
+    background: none;
   }
 }
 .contact .contact-container .contact-item {
-  border: 0.105rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.105rem solid rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
   padding: 1rem 0.5rem;
-  border-radius: 0.5rem;
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -784,8 +785,10 @@ header.hero-header .logo {
 @media (min-width: 768px) {
   .contact .contact-container .contact-item {
     flex-grow: 1;
+    border-radius: 0.5rem;
     border-color: #29323c;
     padding: 1rem 0.5rem;
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
   }
 }
 .contact .contact-container .contact-item .contact-icon {
@@ -890,6 +893,8 @@ header.hero-header .logo {
   padding: 0.25rem;
   width: 100%;
   border-color: #485563;
+  resize: none;
+  margin-top: 0.25rem;
 }
 .contact .contact-form form .submit-btn {
   margin-top: 1rem;

@@ -15,7 +15,7 @@
             padding: 1rem .5rem;
             border-radius: $border-radius-sm;
             background: $overlay;
-            box-shadow: $box-shadow;
+            // box-shadow: $box-shadow;
             display: flex;
             align-items: center;
             overflow: hidden;
@@ -133,5 +133,68 @@
                 }
             }
         }
+    }
+    .contact-form {
+        // border: 2px solid red;
+        padding: 5vh 0;
+        form {
+            @include md {
+                width: 50%;
+            }
+            .form-title {
+                margin-bottom: 1rem;
+                // border: 1px solid red;
+
+                h1 {
+                    text-transform: capitalize;
+                    font-size: 1.5rem;
+                    color: $overlay-blue-dark;
+                    margin-bottom: .5rem;
+                }
+            }
+            fieldset {
+                margin: 2rem 0 0;
+                border: none;
+            }
+            label {
+                display: block;
+                text-transform: capitalize;
+                // border: 2px solid blue;
+                margin-bottom: .5rem;
+
+                input {
+                    display: block;
+                    border-radius: .25rem;
+                    padding: .25rem;
+                    width: 100%;
+                }
+            }
+
+            // SUBMIT BUTTON
+            .submit-btn {
+                margin-top: 1rem;
+                padding:  1rem;
+                width: 10rem;
+                font-family: $font-content;
+                font-size: 1rem;
+                border-radius: $border-radius-sm;
+                cursor: pointer;
+                background: $btn-overlay;
+                color: $text-light;
+                border: none;
+                box-shadow: $box-shadow;
+                letter-spacing: .05rem;
+                transition: .25s;
+
+                &:active {
+                    letter-spacing: normal;
+                    transform: scale(.97);
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+        }
+
+
     }
 }

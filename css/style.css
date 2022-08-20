@@ -777,7 +777,6 @@ header.hero-header .logo {
   padding: 1rem 0.5rem;
   border-radius: 0.5rem;
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.3), inset -2px -2px 3px rgba(0, 0, 0, 0.35), 4px 4px 2px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -857,6 +856,58 @@ header.hero-header .logo {
 }
 .contact .contact-container .contact-item.active-item:hover .contact-info a::after {
   transform: scale(1);
+}
+.contact .contact-form {
+  padding: 5vh 0;
+}
+@media (min-width: 768px) {
+  .contact .contact-form form {
+    width: 50%;
+  }
+}
+.contact .contact-form form .form-title {
+  margin-bottom: 1rem;
+}
+.contact .contact-form form .form-title h1 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #29323c;
+  margin-bottom: 0.5rem;
+}
+.contact .contact-form form fieldset {
+  margin: 2rem 0 0;
+  border: none;
+}
+.contact .contact-form form label {
+  display: block;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.contact .contact-form form label input {
+  display: block;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  width: 100%;
+}
+.contact .contact-form form .submit-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 10rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: linear-gradient(0deg, #20262e, #485563);
+  color: #f4f4f4;
+  border: none;
+  box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.3), inset -2px -2px 3px rgba(0, 0, 0, 0.35), 4px 4px 2px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.05rem;
+  transition: 0.25s;
+}
+.contact .contact-form form .submit-btn:active {
+  letter-spacing: normal;
+  transform: scale(0.97);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(221, 221, 221, 0.25), 0px 4px 1px rgba(0, 0, 0, 0.15);
 }
 
 .about .flex-container {

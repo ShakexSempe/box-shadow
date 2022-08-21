@@ -122,45 +122,45 @@
         }
     }
 
-    // ICON 
-    i {
-        &::before, &::after {
-            position: absolute;
-            color: $text-light;
-            opacity: 1;
-            top: 50%;
-            font-size: 1rem;
-            transform: translateY(-50%);
-            right: 1rem;
-            transition: .25s;
-        }
-        &::before {
-            content: '\f101';
-            font-family: "Font Awesome 6 Free";
-            // opacity: 0;
-            animation: arrow 1.5s infinite;
-        }
-        &::after {
-            content: '\f105';
-            font-family: "Font Awesome 6 Free";
-            // opacity: .5;
-            animation: arrow-2 1.5s infinite;
-        }
-
-        @keyframes arrow {
-            
-            50% {
-                transform: translateY(-50%) translateX(.15rem);
-                opacity: 0;
-            }
-        }
-        @keyframes arrow-2 {
-            50% {
-                opacity: 1;
-                color: $text-dark;
-                color: $span-gold;
-            }
-        }
+    
+}
+// ICON 
+.cta-i {
+    &::before, &::after {
+        position: absolute;
+        color: $text-light;
+        opacity: 1;
+        top: 50%;
+        font-size: 1rem;
+        transform: translateY(-50%);
+        right: 1rem;
+        transition: .25s;
+    }
+    &::before {
+        content: '\f101';
+        font-family: "Font Awesome 6 Free";
+        // opacity: 0;
+        animation: arrow 1.5s infinite;
+    }
+    &::after {
+        content: '\f105';
+        font-family: "Font Awesome 6 Free";
+        // opacity: .5;
+        animation: arrow-2 1.5s infinite;
     }
 
+    @keyframes arrow {
+        
+        50% {
+            transform: translateY(-50%) translateX(.15rem);
+            opacity: 0;
+        }
+    }
+    @keyframes arrow-2 {
+        50% {
+            opacity: 1;
+            color: $text-dark;
+            color: $span-gold;
+        }
+    }
 }

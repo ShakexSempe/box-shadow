@@ -235,11 +235,8 @@
                 box-shadow: $box-shadow;
                 letter-spacing: .05rem;
                 transition: .25s;
-
-                i {
-                    margin-left: .25rem;
-                    color: $brand;
-                }
+                text-align: left;
+                position: relative;
 
                 &:active {
                     letter-spacing: normal;

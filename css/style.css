@@ -862,7 +862,15 @@ header.hero-header .logo {
   transform: scale(1);
 }
 .contact .contact-form {
+  margin-top: 5vh;
+}
+.contact .contact-form form {
   padding: 5vh 0;
+}
+@media (max-width: 768px) {
+  .contact .contact-form form {
+    min-height: 100vh;
+  }
 }
 .contact .contact-form form .form-title {
   margin-bottom: 1rem;

@@ -152,8 +152,12 @@
     }
     .contact-form {
         // border: 2px solid red;
-        padding: 5vh 0;
+        margin-top: 5vh;
         form {
+            @media (max-width: 768px){
+                min-height: 100vh;
+            }
+            padding: 5vh 0;
             .form-title {
                 margin-bottom: 1rem;
                 // border: 1px solid red;

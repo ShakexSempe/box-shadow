@@ -771,7 +771,6 @@ header.hero-header .logo {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
-    background: none;
   }
 }
 .contact .contact-container .contact-item {
@@ -788,7 +787,8 @@ header.hero-header .logo {
     border-radius: 0.5rem;
     border-color: #29323c;
     padding: 1rem 0.5rem;
-    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding: 0 1rem;
+    margin-bottom: 0;
   }
 }
 .contact .contact-container .contact-item .contact-icon {
@@ -863,19 +863,22 @@ header.hero-header .logo {
 .contact .contact-form {
   padding: 5vh 0;
 }
-@media (min-width: 768px) {
-  .contact .contact-form form {
-    width: 50%;
-  }
-}
 .contact .contact-form form .form-title {
   margin-bottom: 1rem;
+  color: #29323c;
 }
 .contact .contact-form form .form-title h1 {
   text-transform: capitalize;
-  font-size: 1.5rem;
-  color: #29323c;
-  margin-bottom: 0.5rem;
+  font-family: "Taviraj", serif;
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-form form .form-title h1 {
+    font-size: 2rem;
+  }
+}
+.contact .contact-form form .form-title p {
+  font-weight: 500;
 }
 .contact .contact-form form fieldset {
   margin: 2rem 0 0;
@@ -885,7 +888,9 @@ header.hero-header .logo {
   display: block;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
-  color: #485563;
+  color: #20262e;
+  font-weight: 400;
+  font-family: "Taviraj", serif;
 }
 .contact .contact-form form label input, .contact .contact-form form label textarea {
   display: block;
@@ -895,11 +900,28 @@ header.hero-header .logo {
   border-color: #485563;
   resize: none;
   margin-top: 0.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+.contact .contact-form form label input::placeholder, .contact .contact-form form label textarea::placeholder {
+  opacity: 0.5;
+  letter-spacing: 0.05rem;
+  transition: 0.25s;
+}
+.contact .contact-form form label input:focus::placeholder, .contact .contact-form form label textarea:focus::placeholder {
+  opacity: 1;
+  letter-spacing: normal;
+}
+@media (min-width: 768px) {
+  .contact .contact-form form label input:hover::placeholder, .contact .contact-form form label textarea:hover::placeholder {
+    opacity: 1;
+    letter-spacing: normal;
+  }
 }
 .contact .contact-form form .submit-btn {
   margin-top: 1rem;
   padding: 1rem;
-  width: 10rem;
+  width: 11rem;
+  text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -911,10 +933,33 @@ header.hero-header .logo {
   letter-spacing: 0.05rem;
   transition: 0.25s;
 }
+.contact .contact-form form .submit-btn i {
+  margin-left: 0.25rem;
+  color: #ead2a1;
+}
 .contact .contact-form form .submit-btn:active {
   letter-spacing: normal;
   transform: scale(0.97);
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(221, 221, 221, 0.25), 0px 4px 1px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 768px) {
+  .contact .contact-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5vw;
+  }
+  .contact .contact-flex-container .contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact .contact-flex-container .contact-form {
+    width: 100%;
+  }
+  .contact .contact-flex-container .contact-form form {
+    width: 100%;
+  }
 }
 
 .about .flex-container {

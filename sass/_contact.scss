@@ -10,7 +10,7 @@
             display: flex;
             justify-content: space-around;
             gap: 1rem;
-            background: none;
+            // background: none;
         }
         .contact-item {
             border-bottom: $border-light-sm;
@@ -27,7 +27,9 @@
                 border-radius: $border-radius-sm;
                 border-color: $overlay-blue-dark;
                 padding: 1rem .5rem;
-                background: $overlay;
+                padding: 0 1rem;
+                margin-bottom: 0;
+                // background: $overlay;
             }
 
             .contact-icon {
@@ -152,18 +154,23 @@
         // border: 2px solid red;
         padding: 5vh 0;
         form {
-            @include md {
-                width: 50%;
-            }
             .form-title {
                 margin-bottom: 1rem;
                 // border: 1px solid red;
+                color: $overlay-blue-dark;
 
                 h1 {
                     text-transform: capitalize;
-                    font-size: 1.5rem;
-                    color: $overlay-blue-dark;
-                    margin-bottom: .5rem;
+                    font-family: $font-title;
+                    font-size: 1.8rem;
+                    // margin-bottom: .25rem;
+                    @include md {
+                        font-size: 2rem;
+                    }
+                }
+
+                p {
+                    font-weight: 500;
                 }
             }
             fieldset {
@@ -175,7 +182,9 @@
                 text-transform: capitalize;
                 // border: 2px solid blue;
                 margin-bottom: .5rem;
-                color: $overlay-blue-light;
+                color: $overlay-blue-darker;
+                font-weight: 400;
+                font-family: $font-title;
 
                 input, textarea {
                     display: block;
@@ -185,6 +194,28 @@
                     border-color: $overlay-blue-light;
                     resize: none;
                     margin-top: .25rem;
+                    font-family: $font-content;
+
+                    &::placeholder {
+                        opacity: .5;
+                        letter-spacing: .05rem;
+                        transition: .25s;
+                    }
+
+                    &:focus {
+                        &::placeholder {
+                            opacity: 1;
+                            letter-spacing: normal;
+                        }
+                    }
+                    @include md {
+                        &:hover {
+                            &::placeholder {
+                                opacity: 1;
+                                letter-spacing: normal;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -192,7 +223,8 @@
             .submit-btn {
                 margin-top: 1rem;
                 padding:  1rem;
-                width: 10rem;
+                width: 11rem;
+                text-transform: capitalize;
                 font-family: $font-content;
                 font-size: 1rem;
                 border-radius: $border-radius-sm;
@@ -204,6 +236,11 @@
                 letter-spacing: .05rem;
                 transition: .25s;
 
+                i {
+                    margin-left: .25rem;
+                    color: $brand;
+                }
+
                 &:active {
                     letter-spacing: normal;
                     transform: scale(.97);
@@ -214,5 +251,30 @@
         }
 
 
+    }
+
+    // DESKTOP FLEX
+    .contact-flex-container {
+        @include md {
+            display: flex;
+            flex-direction: row;
+            // border: 2px solid red;
+            justify-content: space-around;
+            // align-items: center;
+            gap: 5vw;
+            .contact-container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .contact-form {
+                width: 100%;
+                // border: 2px solid red;
+
+                form {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

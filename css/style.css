@@ -1016,7 +1016,7 @@ header.hero-header .logo {
   }
 }
 .about .about-article p.io-item {
-  opacity: 0.5;
+  opacity: 0.3;
   transform: translateY(1rem);
 }
 .about .about-article p.active-item {

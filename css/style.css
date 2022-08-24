@@ -249,6 +249,7 @@ header aside ul li::after {
   transition: 0.7s;
 }
 header aside ul li a {
+  font-family: "Taviraj", serif;
   text-decoration: none;
   text-transform: capitalize;
   color: #f4f4f4;
@@ -362,12 +363,33 @@ header .navbar ul li {
   text-transform: capitalize;
 }
 header .navbar ul li a {
+  font-family: "Taviraj", serif;
+  opacity: 0.7;
+  letter-spacing: 0.025rem;
   color: #f4f4f4;
   text-decoration: none;
+  transition: 0.25s;
+  position: relative;
+}
+header .navbar ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 25%;
+  opacity: 0;
+  height: 0.1rem;
+  background-color: #ead2a1;
+  transform: translateX(-50%);
   transition: 0.25s;
 }
 header .navbar ul li a:hover {
   color: #ead2a1;
+  opacity: 1;
+}
+header .navbar ul li a:hover::after {
+  width: 70%;
+  opacity: 1;
 }
 header.aside-header {
   background: #29323c;

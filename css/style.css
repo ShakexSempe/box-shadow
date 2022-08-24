@@ -787,6 +787,7 @@ header.hero-header .logo {
   margin-top: 5vh;
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);
   border-radius: 0.5rem;
+  padding: 1rem 0;
 }
 @media (min-width: 768px) {
   .contact .contact-container {
@@ -797,8 +798,7 @@ header.hero-header .logo {
   }
 }
 .contact .contact-container .contact-item {
-  border-bottom: 0.105rem solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding: 1rem 0.5rem;
   display: flex;
   align-items: center;
@@ -821,12 +821,11 @@ header.hero-header .logo {
 .contact .contact-container .contact-item .contact-icon i {
   font-size: 1.5rem;
   color: #ead2a1;
-  opacity: 0.8;
 }
 .contact .contact-container .contact-item .contact-info h2 {
   font-size: 1.25rem;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 400;
   color: #ead2a1;
   margin-bottom: 0.25rem;
 }
@@ -865,6 +864,7 @@ header.hero-header .logo {
 }
 .contact .contact-container .contact-item.active-item .contact-icon i {
   transform: scale(1);
+  opacity: 0.7;
 }
 .contact .contact-container .contact-item.active-item .contact-info h2 {
   color: #ead2a1;
@@ -873,11 +873,11 @@ header.hero-header .logo {
   transform: translateX(0);
 }
 .contact .contact-container .contact-item.active-item:hover .contact-icon i {
-  opacity: 0.7;
+  opacity: 0.9;
   transition: 0.25s;
 }
 .contact .contact-container .contact-item.active-item:hover .contact-info h2 {
-  opacity: 0.6;
+  opacity: 0.7;
   transition: 0.25s;
 }
 .contact .contact-container .contact-item.active-item:hover .contact-info a::after {

@@ -3,6 +3,7 @@ const aside = document.querySelector('.aside');
 const links = document.querySelectorAll('header a');
 const header = document.querySelector('.header');
 const container = document.querySelector('.container');
+const homebtn = document.querySelector('.home-button')
 console.log(links);
 
 // HAMBURGER TOGGLE
@@ -38,9 +39,11 @@ const heroObserver = new IntersectionObserver(
             if(!entry.isIntersecting) {
                 console.log("Her NOT io");
                 header.classList.remove('hero-header');
+                homebtn.classList.add('active');
             } else {
                 console.log("hero IS io");
                 header.classList.add('hero-header');
+                homebtn.classList.remove('active');
             }
         });
     }, heroOptions
@@ -92,4 +95,4 @@ ioItem.forEach(item => {
         }, itemOptions
     );
     itemObserver.observe(item);
-})
+});

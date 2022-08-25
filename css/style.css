@@ -916,6 +916,7 @@ header.hero-header .logo {
 .cube .right p,
 .cube .front p,
 .cube .back p {
+  font-family: "Taviraj", serif;
   font-size: 0.25em;
   text-transform: uppercase;
 }
@@ -925,7 +926,6 @@ header.hero-header .logo {
 }
 .cube .front p {
   color: #ead2a1;
-  font-family: "Taviraj", serif;
 }
 .cube .right {
   transform: rotateY(90deg) translateZ(1em);

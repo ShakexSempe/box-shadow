@@ -116,6 +116,7 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
         place-items: center;
 
         p {
+            font-family: $font-title;
             font-size: .25em;
             text-transform: uppercase;
         }
@@ -126,7 +127,6 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
         background: $overlay-dark;
         p {
             color: $brand;
-            font-family: $font-title;
         }
     }
 

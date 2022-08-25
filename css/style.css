@@ -860,7 +860,7 @@ header.hero-header .logo {
   position: absolute;
   left: -0.5em;
   bottom: 1em;
-  background-image: radial-gradient(circle at top, skyblue, 50%, #000);
+  background-image: radial-gradient(circle at top, #ead2a1, 50%, #000);
   animation: scene 20s infinite linear reverse;
 }
 @keyframes ball-bounce {

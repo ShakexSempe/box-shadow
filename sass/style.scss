@@ -2,6 +2,7 @@
 @import 'utilities';
 @import 'header';
 @import 'hero';
+@import 'cube';
 @import 'skills';
 @import 'contact';
 @import 'mixin';
@@ -54,6 +55,7 @@ body {
         min-height: 100vh;
         width: 100%;
         border: 2px solid white;
+        border: none;
 
         section {
             min-height: 100vh;

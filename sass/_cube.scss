@@ -47,8 +47,9 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
     background-image: radial-gradient(circle at top, skyblue, 50%,#000);
     // SAME ANIMATION AS SCENE IN REVERSE TO KEEP BALL CENTERED 
     // + BALL BOUNCE ANIMATION
-    animation:  ball-bounce $bounce-speed infinite ease-out,
-                scene $rotate-speed infinite linear reverse;
+    // animation:  ball-bounce $bounce-speed infinite ease-out,
+    //             scene $rotate-speed infinite linear reverse;
+    animation:  scene $rotate-speed infinite linear reverse;
 
     // BALL BOUNCE KEYFRAMES 
     @keyframes ball-bounce {
@@ -71,7 +72,7 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
     height: 100%;
     // background-color: yellow;
     background-image: radial-gradient(#0007, #0000 50%);
-    animation: ball-shadow $bounce-speed infinite ease-out;
+    // animation: ball-shadow $bounce-speed infinite ease-out;
     // BALL SHADOW KEYFRAMES 
     @keyframes ball-shadow {
         0%, 10%, 90%,
@@ -96,7 +97,7 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
     bottom: -1em;
     left: -1em;
     transform-style: preserve-3d;
-    animation: cube-height $bounce-speed infinite linear;
+    // animation: cube-height $bounce-speed infinite linear;
 
     .left,
     .right,

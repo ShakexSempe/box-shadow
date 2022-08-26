@@ -985,6 +985,70 @@ header.hero-header .logo {
   background-size: 100%, 1em 1em;
 }
 
+.services .services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .services .services-container {
+    flex-direction: row;
+  }
+}
+.services .services-container .service-item {
+  border-bottom: 2px solid #485563;
+  position: relative;
+  flex-basis: 50%;
+  margin: 1rem 0;
+}
+@media (min-width: 768px) {
+  .services .services-container .service-item {
+    padding: 0.5rem;
+  }
+}
+.services .services-container .service-item .service-logo {
+  margin-bottom: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+.services .services-container .service-item .service-logo img {
+  width: 100%;
+}
+.services .services-container .service-item .service-content {
+  color: #29323c;
+}
+.services .services-container .service-item .service-content h2 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-family: "Taviraj", serif;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+.services .services-container .service-item .service-content h2 span {
+  font-size: 1rem;
+  display: block;
+  opacity: 0.7;
+  font-weight: 400;
+}
+.services .services-container .service-item .service-content p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .services .services-container .service-item .service-content p {
+    height: 7vh;
+  }
+}
+.services .services-container .service-item .service-content ul {
+  margin: 0.5rem;
+  padding: 0 0.5rem;
+}
+.services .services-container .service-item .service-content ul li {
+  text-transform: capitalize;
+}
+
 .contact .contact-container {
   margin-top: 5vh;
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);

@@ -68,6 +68,32 @@
                     }
                 }
             }
+
+            // IO CLASS 
+            &.io-item {
+                .service-logo {
+                    transform: scale(.7);
+                    transition: 1s;
+                }
+                .service-content {
+                    h2 {
+                        transform: translateX(1rem);
+                        transition: 1s;
+                        transition-delay: .5s;
+                    }
+                }
+            }
+
+            &.active-item {
+                .service-logo {
+                    transform: scale(1);
+                }
+                .service-content {
+                    h2 {
+                        transform: translateX(0);
+                    }
+                }
+            }
         }
     }
 }

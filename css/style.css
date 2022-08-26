@@ -1048,6 +1048,21 @@ header.hero-header .logo {
 .services .services-container .service-item .service-content ul li {
   text-transform: capitalize;
 }
+.services .services-container .service-item.io-item .service-logo {
+  transform: scale(0.7);
+  transition: 1s;
+}
+.services .services-container .service-item.io-item .service-content h2 {
+  transform: translateX(1rem);
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.services .services-container .service-item.active-item .service-logo {
+  transform: scale(1);
+}
+.services .services-container .service-item.active-item .service-content h2 {
+  transform: translateX(0);
+}
 
 .contact .contact-container {
   margin-top: 5vh;

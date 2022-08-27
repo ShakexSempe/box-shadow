@@ -100,8 +100,8 @@
                         &::marker {
                             color: #000a;
                         }
-                        &:nth-child(even) {
-                            background-color: #48556338;
+                        &:nth-child(odd) {
+                            background-color: rgba(72, 85, 99, 0.050);
                         }
                     }
                 }
@@ -172,7 +172,7 @@
                             transform: translateX(0);
                             opacity: 1;
                             transition: 1s;
-                            transition-delay: calc(.5s + .25s * var(--i));
+                            transition-delay: calc(1s + .25s * var(--i));
                         }
                     }
                 }

@@ -1072,8 +1072,8 @@ header.hero-header .logo {
 .services .services-container .service-item .service-content ol li::marker {
   color: #000a;
 }
-.services .services-container .service-item .service-content ol li:nth-child(even) {
-  background-color: #48556338;
+.services .services-container .service-item .service-content ol li:nth-child(odd) {
+  background-color: rgba(72, 85, 99, 0.05);
 }
 .services .services-container .service-item.io-item .service-logo {
   transform: translateX(1rem);
@@ -1121,7 +1121,7 @@ header.hero-header .logo {
   transform: translateX(0);
   opacity: 1;
   transition: 1s;
-  transition-delay: calc(.5s + .25s * var(--i));
+  transition-delay: calc(1s + .25s * var(--i));
 }
 
 .contact .contact-container {

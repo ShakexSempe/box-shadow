@@ -1000,45 +1000,65 @@ header.hero-header .logo {
   position: relative;
   flex-basis: 50%;
   margin: 1rem 0;
+  color: #29323c;
 }
 @media (min-width: 768px) {
   .services .services-container .service-item {
+    background: linear-gradient(0deg, #f4f4f4, #fff);
+    border-radius: 1rem;
+    border: 1px solid rgba(72, 85, 99, 0.15);
+    box-shadow: 0rem 0.25rem 0.35rem rgba(72, 85, 99, 0.15);
     padding: 0.5rem;
+    text-align: center;
   }
 }
-.services .services-container .service-item .service-logo {
+.services .services-container .service-item .service-header .service-logo {
   margin-bottom: 0.5rem;
   width: 5rem;
   height: 5rem;
   overflow: hidden;
 }
-.services .services-container .service-item .service-logo img {
+@media (min-width: 768px) {
+  .services .services-container .service-item .service-header .service-logo {
+    margin: 1rem auto;
+  }
+}
+.services .services-container .service-item .service-header .service-logo img {
   width: 100%;
 }
-.services .services-container .service-item .service-content {
-  color: #29323c;
+.services .services-container .service-item .service-header .service-title {
+  font-family: "Taviraj", serif;
 }
-.services .services-container .service-item .service-content h2 {
+.services .services-container .service-item .service-header .service-title h2 {
   text-transform: capitalize;
   font-size: 1.5rem;
-  font-family: "Taviraj", serif;
   line-height: 1.2;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
 }
-.services .services-container .service-item .service-content h2 span {
-  font-size: 1rem;
-  display: block;
-  opacity: 0.7;
-  font-weight: 400;
+.services .services-container .service-item .service-header .service-title p {
+  opacity: 0.8;
 }
 .services .services-container .service-item .service-content p {
   margin: 1rem 0;
   font-size: 1rem;
+  line-height: 1.5;
   font-weight: 500;
+  color: #fff;
+  background: #29323c;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  height: auto;
 }
 @media (min-width: 768px) {
   .services .services-container .service-item .service-content p {
-    height: 7vh;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .services .services-container .service-item .service-content p {
+    height: 15vh;
   }
 }
 .services .services-container .service-item .service-content ul {
@@ -1048,20 +1068,56 @@ header.hero-header .logo {
 .services .services-container .service-item .service-content ul li {
   text-transform: capitalize;
 }
+.services .services-container .service-item .service-content ul li::marker {
+  color: #000a;
+}
 .services .services-container .service-item.io-item .service-logo {
-  transform: scale(0.7);
+  transform: translateX(1rem);
+  opacity: 0;
   transition: 1s;
 }
-.services .services-container .service-item.io-item .service-content h2 {
+.services .services-container .service-item.io-item .service-title h2 {
+  opacity: 0;
   transform: translateX(1rem);
   transition: 1s;
   transition-delay: 0.5s;
 }
-.services .services-container .service-item.active-item .service-logo {
-  transform: scale(1);
+.services .services-container .service-item.io-item .service-title p {
+  transform: translateX(1.25rem);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.8s;
 }
-.services .services-container .service-item.active-item .service-content h2 {
+.services .services-container .service-item.io-item .service-content p {
+  opacity: 0;
+  transition: 1.5s;
+  transition-delay: 1s;
+}
+.services .services-container .service-item.io-item .service-content ul li {
+  transform: translateX(1.5rem);
+  opacity: 0;
+}
+.services .services-container .service-item.active-item .service-logo {
   transform: translateX(0);
+  opacity: 1;
+}
+.services .services-container .service-item.active-item .service-title h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+.services .services-container .service-item.active-item .service-title p {
+  transform: translateX(0);
+  opacity: 1;
+}
+.services .services-container .service-item.active-item .service-content p {
+  opacity: 1;
+  transform: translateX(0);
+}
+.services .services-container .service-item.active-item .service-content ul li {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 1s;
+  transition-delay: calc(.5s + .25s * var(--i));
 }
 
 .contact .contact-container {
@@ -1436,7 +1492,6 @@ body {
   width: 100%;
   padding: 7vh 5vw;
   background: radial-gradient(#f4f4f4, #fff);
-  border-bottom: 0.15rem dashed rgba(0, 0, 0, 0.247);
   position: relative;
 }
 .container main section .section-title {

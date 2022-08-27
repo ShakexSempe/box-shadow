@@ -57,7 +57,7 @@
                     }
 
                     p {
-                        opacity: .8;
+                        color: $overlay-blue-light;
                     }
 
                 }
@@ -86,17 +86,22 @@
                     }
                 }
 
-                ul {
+                ol {
                     margin: .5rem;
                     // border: 2px solid yellow;
                     // background: $overlay-blue-dark;
                     padding: 0 .5rem;
 
                     li {
+                        padding: .25rem;
                         text-transform: capitalize;
+                        border-radius: $border-radius-sm;
                         // color: #f4f4f4;
                         &::marker {
                             color: #000a;
+                        }
+                        &:nth-child(even) {
+                            background-color: #48556338;
                         }
                     }
                 }
@@ -131,7 +136,7 @@
                         transition-delay: 1s;
                     }
 
-                    ul {
+                    ol {
                         li {
                             transform: translateX(1.5rem);
                             opacity: 0;
@@ -162,7 +167,7 @@
                         transform: translateX(0);
                     }
 
-                    ul {
+                    ol {
                         li {
                             transform: translateX(0);
                             opacity: 1;

@@ -1036,7 +1036,7 @@ header.hero-header .logo {
   margin: 1rem 0 0;
 }
 .services .services-container .service-item .service-header .service-title p {
-  opacity: 0.8;
+  color: #485563;
 }
 .services .services-container .service-item .service-content p {
   margin: 1rem 0;
@@ -1061,15 +1061,20 @@ header.hero-header .logo {
     height: 15vh;
   }
 }
-.services .services-container .service-item .service-content ul {
+.services .services-container .service-item .service-content ol {
   margin: 0.5rem;
   padding: 0 0.5rem;
 }
-.services .services-container .service-item .service-content ul li {
+.services .services-container .service-item .service-content ol li {
+  padding: 0.25rem;
   text-transform: capitalize;
+  border-radius: 0.5rem;
 }
-.services .services-container .service-item .service-content ul li::marker {
+.services .services-container .service-item .service-content ol li::marker {
   color: #000a;
+}
+.services .services-container .service-item .service-content ol li:nth-child(even) {
+  background-color: #48556338;
 }
 .services .services-container .service-item.io-item .service-logo {
   transform: translateX(1rem);
@@ -1093,7 +1098,7 @@ header.hero-header .logo {
   transition: 1.5s;
   transition-delay: 1s;
 }
-.services .services-container .service-item.io-item .service-content ul li {
+.services .services-container .service-item.io-item .service-content ol li {
   transform: translateX(1.5rem);
   opacity: 0;
 }
@@ -1113,7 +1118,7 @@ header.hero-header .logo {
   opacity: 1;
   transform: translateX(0);
 }
-.services .services-container .service-item.active-item .service-content ul li {
+.services .services-container .service-item.active-item .service-content ol li {
   transform: translateX(0);
   opacity: 1;
   transition: 1s;

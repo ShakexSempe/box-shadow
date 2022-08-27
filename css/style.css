@@ -996,7 +996,6 @@ header.hero-header .logo {
   }
 }
 .services .services-container .service-item {
-  border-bottom: 2px solid #485563;
   position: relative;
   flex-basis: 50%;
   margin: 1rem 0;

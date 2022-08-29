@@ -1166,6 +1166,7 @@ header.hero-header .logo {
 .contact .contact-container .contact-item .contact-info h2 {
   font-size: 1.25rem;
   text-transform: capitalize;
+  font-family: "Taviraj", serif;
   font-weight: 400;
   color: #ead2a1;
   margin-bottom: 0.25rem;

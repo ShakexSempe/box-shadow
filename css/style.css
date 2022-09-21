@@ -197,7 +197,7 @@
 
 .footer-nav {
   position: fixed;
-  z-index: 50;
+  z-index: 5;
   bottom: 0;
   height: auto;
   width: 100%;
@@ -1234,7 +1234,6 @@ header.hero-header .logo {
 
 .contact .contact-container {
   margin-top: 5vh;
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
   border-radius: 0.5rem;
   padding: 1rem 0;
 }
@@ -1243,12 +1242,11 @@ header.hero-header .logo {
     margin-top: 10vh;
     display: flex;
     justify-content: space-around;
-    gap: 1rem;
   }
 }
 .contact .contact-container .contact-item {
   margin-bottom: 0.5rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1265,25 +1263,24 @@ header.hero-header .logo {
 }
 .contact .contact-container .contact-item .contact-icon {
   width: 2.5rem;
-  overflow: hidden;
 }
 .contact .contact-container .contact-item .contact-icon i {
-  font-size: 1.5rem;
-  color: #ead2a1;
+  font-size: 2rem;
+  color: #29323c;
 }
 .contact .contact-container .contact-item .contact-info h2 {
   font-size: 1.25rem;
   text-transform: capitalize;
   font-family: "Taviraj", serif;
-  font-weight: 400;
-  color: #ead2a1;
+  font-weight: 600;
+  color: #000;
   margin-bottom: 0.25rem;
 }
 .contact .contact-container .contact-item .contact-info a {
   display: block;
   text-decoration: none;
   color: #20262e;
-  color: #f4f4f4;
+  color: #000;
   letter-spacing: 0.05rem;
   position: relative;
 }
@@ -1301,7 +1298,6 @@ header.hero-header .logo {
   transition: 1s;
 }
 .contact .contact-container .contact-item.io-item .contact-info h2 {
-  color: #f4f4f4;
   transition: 0.5s 0.5s;
 }
 .contact .contact-container .contact-item.io-item .contact-info a {
@@ -1314,10 +1310,7 @@ header.hero-header .logo {
 }
 .contact .contact-container .contact-item.active-item .contact-icon i {
   transform: scale(1);
-  opacity: 0.7;
-}
-.contact .contact-container .contact-item.active-item .contact-info h2 {
-  color: #ead2a1;
+  opacity: 0.6;
 }
 .contact .contact-container .contact-item.active-item .contact-info a {
   transform: translateX(0);

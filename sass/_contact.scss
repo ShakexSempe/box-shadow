@@ -1,8 +1,8 @@
 .contact {
     .contact-container {
         // border: 2px solid blue;
+        // background: $overlay;
         margin-top: 5vh;
-        background: $overlay;
         border-radius: $border-radius-sm;
         padding: 1rem 0;
         @include md {
@@ -10,15 +10,13 @@
             margin-top: 10vh;
             display: flex;
             justify-content: space-around;
-            gap: 1rem;
+            // gap: 1rem;
             // background: none;
         }
         .contact-item {
             // border-bottom: $border-light-sm;
             margin-bottom: .5rem;
-            padding: 1rem .5rem;
-            // background: $overlay;
-            // box-shadow: $box-shadow;
+            padding: 1rem 0;
             display: flex;
             align-items: center;
             overflow: hidden;
@@ -36,24 +34,25 @@
             .contact-icon {
                 // border: 2px solid yellow;
                 width: 2.5rem;
-                overflow: hidden;
+                // overflow: hidden;
 
                 i {
-                    font-size: 1.5rem;
-                    color: $brand;
+                    font-size: 2rem;
+                    color: $overlay-blue-dark;
                 }
             }
 
             .contact-info {
                 // border: 2px solid green;
+                // background: #fff000;
                 // padding-left: 2rem;
-
+                
                 h2 {
                     font-size: 1.25rem;
                     text-transform: capitalize;
                     font-family: $font-title;
-                    font-weight: 400;
-                    color: $brand;
+                    font-weight: 600;
+                    color: $text-dark;
                     margin-bottom: .25rem;
 
                     @include md {
@@ -65,7 +64,7 @@
                     display: block;
                     text-decoration: none;
                     color: $overlay-blue-darker;
-                    color: $text-light;
+                    color: $text-dark;
                     letter-spacing: .05rem;
                     position: relative;
 
@@ -93,7 +92,7 @@
 
                 .contact-info {
                     h2 {
-                        color: $text-light;
+                        // color: $text-light;
                         transition: .5s .5s;
                     }
 
@@ -114,14 +113,14 @@
                 .contact-icon {
                     i {
                         transform: scale(1);
-                        opacity: .7;
+                        opacity: .6;
 
                     }
                 }
 
                 .contact-info {
                     h2 {
-                        color: $brand;
+                        // color: $brand;
                     }
 
                     a {

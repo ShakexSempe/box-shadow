@@ -3,8 +3,8 @@ header {
     // border: 1px solid red;
     position: fixed;
     top: 0;
-    background: $overlay-blue-darkest;
     background: $overlay-blue-dark;
+    background: $overlay-blue-darkest;
     height: 7vh;
     width: 100vw;
     margin: 0;
@@ -364,6 +364,7 @@ header {
     // INTERSECTION CLASSES
     &.hero-header {
         background: transparent;
+        background: #000;
         .logo {
             border: $border-light-sm;
         }

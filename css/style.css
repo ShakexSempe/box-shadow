@@ -198,8 +198,8 @@
 header {
   position: fixed;
   top: 0;
-  background: #0a0c0f;
   background: #29323c;
+  background: #0a0c0f;
   height: 7vh;
   width: 100vw;
   margin: 0;
@@ -491,6 +491,7 @@ header.aside-header .logo {
 }
 header.hero-header {
   background: transparent;
+  background: #000;
 }
 header.hero-header .logo {
   border: 0.105rem solid rgba(255, 255, 255, 0.2);

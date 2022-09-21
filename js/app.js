@@ -3,7 +3,8 @@ const aside = document.querySelector('.aside');
 const links = document.querySelectorAll('header a');
 const header = document.querySelector('.header');
 const container = document.querySelector('.container');
-const homebtn = document.querySelector('.home-button')
+const homebtn = document.querySelector('.home-button');
+const footerNav = document.querySelector('.footer-nav');
 console.log(links);
 
 // HAMBURGER TOGGLE
@@ -39,11 +40,11 @@ const heroObserver = new IntersectionObserver(
             if(!entry.isIntersecting) {
                 console.log("Her NOT io");
                 header.classList.remove('hero-header');
-                homebtn.classList.add('active');
+                footerNav.classList.add('active-footer');
             } else {
                 console.log("hero IS io");
                 header.classList.add('hero-header');
-                homebtn.classList.remove('active');
+                footerNav.classList.remove('active-footer');
             }
         });
     }, heroOptions

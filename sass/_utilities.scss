@@ -209,3 +209,64 @@
         transform: translateY(0);
     }
 }
+
+// BOTTOM NAV
+.footer-nav {
+    position: fixed;
+    z-index: 50;
+    bottom: 0;
+    // height: 7vh;
+    height: auto;
+    width: 100%;
+    padding: .5rem 5vw;
+    padding: .5rem 0;
+    background: $overlay-blue-darkest;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(8vh);
+    transition: .5s;
+
+    .item {
+        // border: $border-brand-md;
+        a {
+            transition: 1s;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: .75rem;
+            color: $brand;
+            i {
+                font-size: 1.05rem;
+                color: $brand;
+                opacity: .8;
+                transition: 1s;
+                display: grid;
+                place-items: center;
+            }
+        }
+        @include md {
+            a {
+                i {
+                    font-size: 1rem;
+                }
+            }
+            &:hover {
+                a {
+                    i {
+                        opacity: 1;
+                        transition: .25s;
+                    }
+                    transition: .25s;
+                }
+            }
+        }
+    }
+    // DESKTOP NAV STYLE
+    @include md {
+        padding: .25rem 5vw;
+    }
+    // FOOTER NAV IO
+    &.active-footer {
+        transform: translateY(0);
+    }
+}

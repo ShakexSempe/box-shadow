@@ -492,6 +492,8 @@ header .header-cta {
   border-radius: 0.5rem;
   border: 0.105rem solid rgba(234, 210, 161, 0.4);
   text-align: center;
+  transform: translateY(-10vh);
+  transition: 0.5s;
 }
 header .header-cta a {
   width: 100%;
@@ -533,6 +535,9 @@ header .header-cta:hover a {
 header .header-cta:hover a i {
   transition: 0.25s;
   color: #ead2a1;
+}
+header .header-cta.active-cta {
+  transform: translateY(0);
 }
 header.aside-header {
   background: #29323c;

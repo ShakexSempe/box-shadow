@@ -301,7 +301,7 @@ header .logo a span {
 }
 header aside {
   position: absolute;
-  background: linear-gradient(60deg, #1f252d, #343f4c);
+  background: linear-gradient(0deg, #0a0c0f 30%, #29323c);
   width: 100%;
   height: 100vh;
   top: 7vh;
@@ -488,7 +488,7 @@ header .header-cta {
   transform: translateY(0);
   transition: 0.5s;
   width: 10rem;
-  background: linear-gradient(60deg, #1f252d, #343f4c);
+  background: linear-gradient(0deg, #0a0c0f 30%, #29323c);
   border-radius: 0.5rem;
   border: 0.105rem solid rgba(234, 210, 161, 0.4);
   text-align: center;
@@ -792,7 +792,7 @@ header.hero-header .logo {
   padding: 0.5rem;
   height: 13vh;
   width: 100%;
-  background: linear-gradient(60deg, #1f252d, #343f4c);
+  background: linear-gradient(0deg, #0a0c0f 30%, #29323c);
   border-left: 0.105rem solid rgba(255, 255, 255, 0.2);
   border-bottom: 0.105rem solid rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
@@ -1029,7 +1029,7 @@ header.hero-header .logo {
 }
 .cube .front {
   transform: translateZ(1em);
-  background: linear-gradient(60deg, #1f252d, #343f4c);
+  background: linear-gradient(0deg, #0a0c0f 30%, #29323c);
 }
 .cube .front p {
   color: #ead2a1;
@@ -1471,7 +1471,7 @@ header.hero-header .logo {
   margin-right: 0.2rem;
   border-radius: 0.25rem;
   padding: 0 0.3rem 0 0.25rem;
-  background: linear-gradient(60deg, #1f252d, #343f4c);
+  background: linear-gradient(0deg, #0a0c0f 30%, #29323c);
   text-shadow: 2px 2px 0px #000;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
@@ -1534,7 +1534,7 @@ header.hero-header .logo {
 footer {
   min-height: 20vh;
   width: 100%;
-  background: linear-gradient(60deg, #1f252d, #343f4c);
+  background: linear-gradient(0deg, #0a0c0f 30%, #29323c);
   padding: 5vh 5vw 8vh;
 }
 footer .copyright {

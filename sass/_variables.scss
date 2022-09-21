@@ -29,6 +29,8 @@ $overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
 $overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
 // $overlay: linear-gradient(-60deg, red 0%, blue 100%);
 $overlay-dark: linear-gradient(60deg, hsl(214, 18%, 15%), hsl(212, 19%, 25%));
+$overlay-dark: linear-gradient(0deg, #0a0c0f 30%, #29323c);
+$overlay-footer-nav: linear-gradient(0deg, #000, #0a0c0f);
 $overlay-blue-light: #485563;
 $overlay-blue-dark:#29323c;
 $overlay-blue-dark-trans:rgba(34, 41, 49, 0.9);

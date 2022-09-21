@@ -34,9 +34,11 @@
 
             .item-image {
                 // border: 1px solid green;
+                margin-top: .5rem;
                 figure {
                     height: 40vh;
-                    width: 100%;
+                        // border: 1px solid red;
+                        width: auto;
                     overflow: hidden;
                     @include md {
                     width: 50%;
@@ -46,8 +48,12 @@
                     }
 
                     img {
+                        background-color: #fff;
+                        border: 1px solid #0002;
                         width: 100%;
                         height: 100%;
+                        object-fit: contain;
+                        border-radius: .5rem;
                     }
                 }
             }

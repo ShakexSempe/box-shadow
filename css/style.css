@@ -1466,9 +1466,12 @@ header.hero-header .logo {
   color: #29323c;
   text-decoration: none;
 }
+.work .items-container .work-item .item-image {
+  margin-top: 0.5rem;
+}
 .work .items-container .work-item .item-image figure {
   height: 40vh;
-  width: 100%;
+  width: auto;
   overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -1477,8 +1480,12 @@ header.hero-header .logo {
   }
 }
 .work .items-container .work-item .item-image figure img {
+  background-color: #fff;
+  border: 1px solid #0002;
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
 }
 
 .about .flex-container {
@@ -1615,6 +1622,7 @@ body {
   width: 100%;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {

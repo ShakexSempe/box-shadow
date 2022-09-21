@@ -15,8 +15,8 @@
     .bar {
         height: .125rem;
         width: 100%;
-        background: $span-gold;
-        border-radius: $border-radius-sm;
+        background: $text-light;
+        border-radius: $border-radius-lg;
         position: relative;
         border: none;
         transition: .25s;
@@ -27,8 +27,8 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: $text-light;
-            border-radius: $border-radius-sm;
+            background: $brand;
+            border-radius: $border-radius-lg;
             transition: .25s;
             z-index: -1;
         }
@@ -43,13 +43,15 @@
     // ACTIVE CLASS
     &.active {
         .bar {
-            background: $span-gold;
-            transform: translateX(-.25rem);
+            background: transparent;
+            // transform: translateX(-.25rem);
             &::before {
-                transform: translateY(-.4rem) translateX(.25rem);
+                transform: rotate(45deg);
+                // transform: translateY(-.4rem) translateX(.25rem);
             }
             &::after {
-                transform: translateY(.4rem) translateX(-.25rem);
+                transform: rotate(-45deg);
+                // transform: translateY(.4rem) translateX(-.25rem);
             }
         }
     }

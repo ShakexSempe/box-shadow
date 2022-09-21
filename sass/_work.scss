@@ -1,0 +1,56 @@
+.work {
+    .items-container {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5vh;
+        @include md {
+            flex-direction: row;
+            gap: 0;
+        }
+        .work-item {
+            width: 100%;
+            padding-bottom: 1rem;
+            // border-bottom: .25rem solid $brand;
+            .item-title {
+                // border: 1px solid yellow;
+                color: $overlay-blue-darker;
+
+                h2, h3 {
+                    text-transform: capitalize;
+                    margin-bottom: .25rem;
+                    font-family: $font-title;
+                }
+                h2 {
+                    margin-bottom: .0rem;
+                }
+                a {
+                    color: $overlay-blue-dark;
+                    text-decoration: none;
+                }
+            }
+
+            .item-image {
+                // border: 1px solid green;
+                figure {
+                    height: 40vh;
+                    width: 100%;
+                    overflow: hidden;
+                    @include md {
+                    width: 50%;
+                        img {
+
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

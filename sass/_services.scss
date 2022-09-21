@@ -64,7 +64,7 @@
             }
 
             .service-content {
-                p {
+                .service-description {
                     margin: 1rem 0;
                     font-size: 1rem;
                     line-height: 1.5;
@@ -93,16 +93,22 @@
                     padding: 0 .5rem;
 
                     li {
-                        padding: .25rem;
-                        text-transform: capitalize;
+                        padding: .5rem;
                         border-radius: $border-radius-sm;
                         // color: #f4f4f4;
                         &::marker {
                             color: #000a;
                         }
-                        &:nth-child(odd) {
-                            background-color: rgba(72, 85, 99, 0.050);
+                        // &:nth-child(odd) {
+                        //     background-color: rgba(72, 85, 99, 0.050);
+                        // }
+
+                        h3 {
+                            text-transform: capitalize;
+                            margin-bottom: .25em;
+                            font-size: 1.05rem;
                         }
+
                     }
                 }
             }

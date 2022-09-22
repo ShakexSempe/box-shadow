@@ -241,7 +241,7 @@
 }
 @media (min-width: 768px) {
   .footer-nav {
-    padding: 0.25rem 5vw;
+    padding: 0.5rem 5vw;
   }
 }
 .footer-nav.active-footer {

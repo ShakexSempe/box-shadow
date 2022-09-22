@@ -1440,12 +1440,17 @@ header.hero-header .logo {
 @media (min-width: 768px) {
   .work .items-container {
     flex-direction: row;
-    gap: 0;
+    gap: 1rem;
   }
 }
 .work .items-container .work-item {
   width: 100%;
   padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .work .items-container .work-item {
+    text-align: center;
+  }
 }
 .work .items-container .work-item .item-title {
   color: #20262e;
@@ -1465,10 +1470,18 @@ header.hero-header .logo {
 .work .items-container .work-item .item-image {
   margin-top: 0.5rem;
 }
+@media (min-width: 768px) {
+  .work .items-container .work-item .item-image {
+    display: grid;
+    place-items: center;
+  }
+}
 .work .items-container .work-item .item-image figure {
   height: 40vh;
+  border: 1px solid #485563;
   width: auto;
   overflow: hidden;
+  border-radius: 0.5rem;
 }
 @media (min-width: 768px) {
   .work .items-container .work-item .item-image figure {

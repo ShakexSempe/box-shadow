@@ -8,12 +8,15 @@
         gap: 5vh;
         @include md {
             flex-direction: row;
-            gap: 0;
+            gap: 1rem;
         }
         .work-item {
             width: 100%;
             padding-bottom: 1rem;
             // border-bottom: .25rem solid $brand;
+            @include md {
+                text-align: center;
+            }
             .item-title {
                 // border: 1px solid yellow;
                 color: $overlay-blue-darker;
@@ -35,16 +38,18 @@
             .item-image {
                 // border: 1px solid green;
                 margin-top: .5rem;
+                @include md {
+                    display: grid;
+                    place-items: center;
+                }
                 figure {
                     height: 40vh;
-                        // border: 1px solid red;
+                        border: 1px solid $overlay-blue-light;
                         width: auto;
                     overflow: hidden;
+                    border-radius: $border-radius-sm;
                     @include md {
                     width: 50%;
-                        img {
-
-                        }
                     }
 
                     img {

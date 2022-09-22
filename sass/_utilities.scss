@@ -222,29 +222,31 @@
     width: 100%;
     // border: 2px solid green;
     padding: .5rem 5vw;
-    padding: .5rem 0;
+    // padding: .5rem 0;
     background: $overlay-blue-darkest;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: .5rem;
     transform: translateY(8vh);
     transition: .5s;
 
     .item {
         // border: $border-brand-md;
+        width: 100%;
         a {
             transition: 1s;
             text-transform: capitalize;
             text-decoration: none;
             font-size: .75rem;
             color: $brand;
+            display: grid;
+            place-items: center;
             i {
                 font-size: 1.05rem;
                 color: $brand;
                 opacity: .8;
                 transition: 1s;
-                display: grid;
-                place-items: center;
             }
         }
         @include md {

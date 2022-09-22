@@ -201,13 +201,16 @@
   height: auto;
   width: 100%;
   padding: 0.5rem 5vw;
-  padding: 0.5rem 0;
   background: #0a0c0f;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 0.5rem;
   transform: translateY(8vh);
   transition: 0.5s;
+}
+.footer-nav .item {
+  width: 100%;
 }
 .footer-nav .item a {
   transition: 1s;
@@ -215,14 +218,14 @@
   text-decoration: none;
   font-size: 0.75rem;
   color: #ead2a1;
+  display: grid;
+  place-items: center;
 }
 .footer-nav .item a i {
   font-size: 1.05rem;
   color: #ead2a1;
   opacity: 0.8;
   transition: 1s;
-  display: grid;
-  place-items: center;
 }
 @media (min-width: 768px) {
   .footer-nav .item a i {
@@ -1615,7 +1618,6 @@ body {
   width: 100%;
   position: relative;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 .container {

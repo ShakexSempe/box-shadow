@@ -112,6 +112,7 @@
                         // CAP AND FULL STOP
                         p {
                             margin-bottom: .25rem;
+                            line-height: 1.5;
                             &::first-letter{
                                 text-transform: capitalize;
                             }

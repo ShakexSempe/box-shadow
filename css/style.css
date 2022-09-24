@@ -1211,6 +1211,9 @@ header.hero-header .logo {
 .services .services-container .service-item .service-content ol li p span {
   font-weight: 500;
 }
+.services .services-container .service-item .service-content ol li p a {
+  color: inherit;
+}
 .services .services-container .service-item.io-item .service-logo {
   transform: translateX(1rem);
   opacity: 0;

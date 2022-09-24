@@ -1184,6 +1184,7 @@ header.hero-header .logo {
 .services .services-container .service-item .service-content ol {
   margin: 0.5rem;
   padding: 0 0.5rem;
+  text-align: left;
 }
 .services .services-container .service-item .service-content ol li {
   padding: 0.5rem;
@@ -1196,6 +1197,18 @@ header.hero-header .logo {
   text-transform: capitalize;
   margin-bottom: 0.25em;
   font-size: 1.05rem;
+}
+.services .services-container .service-item .service-content ol li p {
+  margin-bottom: 0.25rem;
+}
+.services .services-container .service-item .service-content ol li p::first-letter {
+  text-transform: capitalize;
+}
+.services .services-container .service-item .service-content ol li p::after {
+  content: ".";
+}
+.services .services-container .service-item .service-content ol li p span {
+  font-weight: 500;
 }
 .services .services-container .service-item.io-item .service-logo {
   transform: translateX(1rem);

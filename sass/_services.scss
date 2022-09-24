@@ -91,6 +91,7 @@
                     // border: 2px solid yellow;
                     // background: $overlay-blue-dark;
                     padding: 0 .5rem;
+                    text-align: left;
 
                     li {
                         padding: .5rem;
@@ -108,7 +109,19 @@
                             margin-bottom: .25em;
                             font-size: 1.05rem;
                         }
-
+                        // CAP AND FULL STOP
+                        p {
+                            margin-bottom: .25rem;
+                            &::first-letter{
+                                text-transform: capitalize;
+                            }
+                            &::after {
+                                content: '.';
+                            }
+                            span {
+                                font-weight: 500;
+                            }
+                        }
                     }
                 }
             }

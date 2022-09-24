@@ -248,6 +248,24 @@
   transform: translateY(0);
 }
 
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 5vw;
+  background: #fff;
+  color: #000;
+  z-index: 99;
+  text-align: center;
+  text-transform: capitalize;
+  transform: translateY(-10vh);
+  transition: 0.5s;
+}
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
 header {
   position: fixed;
   top: 0;

@@ -274,3 +274,23 @@
         transform: translateY(0);
     }
 }
+
+// SKIP LINK
+.skip-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem 5vw;
+    background: #fff;
+    color: $text-dark;
+    z-index: 99;
+    text-align: center;
+    text-transform: capitalize;
+    transform: translateY(-10vh);
+    transition: .5s;
+
+    &:focus-visible {
+        transform: translateY(0);
+    }
+}

@@ -1499,10 +1499,10 @@ header.hero-header .logo {
 .work .items-container .work-item .item-title h2, .work .items-container .work-item .item-title h3 {
   text-transform: capitalize;
   margin-bottom: 0.25rem;
-  font-family: "Taviraj", serif;
 }
 .work .items-container .work-item .item-title h2 {
   margin-bottom: 0rem;
+  font-family: "Taviraj", serif;
 }
 .work .items-container .work-item .item-title a {
   color: #29323c;

@@ -244,7 +244,7 @@
             i {
                 font-size: 1.05rem;
                 color: $brand;
-                opacity: .8;
+                opacity: .5;
                 transition: 1s;
             }
         }
@@ -260,6 +260,15 @@
                         opacity: 1;
                         transition: .25s;
                     }
+                    transition: .25s;
+                }
+            }
+        }
+
+        &:hover {
+            a {
+                i {
+                    opacity: 1;
                     transition: .25s;
                 }
             }

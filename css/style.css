@@ -224,7 +224,7 @@
 .footer-nav .item a i {
   font-size: 1.05rem;
   color: #ead2a1;
-  opacity: 0.8;
+  opacity: 0.5;
   transition: 1s;
 }
 @media (min-width: 768px) {
@@ -238,6 +238,10 @@
     opacity: 1;
     transition: 0.25s;
   }
+}
+.footer-nav .item:hover a i {
+  opacity: 1;
+  transition: 0.25s;
 }
 @media (min-width: 768px) {
   .footer-nav {
@@ -270,7 +274,7 @@ header {
   position: fixed;
   top: 0;
   background: #29323c;
-  background: #0a0c0f;
+  background: #20262e;
   height: 7vh;
   width: 100vw;
   margin: 0;

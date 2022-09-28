@@ -29,7 +29,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ead2a1;
+  background: inherit;
   border-radius: 2rem;
   transition: 0.25s;
   z-index: -1;
@@ -44,9 +44,11 @@
   background: transparent;
 }
 .hamburger.active .bar::before {
+  background: #ead2a1;
   transform: rotate(45deg);
 }
 .hamburger.active .bar::after {
+  background: #ead2a1;
   transform: rotate(-45deg);
 }
 

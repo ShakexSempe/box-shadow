@@ -27,7 +27,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: $brand;
+            background: inherit;
             border-radius: $border-radius-lg;
             transition: .25s;
             z-index: -1;
@@ -46,10 +46,12 @@
             background: transparent;
             // transform: translateX(-.25rem);
             &::before {
+                background: $brand;
                 transform: rotate(45deg);
                 // transform: translateY(-.4rem) translateX(.25rem);
             }
             &::after {
+                background: $brand;
                 transform: rotate(-45deg);
                 // transform: translateY(.4rem) translateX(-.25rem);
             }

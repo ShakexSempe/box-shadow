@@ -9,14 +9,14 @@
     .about-article {
         // border: 1px solid red;
         margin: 5vh 0;
-        overflow: hidden;
+        // overflow: hidden;
 
         p {
             line-height: 1.5;
             font-size: 1rem;
             font-weight: 500;
             color: $overlay-blue-dark;
-            margin-bottom: 1rem;
+            margin: 1rem 0;
             transition: 1s;
             a, span {
                 text-decoration: none;
@@ -55,6 +55,35 @@
             &.active-item {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        ul {
+            // border: 1px solid red;
+            // overflow: hidden;
+            // padding: .5rem 0 0 1rem;
+            
+            li {
+                margin-left: 5vw;
+                margin-bottom: .5rem;
+            }
+
+            &.io-item {
+                p {
+                    opacity: 0;
+                }
+                li {
+                    opacity: 0;
+                    transition: 1s;
+                }
+            }
+            &.active-item {
+                p {
+                    opacity: 1;
+                }
+                li {
+                    opacity: 1;
+                }
             }
         }
 

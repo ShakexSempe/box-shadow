@@ -1623,14 +1623,13 @@ header.hero-header .logo {
 }
 .about .about-article {
   margin: 5vh 0;
-  overflow: hidden;
 }
 .about .about-article p {
   line-height: 1.5;
   font-size: 1rem;
   font-weight: 500;
   color: #29323c;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   transition: 1s;
 }
 .about .about-article p a, .about .about-article p span {
@@ -1670,6 +1669,23 @@ header.hero-header .logo {
 .about .about-article p.active-item {
   opacity: 1;
   transform: translateY(0);
+}
+.about .about-article ul li {
+  margin-left: 5vw;
+  margin-bottom: 0.5rem;
+}
+.about .about-article ul.io-item p {
+  opacity: 0;
+}
+.about .about-article ul.io-item li {
+  opacity: 0;
+  transition: 1s;
+}
+.about .about-article ul.active-item p {
+  opacity: 1;
+}
+.about .about-article ul.active-item li {
+  opacity: 1;
 }
 .about .about-img {
   overflow: hidden;

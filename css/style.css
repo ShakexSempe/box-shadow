@@ -1283,13 +1283,26 @@ header.hero-header .logo {
   }
 }
 .contact .contact-container .contact-item {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   padding: 1rem 0.5rem;
   border-radius: 0.5rem;
-  background: #ededed;
   display: flex;
   align-items: center;
   overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+.contact .contact-container .contact-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ededed;
+  z-index: -1;
+  transition: 0.25s;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .contact .contact-container .contact-item {
@@ -1370,8 +1383,10 @@ header.hero-header .logo {
   transition: 0.5s;
 }
 .contact .contact-container .contact-item:hover {
-  background: #f4f4f4;
   transition: 0.25s;
+}
+.contact .contact-container .contact-item:hover::after {
+  opacity: 1;
 }
 .contact .contact-container .contact-item:hover .contact-icon::before {
   opacity: 0;

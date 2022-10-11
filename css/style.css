@@ -219,7 +219,7 @@
   text-transform: capitalize;
   text-decoration: none;
   font-size: 0.75rem;
-  color: #ead2a1;
+  color: #f4f4f4;
   display: grid;
   place-items: center;
 }
@@ -241,9 +241,19 @@
     transition: 0.25s;
   }
 }
-.footer-nav .item:hover a i {
-  opacity: 1;
-  transition: 0.25s;
+@media (max-width: 768px) {
+  .footer-nav .item:active a i {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.25s;
+  }
+}
+@media (min-width: 768px) {
+  .footer-nav .item:hover a i {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.25s;
+  }
 }
 @media (min-width: 768px) {
   .footer-nav {

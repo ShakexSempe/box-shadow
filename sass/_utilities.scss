@@ -240,7 +240,7 @@
             text-transform: capitalize;
             text-decoration: none;
             font-size: .75rem;
-            color: $brand;
+            color: $text-light;
             display: grid;
             place-items: center;
             i {
@@ -266,12 +266,26 @@
                 }
             }
         }
-
-        &:hover {
-            a {
-                i {
-                    opacity: 1;
-                    transition: .25s;
+        // HOVER AND ACTIVE STATES
+        @media (max-width: 768px) {
+            &:active {
+                a {
+                    i {
+                        opacity: 1;
+                        transform: scale(1.05);
+                        transition: .25s;
+                    }
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            &:hover {
+                a {
+                    i {
+                        opacity: 1;
+                        transform: scale(1.05);
+                        transition: .25s;
+                    }
                 }
             }
         }

@@ -401,7 +401,7 @@ header aside ul li a {
   transition: 0.25s;
   padding: 0;
   letter-spacing: 0.025rem;
-  width: 100%;
+  width: 60%;
   display: block;
   position: relative;
 }

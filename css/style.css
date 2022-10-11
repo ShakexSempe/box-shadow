@@ -750,6 +750,11 @@ header.hero-header .logo {
   }
 }
 .hero .menu .menu-section .menu-arrow {
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   overflow: hidden;
   margin-top: 5vh;

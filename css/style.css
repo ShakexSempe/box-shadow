@@ -482,8 +482,6 @@ header .navbar ul li {
   text-transform: capitalize;
 }
 header .navbar ul li a {
-  font-family: "Taviraj", serif;
-  opacity: 0.7;
   letter-spacing: 0.025rem;
   color: #f4f4f4;
   text-decoration: none;

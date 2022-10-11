@@ -18,6 +18,11 @@
             color: $overlay-blue-dark;
             margin-bottom: 1rem;
             transition: 1s;
+            a, span {
+                text-decoration: none;
+                color: inherit;
+                font-weight: 600;
+            }
             @include md {
                 font-size: 1.05rem;
             }

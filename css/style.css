@@ -1608,6 +1608,11 @@ header.hero-header .logo {
   margin-bottom: 1rem;
   transition: 1s;
 }
+.about .about-article p a, .about .about-article p span {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
 @media (min-width: 768px) {
   .about .about-article p {
     font-size: 1.05rem;

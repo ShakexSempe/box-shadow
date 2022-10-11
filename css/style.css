@@ -811,6 +811,7 @@ header.hero-header .logo {
   height: 13vh;
   width: 100%;
   background: linear-gradient(90deg, #0a0c0f 30%, #29323c);
+  background: #29323c;
   border-left: 0.105rem solid rgba(255, 255, 255, 0.2);
   border-bottom: 0.105rem solid rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;

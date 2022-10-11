@@ -64,6 +64,8 @@ $border-dark-md: .15rem solid rgba(0, 0, 0, .2);
 $border-brand-sm: .105rem solid rgba(234, 210, 161, .4);
 $border-brand-md: .15rem solid rgba(234, 210, 161, 1);
 // BOX SHADOWS
+$item-shadow: inset 2px 2px 5px rgba(225, 225, 225, 0.300),
+                    5px 5px 3px rgba(0, 0, 0, .150);
 $box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.300),
                     inset -2px -2px 3px rgba(0, 0, 0, .350),
                     4px 4px 2px rgba(0, 0, 0, .150);

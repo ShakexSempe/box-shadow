@@ -67,11 +67,9 @@ body {
             position: relative;
 
             .section-title {
-                // position: sticky;
-                // top: 8vh;
                 overflow: hidden;
-
-                // background: #fff;
+                // position: relative;
+                isolation: isolate;
                 @include md {
                     top: 9vh;
                 }
@@ -94,10 +92,12 @@ body {
                         font-size: 2.5rem;
                     }
                 }
-
                 &.active-title {
                     h1 {
                         opacity: .6;
+                    }
+                    &::after {
+                        transform: scaleY(0);
                     }
                 }
             }

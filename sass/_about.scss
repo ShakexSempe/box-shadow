@@ -49,8 +49,8 @@
 
             // IO ITEM 
             &.io-item {
-                opacity: .1;
-                transform: translateY(1rem);
+                opacity: 0;
+                transform: translateY(.5rem);
             }
             &.active-item {
                 opacity: 1;
@@ -60,29 +60,35 @@
 
         ul {
             // border: 1px solid red;
-            // overflow: hidden;
-            // padding: .5rem 0 0 1rem;
             
             li {
                 margin-left: 5vw;
                 margin-bottom: .5rem;
+                @include md {
+                    margin-left: 1rem;
+                }
             }
 
             &.io-item {
-                p {
-                    opacity: 0;
-                }
                 li {
                     opacity: 0;
-                    transition: 1s;
+                    transform: translateX(.25rem);
+                    transition: 1.5s;
+                    &:nth-child(1){
+                        transition-delay: .25s;
+                    }
+                    &:nth-child(2){
+                        transition-delay: .35s;
+                    }
+                    &:nth-child(3){
+                        transition-delay: .45s;
+                    }
                 }
             }
             &.active-item {
-                p {
-                    opacity: 1;
-                }
                 li {
                     opacity: 1;
+                    transform: translateX(.25rem);
                 }
             }
         }
@@ -126,6 +132,8 @@
     }
 
         // ABOUT BTN
+        // NO DISPLAY ON MOBILE SCREENS
+        
         .about-btn {
             font-size: 1rem;
             margin: 5vh 0 1rem;

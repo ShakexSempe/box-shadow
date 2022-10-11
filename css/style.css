@@ -1663,8 +1663,8 @@ header.hero-header .logo {
   }
 }
 .about .about-article p.io-item {
-  opacity: 0.1;
-  transform: translateY(1rem);
+  opacity: 0;
+  transform: translateY(0.5rem);
 }
 .about .about-article p.active-item {
   opacity: 1;
@@ -1674,18 +1674,28 @@ header.hero-header .logo {
   margin-left: 5vw;
   margin-bottom: 0.5rem;
 }
-.about .about-article ul.io-item p {
-  opacity: 0;
+@media (min-width: 768px) {
+  .about .about-article ul li {
+    margin-left: 1rem;
+  }
 }
 .about .about-article ul.io-item li {
   opacity: 0;
-  transition: 1s;
+  transform: translateX(0.25rem);
+  transition: 1.5s;
 }
-.about .about-article ul.active-item p {
-  opacity: 1;
+.about .about-article ul.io-item li:nth-child(1) {
+  transition-delay: 0.25s;
+}
+.about .about-article ul.io-item li:nth-child(2) {
+  transition-delay: 0.35s;
+}
+.about .about-article ul.io-item li:nth-child(3) {
+  transition-delay: 0.45s;
 }
 .about .about-article ul.active-item li {
   opacity: 1;
+  transform: translateX(0.25rem);
 }
 .about .about-img {
   overflow: hidden;

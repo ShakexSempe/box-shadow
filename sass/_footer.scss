@@ -19,5 +19,10 @@ footer {
                 color: #f4f4f4;
             }
         }
+
+        a {
+            text-decoration: none;
+            color: $brand;
+        }
     }
 }

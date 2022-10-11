@@ -273,15 +273,30 @@
   background: #fff;
   color: #000;
   z-index: 99;
+  border: none;
   text-align: center;
   text-transform: capitalize;
+  text-decoration: none;
   transform: translateY(-10vh);
   transition: 0.5s;
+}
+.skip-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0.2);
+  width: 10%;
+  height: 0.15rem;
+  transition: 1s;
+  background: linear-gradient(90deg, #29323c, skyblue, #29323c);
 }
 .skip-link:focus-visible {
   transform: translateY(0);
 }
-
+.skip-link:focus-visible::after {
+  transform: translateX(-50%) scaleX(1);
+}
 header {
   position: fixed;
   top: 0;

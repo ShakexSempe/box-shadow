@@ -310,12 +310,31 @@
     background: #fff;
     color: $text-dark;
     z-index: 99;
+    border: none;
     text-align: center;
     text-transform: capitalize;
+    text-decoration: none;
     transform: translateY(-10vh);
     transition: .5s;
 
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: .25rem;
+        left: 50%;
+        transform: translateX(-50%) scaleX(.2);
+        width: 10%;
+        height: .15rem;
+        transition: 1s;
+        background: linear-gradient(90deg, $overlay-blue-dark,skyblue, $overlay-blue-dark);
+    }
+
     &:focus-visible {
         transform: translateY(0);
+        &::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+    }
+    &:hover {
     }
 }

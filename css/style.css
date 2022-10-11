@@ -335,6 +335,7 @@ header aside {
   overflow: hidden;
   padding: 5vh 0;
   transition: 0.5s;
+  isolation: isolate;
 }
 @media (min-width: 820px) {
   header aside {
@@ -361,7 +362,7 @@ header aside ul li::after {
   left: 0;
   width: 100%;
   height: 0.15rem;
-  background: #ead2a1;
+  background: #fff3;
   border-radius: 0.5rem;
   transform: translateX(40%);
   opacity: 0;
@@ -373,7 +374,7 @@ header aside ul li a {
   text-transform: capitalize;
   color: #f4f4f4;
   transition: 0.25s;
-  padding: 0.5rem 2rem 0 0;
+  padding: 0;
   letter-spacing: 0.025rem;
   width: max-content;
   display: block;
@@ -390,6 +391,7 @@ header aside ul li a::after {
   opacity: 0;
   letter-spacing: 0.5rem;
   transform: 1s;
+  z-index: -2;
 }
 header aside ul li:hover {
   border: none;
@@ -405,7 +407,7 @@ header aside .contact-links {
   gap: 1rem;
 }
 header aside .contact-links a {
-  color: #ead2a1;
+  color: #f4f4f4;
   font-size: 1rem;
   text-decoration: none;
   letter-spacing: 0.025rem;
@@ -414,7 +416,7 @@ header aside .contact-links a {
 }
 header aside .contact-links a i {
   padding-right: 0.5rem;
-  color: #f4f4f4;
+  color: #ead2a1;
   transform: translateX(-1rem);
   transition: 0.5s;
 }

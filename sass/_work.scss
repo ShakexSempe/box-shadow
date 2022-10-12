@@ -34,6 +34,19 @@
                 a {
                     color: $overlay-blue-dark;
                     text-decoration: none;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        right: -1.5rem;
+                        top: 0;
+                        content: '\f35d';
+                        font-family: 'Font Awesome 6 Free';
+                        font-weight: 600;
+                        color: $span-crimson;
+                        opacity: 0;
+                        transition: .5s;
+                        transform:  scale(1.2) translateX(-.5rem);
+                    }
                 }
             }
 
@@ -68,6 +81,18 @@
                             object-fit: cover;
                             height: 100%;
                             width: 100%;
+                        }
+                    }
+                }
+            }
+
+            // ITEM HOVER 
+            &:hover {
+                .item-title {
+                    a {
+                        &::after {
+                            opacity: 1;
+                        transform:  scale(1) translateX(0);
                         }
                     }
                 }

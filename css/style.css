@@ -1587,6 +1587,19 @@ header.hero-header .logo {
 .work .items-container .work-item .item-title a {
   color: #29323c;
   text-decoration: none;
+  position: relative;
+}
+.work .items-container .work-item .item-title a::after {
+  position: absolute;
+  right: -1.5rem;
+  top: 0;
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  color: #dc143c;
+  opacity: 0;
+  transition: 0.5s;
+  transform: scale(1.2) translateX(-0.5rem);
 }
 .work .items-container .work-item .item-image {
   margin-top: 0.5rem;
@@ -1621,6 +1634,10 @@ header.hero-header .logo {
     height: 100%;
     width: 100%;
   }
+}
+.work .items-container .work-item:hover .item-title a::after {
+  opacity: 1;
+  transform: scale(1) translateX(0);
 }
 
 .about .flex-container {

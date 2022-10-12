@@ -297,6 +297,61 @@
 .skip-link:focus-visible::after {
   transform: translateX(-50%) scaleX(1);
 }
+.loader_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #20262e;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.loader_bg .spinner {
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  color: #485563;
+  text-transform: capitalize;
+}
+.loader_bg .spinner .sector {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 0.5rem solid transparent;
+  animation: rotate 3s infinite;
+  mix-blend-mode: overlay;
+}
+.loader_bg .spinner .sector.sector-1 {
+  border-top-color: #dc143c;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.loader_bg .spinner .sector.sector-2 {
+  border-right-color: #ead2a1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+.loader_bg .spinner .sector.sector-3 {
+  border-left-color: #485563;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 header {
   position: fixed;
   top: 0;

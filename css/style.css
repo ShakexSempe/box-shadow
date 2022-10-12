@@ -1144,6 +1144,7 @@ header.hero-header .logo {
 }
 
 .services .services-container {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -1151,6 +1152,7 @@ header.hero-header .logo {
 @media (min-width: 768px) {
   .services .services-container {
     flex-direction: row;
+    margin-top: 10vh;
   }
 }
 .services .services-container .service-item {
@@ -1310,7 +1312,7 @@ header.hero-header .logo {
   .contact .contact-container {
     margin-top: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1rem;
   }
 }
@@ -1339,7 +1341,6 @@ header.hero-header .logo {
 }
 @media (min-width: 768px) {
   .contact .contact-container .contact-item {
-    flex-grow: 1;
     border-radius: 0.5rem;
     border-color: #29323c;
     padding: 1rem 0.5rem;
@@ -1406,6 +1407,11 @@ header.hero-header .logo {
   margin-bottom: 0.25rem;
   transition: 0.25s;
 }
+@media (min-width: 768px) {
+  .contact .contact-container .contact-item .contact-info h2 {
+    font-size: 1.5rem;
+  }
+}
 .contact .contact-container .contact-item .contact-info a {
   display: block;
   text-decoration: none;
@@ -1454,7 +1460,6 @@ header.hero-header .logo {
 }
 .contact .contact-form form .form-title h1 {
   text-transform: capitalize;
-  font-family: "Taviraj", serif;
   font-size: 1.8rem;
 }
 @media (min-width: 768px) {
@@ -1474,8 +1479,7 @@ header.hero-header .logo {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   color: #20262e;
-  font-weight: 400;
-  font-family: "Taviraj", serif;
+  font-weight: 500;
 }
 .contact .contact-form form label input, .contact .contact-form form label textarea {
   display: block;
@@ -1488,7 +1492,7 @@ header.hero-header .logo {
   font-family: "Montserrat", sans-serif;
 }
 .contact .contact-form form label input::placeholder, .contact .contact-form form label textarea::placeholder {
-  opacity: 0.5;
+  opacity: 0;
   letter-spacing: 0.05rem;
   transition: 0.25s;
 }
@@ -1847,7 +1851,6 @@ body {
 }
 @media (min-width: 576px) {
   .container main section .section-title h1 {
-    width: 10rem;
     font-size: 2.5rem;
   }
 }

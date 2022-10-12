@@ -8,7 +8,7 @@
             // border: 2px solid red;
             margin-top: 10vh;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             gap: 1rem;
             // background: none;
         }
@@ -40,7 +40,6 @@
             }
 
             @include md {
-                flex-grow: 1;
                 border-radius: $border-radius-sm;
                 border-color: $overlay-blue-dark;
                 padding: 1rem .5rem;
@@ -126,7 +125,7 @@
                     transition: .25s;
 
                     @include md {
-                        // font-size: 1.5rem;
+                        font-size: 1.5rem;
                     }
                 }
 
@@ -138,17 +137,6 @@
                     letter-spacing: .05rem;
                     position: relative;
                     transition: .25s;
-
-                    // PSEUDO UNDERLINE
-                    // &::after {
-                    //     content: '';
-                    //     position: absolute;
-                    //     bottom: -.05rem;
-                    //     left: 0;
-                    //     width: 100%;
-                    //     height: .05rem;
-                    //     background-color: $brand;
-                    // }
                 }
             }
 
@@ -199,7 +187,7 @@
 
                 h1 {
                     text-transform: capitalize;
-                    font-family: $font-title;
+                    // font-family: $font-title;
                     font-size: 1.8rem;
                     // margin-bottom: .25rem;
                     @include md {
@@ -221,8 +209,8 @@
                 // border: 2px solid blue;
                 margin-bottom: .5rem;
                 color: $overlay-blue-darker;
-                font-weight: 400;
-                font-family: $font-title;
+                font-weight: 500;
+                // font-family: $font-title;
 
                 input, textarea {
                     display: block;
@@ -235,7 +223,7 @@
                     font-family: $font-content;
 
                     &::placeholder {
-                        opacity: .5;
+                        opacity: 0;
                         letter-spacing: .05rem;
                         transition: .25s;
                     }

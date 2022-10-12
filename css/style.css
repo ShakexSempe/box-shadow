@@ -1546,6 +1546,7 @@ header.hero-header .logo {
 }
 
 .work .items-container {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1554,6 +1555,7 @@ header.hero-header .logo {
 }
 @media (min-width: 768px) {
   .work .items-container {
+    margin-top: 10vh;
     flex-direction: row;
     gap: 1rem;
   }
@@ -1598,11 +1600,6 @@ header.hero-header .logo {
   overflow: hidden;
   border-radius: 0.5rem;
 }
-@media (min-width: 768px) {
-  .work .items-container .work-item .item-image figure {
-    width: 50%;
-  }
-}
 .work .items-container .work-item .item-image figure img {
   background-color: #fff;
   border: 1px solid #0002;
@@ -1610,6 +1607,16 @@ header.hero-header .logo {
   height: 100%;
   object-fit: contain;
   border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .work .items-container .work-item .item-image figure {
+    width: auto;
+  }
+  .work .items-container .work-item .item-image figure img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+  }
 }
 
 .about .flex-container {

@@ -1776,6 +1776,9 @@ header.hero-header .logo {
 .about .about-article ul.io-item li:nth-child(3) {
   transition-delay: 0.45s;
 }
+.about .about-article ul.io-item li:nth-child(4) {
+  transition-delay: 0.55s;
+}
 .about .about-article ul.active-item li {
   opacity: 1;
   transform: translateX(0.25rem);

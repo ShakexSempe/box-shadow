@@ -83,6 +83,9 @@
                     &:nth-child(3){
                         transition-delay: .45s;
                     }
+                    &:nth-child(4){
+                        transition-delay: .55s;
+                    }
                 }
             }
             &.active-item {

@@ -303,11 +303,49 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #20262e;
+  background-color: #0a0c0f;
   z-index: 100;
   display: grid;
   place-items: center;
   overflow: hidden;
+}
+.loader_bg .box {
+  color: #fff;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  position: relative;
+  border-radius: 0.5rem;
+  isolation: isolate;
+  overflow: hidden;
+  font-family: "Taviraj", serif;
+}
+.loader_bg .box span {
+  color: #ead2a1;
+}
+.loader_bg .box::after, .loader_bg .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: shadow 5s forwards linear;
+}
+.loader_bg .box::before {
+  content: "";
+  background: #0a0c0f;
+}
+.loader_bg .box::after {
+  content: "";
+  background: #000a;
+  animation-delay: 2.5s;
+  animation-duration: 2.5s;
+  z-index: -2;
+}
+@keyframes shadow {
+  100% {
+    transform: translateX(100%);
+  }
 }
 .loader_bg .spinner {
   height: 10rem;

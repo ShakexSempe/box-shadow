@@ -350,6 +350,8 @@
     z-index: 100;
     display: grid;
     place-items: center;
+    place-content: center;
+    gap: 1rem;
     overflow: hidden;
 
     .box {
@@ -388,9 +390,9 @@
         }
         &::after {
             content: '';
-            background:#000;
-            transform: translateX(0);
-            animation: shadow 5s forwards linear;
+            // background:#000;
+            // transform: translateX(0);
+            // animation: shadow 5s forwards linear;
             // animation-delay: 2.5s;
             // animation-duration: 2.5s;
             z-index: 2;
@@ -402,7 +404,36 @@
             }
         }
     }
-
+    .bar {
+        height: .2rem;
+        width: 50%;
+        // background-color: #000;
+        border-radius: $border-radius-sm;
+        overflow: hidden;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            background: $brand;
+            border-radius: $border-radius-sm;
+            animation: bar 2s infinite ease-out;
+            @keyframes bar {
+                0% {
+                    transform: translateX(-50%);
+                }
+                50% {
+                    transform: translateX(150%);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
     // SPINNER
     .spinner {
         // border: .25rem solid red;

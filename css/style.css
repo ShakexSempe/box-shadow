@@ -307,6 +307,8 @@
   z-index: 100;
   display: grid;
   place-items: center;
+  place-content: center;
+  gap: 1rem;
   overflow: hidden;
 }
 .loader_bg .box {
@@ -339,14 +341,40 @@
 }
 .loader_bg .box::after {
   content: "";
-  background: #000;
-  transform: translateX(0);
-  animation: shadow 5s forwards linear;
   z-index: 2;
 }
 @keyframes shadow {
   100% {
     transform: translateX(100%);
+  }
+}
+.loader_bg .bar {
+  height: 0.2rem;
+  width: 50%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.loader_bg .bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: #ead2a1;
+  border-radius: 0.5rem;
+  animation: bar 2s infinite ease-out;
+}
+@keyframes bar {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 .loader_bg .spinner {

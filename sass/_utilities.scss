@@ -420,16 +420,16 @@
             width: 50%;
             background: $brand;
             border-radius: $border-radius-sm;
-            animation: bar 2s infinite ease-out;
+            animation: bar 1.5s infinite ease-out;
             @keyframes bar {
                 0% {
-                    transform: translateX(-50%);
+                    transform: translateX(-75%);
                 }
                 50% {
-                    transform: translateX(150%);
+                    transform: translateX(175%);
                 }
                 100% {
-                    transform: translateX(-50%);
+                    transform: translateX(-75%);
                 }
             }
         }

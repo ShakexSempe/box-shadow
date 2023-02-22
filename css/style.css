@@ -81,7 +81,7 @@
   z-index: -1;
 }
 .btn::before {
-  background: linear-gradient(90deg, #0a0c0f, #20262e);
+  background: linear-gradient(0deg, #0a0c0f, #20262e);
   box-shadow: none;
   border: 0.15rem solid #ead2a1;
 }
@@ -634,7 +634,7 @@ header .navbar ul li a {
 header .navbar ul li a::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -0.25rem;
   left: 50%;
   width: 25%;
   opacity: 0;
@@ -644,7 +644,7 @@ header .navbar ul li a::after {
   transition: 0.25s;
 }
 header .navbar ul li a:hover {
-  color: #ead2a1;
+  color: #c2c2c2;
   opacity: 1;
 }
 header .navbar ul li a:hover::after {
@@ -758,19 +758,14 @@ header.hero-header .logo {
   }
 }
 .hero .banner .title h1 {
-  font-size: 2.85rem;
+  font-size: clamp(2rem, 5vw, 2.8rem);
   font-family: "Taviraj", serif;
   color: #ffffff;
   color: #c2c2c2;
 }
-@media (min-width: 768px) {
-  .hero .banner .title h1 {
-    font-size: 2.8rem;
-    margin-bottom: 5vh;
-  }
-}
 .hero .banner .title p {
   font-size: 0.95rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: 1.6;
   color: #ffffff;
   font-weight: 500;
@@ -780,11 +775,6 @@ header.hero-header .logo {
   color: #ffffff;
   text-decoration: none;
   display: block;
-}
-@media (min-width: 768px) {
-  .hero .banner .title p {
-    font-size: 1.25rem;
-  }
 }
 @media (max-width: 820px) {
   .hero .banner .btn {
@@ -802,7 +792,7 @@ header.hero-header .logo {
   }
 }
 .hero .banner .btn::before {
-  background: linear-gradient(90deg, #0a0c0f, #20262e);
+  background: linear-gradient(0deg, #0a0c0f, #20262e);
   box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.3), inset -2px -2px 3px rgba(0, 0, 0, 0.35), 4px 4px 2px rgba(0, 0, 0, 0.15);
   box-shadow: none;
   border: 0.105rem solid rgba(234, 210, 161, 0.4);

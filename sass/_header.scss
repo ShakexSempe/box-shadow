@@ -267,7 +267,7 @@ header {
                     &::after {
                         content: '';
                         position: absolute;
-                        bottom: 0;
+                        bottom: -.25rem;
                         left: 50%;
                         width: 25%;
                         opacity: 0;
@@ -278,7 +278,7 @@ header {
                     }
 
                     &:hover {
-                        color: $span-gold;
+                        color: $brand;
                         opacity: 1;
                         &::after {
                             width: 70%;

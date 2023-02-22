@@ -7,7 +7,7 @@ $font-content:  'Montserrat',sans-serif;
 // FONT SIZES
 $font-clamp-sm: clamp(1rem, 1.5vw, 1.25rem);
 $font-clamp-md: clamp(1.15rem, 2vw, 1.5rem);
-$font-clamp-lg: clamp(1.5rem, 3vw, 2rem);
+$font-clamp-lg: clamp(2rem, 5vw, 2.8rem);
 $font-clamp-xlg: clamp(2rem, 5vw, 2.5rem);
 
 // TEXT-COLORS 
@@ -55,7 +55,7 @@ $crimson-btn-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
 $button-gold: linear-gradient(0deg, hsl(40, 63%, 60%), hsl(40, 63%, 70%));
 $button-gold-hover: linear-gradient(0deg, hsl(40, 63%, 70%), hsl(40, 63%, 60%));
 $btn-brand: linear-gradient(90deg, hsl(40, 63%, 50%), hsl(40, 63%, 60%));
-$btn-brand: linear-gradient( 90deg, #0a0c0f, $overlay-blue-darker);
+$btn-brand: linear-gradient( 0deg, #0a0c0f, $overlay-blue-darker);
 $btn-brand-light: linear-gradient( 90deg, $overlay-blue-darkest, $overlay-blue-light);
 $btn-brand-light-hover: linear-gradient( 90deg, $overlay-blue-light, $overlay-blue-darkest);
 $btn-brand-hover: linear-gradient( -90deg, hsl(40, 63%, 60%) 20%, hsl(40, 63%, 50%));

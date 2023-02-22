@@ -4,14 +4,22 @@
 $font-title: 'Taviraj', serif ;
 $font-content:  'Montserrat',sans-serif;
 
+// FONT SIZES
+$font-clamp-sm: clamp(1rem, 1.5vw, 1.25rem);
+$font-clamp-md: clamp(1.15rem, 2vw, 1.5rem);
+$font-clamp-lg: clamp(1.5rem, 3vw, 2rem);
+$font-clamp-xlg: clamp(2rem, 5vw, 2.5rem);
+
 // TEXT-COLORS 
-$text-light: #f4f4f4;
+$text-light: #ffffff;
 $text-light-trans: #bbb;
 $text-dark: #000;
 $text-dark-trans: #000a;
 
 // BRAND COLORS
 $brand: #ead2a1;
+$brand: hsl(0, 0%, 76%);
+$brand-light: #fff3;
 
 // SPAN COLORS
 $span-gold: #ead2a1;
@@ -23,6 +31,7 @@ $span-orange: tomato;
 // BACKGROUND COLORS
 $background-primary: radial-gradient(hsl(0, 0%, 2%), #000);
 $background-secondary: radial-gradient(#f4f4f4, #fff);
+$header-cta-bg: #000;
 
 // BRAND OVERLAY
 $overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);

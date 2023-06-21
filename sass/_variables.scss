@@ -8,10 +8,11 @@ $font-content:  'Montserrat',sans-serif;
 $text-light: #f4f4f4;
 $text-light-trans: #bbb;
 $text-dark: #000;
-$text-dark-trans: #000a;
+$text-dark-trans: #4f4f4f;
 
 // BRAND COLORS
 $brand: #ead2a1;
+$brand: hsl(0, 0%, 80%);
 
 // SPAN COLORS
 $span-gold: #ead2a1;
@@ -21,15 +22,14 @@ $span-crimson-trans: #dc143c8c;
 $span-orange: tomato;
 
 // BACKGROUND COLORS
-$background-primary: radial-gradient(hsl(0, 0%, 2%), #000);
-$background-secondary: radial-gradient(#f4f4f4, #fff);
+$bg-primary: hsl(216, 20%, 10%);
+$bg-secondary: radial-gradient(#f4f4f4, #fff);
 
 // BRAND OVERLAY
 $overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
 $overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
-// $overlay: linear-gradient(-60deg, red 0%, blue 100%);
 $overlay-dark: linear-gradient(60deg, hsl(214, 18%, 15%), hsl(212, 19%, 25%));
-$overlay-dark: linear-gradient(0deg, #0a0c0f 30%, #29323c);
+$overlay-dark: linear-gradient(0deg, #000 30%, #0a0c0f);
 $overlay-dark-right: linear-gradient(90deg, #0a0c0f 30%, #29323c);
 $overlay-footer-nav: linear-gradient(0deg, #000, #0a0c0f);
 $overlay-blue-light: #485563;
@@ -53,10 +53,10 @@ $btn-brand-hover: linear-gradient( -90deg, hsl(40, 63%, 60%) 20%, hsl(40, 63%, 5
 $btn-brand-hover: linear-gradient( -90deg, hsl(214, 18%, 0%) 20%, $overlay-blue-darker);
 
 // BORDER-RADIUS
-$border-radius-xsm: .25rem;
-$border-radius-sm: .5rem;
-$border-radius-md: 1rem;
-$border-radius-lg: 2rem;
+$border-radius-xsm: .125rem;
+$border-radius-sm: .25rem;
+$border-radius-md: .5rem;
+$border-radius-lg: 1rem;
 $border-light-sm: .105rem solid rgba(255, 255, 255, .2);
 $border-dark-sm: .105rem solid rgba(0, 0, 0, .7);
 $border-light-md: .15rem solid rgba(255, 255, 255, .2);

@@ -13,7 +13,7 @@ footer {
         text-transform: capitalize;
 
         p {
-            line-height: 1.7;
+            line-height: 2;
             span{
                 display: block;
                 color: #f4f4f4;
@@ -23,6 +23,7 @@ footer {
         a {
             text-decoration: none;
             color: $brand;
+            display: block;
         }
     }
 }

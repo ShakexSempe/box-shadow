@@ -702,7 +702,7 @@ header.hero-header {
   background: linear-gradient(0deg, #000 30%, #0a0c0f);
 }
 .hero .banner {
-  height: 100dvh;
+  height: 100vh;
   max-width: 100%;
   padding: 25vh 5vw 5vh;
   overflow: hidden;

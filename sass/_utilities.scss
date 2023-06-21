@@ -239,60 +239,26 @@
             transition: 1s;
             text-transform: capitalize;
             text-decoration: none;
-            font-size: .75rem;
-            color: $text-light;
             display: grid;
             place-items: center;
+            padding: .25rem;
+            border-radius: 1rem;
+            cursor: default;
             i {
                 font-size: 1.05rem;
                 color: $brand;
-                opacity: .5;
                 transition: 1s;
             }
-        }
-        @include md {
-            a {
-                i {
-                    font-size: 1rem;
-                }
-            }
+
             &:hover {
-                a {
-                    i {
-                        opacity: 1;
-                        transition: .25s;
-                    }
-                    transition: .25s;
-                }
-            }
-        }
-        // HOVER AND ACTIVE STATES
-        @media (max-width: 768px) {
-            &:active {
-                a {
-                    i {
-                        opacity: 1;
-                        transform: scale(1.05);
-                        transition: .25s;
-                    }
-                }
-            }
-        }
-        @media (min-width: 768px) {
-            &:hover {
-                a {
-                    i {
-                        opacity: 1;
-                        transform: scale(1.05);
-                        transition: .25s;
-                    }
-                }
+                background: #fff2;
+                transition: .25s;
             }
         }
     }
     // DESKTOP NAV STYLE
-    @include md {
-        padding: .5rem 5vw;
+    @include sm {
+        display: none;
     }
     // FOOTER NAV IO
     &.active-footer {

@@ -218,46 +218,24 @@
   transition: 1s;
   text-transform: capitalize;
   text-decoration: none;
-  font-size: 0.75rem;
-  color: #f4f4f4;
   display: grid;
   place-items: center;
+  padding: 0.25rem;
+  border-radius: 1rem;
+  cursor: default;
 }
 .footer-nav .item a i {
   font-size: 1.05rem;
   color: #cccccc;
-  opacity: 0.5;
   transition: 1s;
 }
-@media (min-width: 768px) {
-  .footer-nav .item a i {
-    font-size: 1rem;
-  }
-  .footer-nav .item:hover a {
-    transition: 0.25s;
-  }
-  .footer-nav .item:hover a i {
-    opacity: 1;
-    transition: 0.25s;
-  }
+.footer-nav .item a:hover {
+  background: #fff2;
+  transition: 0.25s;
 }
-@media (max-width: 768px) {
-  .footer-nav .item:active a i {
-    opacity: 1;
-    transform: scale(1.05);
-    transition: 0.25s;
-  }
-}
-@media (min-width: 768px) {
-  .footer-nav .item:hover a i {
-    opacity: 1;
-    transform: scale(1.05);
-    transition: 0.25s;
-  }
-}
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer-nav {
-    padding: 0.5rem 5vw;
+    display: none;
   }
 }
 .footer-nav.active-footer {

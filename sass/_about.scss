@@ -46,16 +46,6 @@
                     }
                 }
             }
-
-            // IO ITEM 
-            &.io-item {
-                opacity: 0;
-                transform: translateY(.5rem);
-            }
-            &.active-item {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         ul {
@@ -119,7 +109,7 @@
         // IO CLASS
         &.io-item {
             img {
-                transform: scale(2);
+                transform: scale(1.1);
                 opacity: 1;
             }
         }

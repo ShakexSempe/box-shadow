@@ -15,9 +15,6 @@
         }
 
         .service-item {
-            // border: 1px solid red;
-            // background: #f4f4f4;
-            // border-bottom: 2px solid $overlay-blue-light;
             position: relative;
             flex-basis: 50%;
             margin: 1rem 0;
@@ -131,76 +128,7 @@
                 }
             }
 
-            // IO CLASS 
-            &.io-item {
-                .service-logo {
-                    transform: translateX(1rem);
-                    opacity: 0;
-                    transition: 1s;
-                }
-                .service-title {
-                    h2 {
-                        opacity: 0;
-                        transform: translateX(1rem);
-                        transition: 1s;
-                        transition-delay: .5s;
-                    }
-                    p {
-                        transform: translateX(1.25rem);
-                        opacity: 0;
-                        transition: 1s;
-                        transition-delay: .8s;
-                    }
-
-                }
-                .service-content {
-                    p {
-                        opacity: 0;
-                        transition: 1.5s;
-                        transition-delay: 1s;
-                    }
-
-                    ol {
-                        li {
-                            transform: translateX(1.5rem);
-                            opacity: 0;
-                            
-                        }
-                    }
-                }
-            }
-
-            &.active-item {
-                .service-logo {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-                .service-title {
-                    h2 {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                    p {
-                        transform: translateX(0);
-                        opacity: 1;
-                    }
-                }
-                .service-content {
-                    p {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-
-                    ol {
-                        li {
-                            transform: translateX(0);
-                            opacity: 1;
-                            transition: 1s;
-                            transition-delay: calc(1s + .25s * var(--i));
-                        }
-                    }
-                }
-            }
+          
         }
     }
 }

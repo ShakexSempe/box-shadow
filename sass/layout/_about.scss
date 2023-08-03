@@ -1,8 +1,10 @@
+@use '../abstracts';
+
 .about {
     .flex-container {
         display: flex;
         flex-direction: column;
-        @include md {
+        @include abstracts.md {
             flex-direction: row;
         }
     }
@@ -15,7 +17,7 @@
             line-height: 1.5;
             font-size: 1rem;
             font-weight: 500;
-            color: $overlay-blue-dark;
+            color: abstracts.$overlay-blue-dark;
             margin: 1rem 0;
             transition: 1s;
             a, span {
@@ -23,25 +25,25 @@
                 color: inherit;
                 font-weight: 600;
             }
-            @include md {
+            @include abstracts.md {
                 font-size: 1.05rem;
             }
             &.article-intro {
                 font-weight: 600;
 
                 &::first-letter {
-                    color: $brand;
-                    font-family: $font-title;
+                    color: abstracts.$brand;
+                    font-family: abstracts.$font-title;
                     font-size: 2rem;
                     float: left;
                     margin-right: .2rem;
                     // border: 1px solid blue;
                     border-radius: .25rem;
                     padding: 0 .3rem 0 .25rem;
-                    background: $overlay-dark;
+                    background: abstracts.$overlay-dark;
                     text-shadow: 2px 2px 0px #000;
                     box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
-                    @include md {
+                    @include abstracts.md {
                         font-size: 2.5rem;
                     }
                 }
@@ -54,7 +56,7 @@
             li {
                 margin-left: 5vw;
                 margin-bottom: .5rem;
-                @include md {
+                @include abstracts.md {
                     margin-left: 1rem;
                 }
             }
@@ -92,14 +94,14 @@
     .about-img {
         // border: 2px solid red;
         overflow: hidden;
-        border-radius: $border-radius-sm;
+        border-radius: abstracts.$border-radius-sm;
 
         img {
             width: 100%;
             transition: 1s;
         }
 
-        @include md {
+        @include abstracts.md {
             width: 100%;
             opacity: 1;
             // position: relative;
@@ -130,19 +132,19 @@
         .about-btn {
             font-size: 1rem;
             margin: 5vh 0 1rem;
-            @include md {
+            @include abstracts.md {
                 margin-top: -5vh;
             }
 
             &::before {
-                background: $btn-brand-light;
+                background: abstracts.$btn-brand-light;
                 border: none;
-                box-shadow: $box-shadow;
+                box-shadow: abstracts.$box-shadow;
             }
             &::after {
-                background: $btn-brand-light-hover;
-                border: $border-light-sm;
-                box-shadow: $box-shadow-hover;
+                background: abstracts.$btn-brand-light-hover;
+                border: abstracts.$border-light-sm;
+                box-shadow: abstracts.$box-shadow-hover;
             }
         }
 }

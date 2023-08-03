@@ -1,7 +1,9 @@
+@use '../abstracts';
+
 .hero {
     // border: 2px solid blue;
     width: 100%;
-    background: $overlay-dark;
+    background: abstracts.$overlay-dark;
 
     .banner {
         height: 95vh;
@@ -13,22 +15,22 @@
             // padding: 1rem;
             width: 100%;
             // background: rgba(0, 0, 0, 1);
-            color: $text-light;
+            color: abstracts.$text-light;
             text-transform: capitalize;
-            border-radius: $border-radius-sm;
+            border-radius: abstracts.$border-radius-sm;
             margin-bottom: 1.5rem;
             position: relative;
-            @include lg {
+            @include abstracts.lg {
                 padding: 5vh .5rem;
                 margin: 10vh 0 0;
             }
 
             h1 {
                 font-size: 2rem;
-                // font-family: $font-title;
-                color: $text-light;
+                // font-family: abstracts.$font-title;
+                color: abstracts.$text-light;
                 margin-bottom: 1rem;
-                @include md {
+                @include abstracts.md {
                     font-size: 2.8rem;
                     margin-bottom: 5vh;
                 }
@@ -37,15 +39,15 @@
             p {
                 font-size: 1rem;
                 line-height: 1.6;
-                color: $brand;
+                color: abstracts.$brand;
                 font-weight: 500;
                 a {
-                    color: $span-gold;
-                    color: $text-light;
+                    color: abstracts.$span-gold;
+                    color: abstracts.$text-light;
                     text-decoration: none;
                     display: block;
                 }
-                @include md {
+                @include abstracts.md {
                     font-size: 1.25rem;
                     // letter-spacing: .35rem;
                 }
@@ -57,7 +59,7 @@
                 bottom: 15vh;
                 left: 5vw;
             }
-            @include lg {
+            @include abstracts.lg {
                 width: 15rem;
                 font-size: 1.05rem;
                 position: relative;
@@ -65,14 +67,14 @@
             }
             // PSEUDO BACKGROUND
             &::before {
-                background: $btn-brand;
+                background: abstracts.$btn-brand;
                 box-shadow: none;
-                border: $border-light-sm;
+                border: abstracts.$border-light-sm;
             }
             &::after {
-                background: $btn-brand-hover;
+                background: abstracts.$btn-brand-hover;
                 box-shadow: none;
-                border: $border-light-md;
+                border: abstracts.$border-light-md;
             }
             
 
@@ -117,17 +119,17 @@
             text-align: center;
             min-height: 100vh;
             padding: 10vh 5vw;
-            background: $overlay-blue-darkest;
+            background: abstracts.$overlay-blue-darkest;
             &:nth-of-type(even) {
                 background: green;
-                background: $overlay-blue-darker;
+                background: abstracts.$overlay-blue-darker;
             }
 
             // MENU FLEX CONTAINER
             .menu-content {
                 display: flex;
                 flex-direction: column;
-                @include lg {
+                @include abstracts.lg {
                     flex-direction: row;
                     align-items: center;
                     justify-content: flex-start;
@@ -140,29 +142,29 @@
             // MENU TITLE
             .menu-title {
                 text-align: left;
-                @include lg {
+                @include abstracts.lg {
                     width: 50%;
                 }
                 h1 {
                     text-transform: capitalize;
                     font-size: 1.5rem;
                     // margin-bottom: .25rem;
-                    // font-family: $font-title;
+                    // font-family: abstracts.$font-title;
                     // font-weight: 500;
-                    color: $text-light;
+                    color: abstracts.$text-light;
                     letter-spacing: .025rem;
                     margin-bottom: 1rem;
-                    @include lg {
+                    @include abstracts.lg {
                         font-size: 2rem;
                     }
                 }
 
                 p {
-                    color: $brand;
+                    color: abstracts.$brand;
                     font-size: .95rem;
                     line-height: 1.6;
                     width: 85%;
-                    @include sm {
+                    @include abstracts.sm {
                         width: 100%;
                     }
                 }
@@ -179,14 +181,14 @@
                 // width: 100%;
                 // overflow: hidden;
                 margin-top: 5vh;
-                @include lg {
+                @include abstracts.lg {
                     position: absolute;
                     bottom: 30vh;
                     left: 5vw;
                 }
                 
                 a {
-                    color: $brand;
+                    color: abstracts.$brand;
                     border: 2px solid #fffa;
                     display: block;
                     text-decoration: none;
@@ -241,10 +243,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
-                @include sm {
+                @include abstracts.sm {
                     // flex-direction: column;
                 }
-                @include md {
+                @include abstracts.md {
                     // flex-direction: row;
                     width: 30rem;
                 }
@@ -256,11 +258,11 @@
                     padding: .5rem;
                     height: 13vh;
                     width: 100%;
-                    background: $overlay-dark-right;
-                    background: $overlay-blue-dark;
-                    border-left: $border-light-sm;
-                    border-bottom: $border-light-sm;
-                    border-radius: $border-radius-sm;
+                    background: abstracts.$overlay-dark-right;
+                    background: abstracts.$overlay-blue-dark;
+                    border-left: abstracts.$border-light-sm;
+                    border-bottom: abstracts.$border-light-sm;
+                    border-radius: abstracts.$border-radius-sm;
                     // IMAGE CONTAINER = 2 PSEUDO IMAGES TRANSITIONING BETWEEN EACH OTHER
                     .device-img {
                         // border: 1px solid yellow;
@@ -330,7 +332,7 @@
                         margin: auto 0;
 
                         h2 {
-                            color: $text-light;
+                            color: abstracts.$text-light;
                             font-size: 1rem;
                             margin-bottom: .2rem;
                             font-weight: 500;
@@ -338,7 +340,7 @@
                         }
 
                         p {
-                            color: $text-light-trans;
+                            color: abstracts.$text-light-trans;
                             font-size: .95rem;
                             transition: .25s;
                         }
@@ -386,7 +388,7 @@
                                     transition: .25s .25s;
                                 }
                                 p {
-                                    color: $span-gold;
+                                    color: abstracts.$span-gold;
                                     transition: .25s .25s;
                                 }
                             }
@@ -411,7 +413,7 @@
                 width: 100%;
                 overflow: hidden;
                 margin: 1rem auto;
-                @include md {
+                @include abstracts.md {
                     height: 50vh;
                     margin: 10vh auto;
                 }

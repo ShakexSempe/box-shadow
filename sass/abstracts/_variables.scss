@@ -11,7 +11,6 @@ $text-dark: #000;
 $text-dark-trans: #4f4f4f;
 
 // BRAND COLORS
-$brand: #ead2a1;
 $brand: hsl(0, 0%, 80%);
 
 // SPAN COLORS
@@ -73,10 +72,3 @@ $box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.300),
 $box-shadow-hover: inset 2px 2px 2px rgba(0, 0, 0, .250),
                     inset -2px -2px 2px rgba(221, 221, 221, 0.250),
                     0px 4px 1px rgba(0, 0, 0, .150);
-
-// BREAK POINTS
-$screen-xsm-max: 390px;
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 820px;
-$screen-xlg-min: 1024px;

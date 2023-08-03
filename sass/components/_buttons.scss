@@ -1,0 +1,30 @@
+// BUTTON BACKGROUND
+.btn-bg {
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // border-radius: $border-radius-sm;
+        border: none;
+        outline: none;
+        z-index: -1;
+        transition: .3s ease;
+    }
+
+    &::before {
+        // background: $button-crimson;
+        background: yellow;
+        // box-shadow: $box-light-top-sm;
+    }
+
+    &::after {
+        // background: $button-crimson-hover;
+        // box-shadow: $box-dark-top-sm;
+        opacity: 0;
+    }
+}

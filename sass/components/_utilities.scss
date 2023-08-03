@@ -1,7 +1,7 @@
-@import 'mixin';
+@use '../abstracts';
 
 .hamburger {
-    @include lg {
+    @include abstracts.lg {
         display: none;
     }
     border: 2px solid #fff;
@@ -15,8 +15,8 @@
     .bar {
         height: .125rem;
         width: 100%;
-        background: $text-light;
-        border-radius: $border-radius-lg;
+        background: abstracts.$text-light;
+        border-radius: abstracts.$border-radius-lg;
         position: relative;
         border: none;
         transition: .25s;
@@ -28,7 +28,7 @@
             height: 100%;
             width: 100%;
             background: inherit;
-            border-radius: $border-radius-lg;
+            border-radius: abstracts.$border-radius-lg;
             transition: .25s;
             z-index: -1;
         }
@@ -46,12 +46,12 @@
             background: transparent;
             // transform: translateX(-.25rem);
             &::before {
-                background: $brand;
+                background: abstracts.$brand;
                 transform: rotate(45deg);
                 // transform: translateY(-.4rem) translateX(.25rem);
             }
             &::after {
-                background: $brand;
+                background: abstracts.$brand;
                 transform: rotate(-45deg);
                 // transform: translateY(.4rem) translateX(-.25rem);
             }
@@ -64,7 +64,7 @@
     position: relative;
     width: 11rem;
     padding: 1rem;
-    color: $text-light;
+    color: abstracts.$text-light;
     font-size: 1.05rem;
     font-weight: 500;
     text-decoration: none;
@@ -74,7 +74,7 @@
     transition: .25s;
     isolation: isolate;
     border: .125rem solid transparent;
-    border-radius: $border-radius-sm;
+    border-radius: abstracts.$border-radius-sm;
 
     
 
@@ -87,19 +87,19 @@
         width: 100%;
         height: 100%;
         transition: .25s;
-        border-radius: $border-radius-sm;
+        border-radius: abstracts.$border-radius-sm;
         z-index: -1;
     }
     &::before {
-        background: $btn-brand;
+        background: abstracts.$btn-brand;
         box-shadow: none;
-        border: $border-brand-md;
+        border: abstracts.$border-brand-md;
     }
     &::after {
-        background: $btn-brand-hover;
+        background: abstracts.$btn-brand-hover;
         box-shadow: none;
         opacity: 0;
-        border: $border-light-md;
+        border: abstracts.$border-light-md;
     }
 
     @media (max-width: 820px){
@@ -120,7 +120,7 @@
             i {
                 &::before, &::after {
                     animation: none;
-                    color: $brand;
+                    color: abstracts.$brand;
                 }
             }
         }
@@ -132,7 +132,7 @@
 .cta-i {
     &::before, &::after {
         position: absolute;
-        color: $text-light;
+        color: abstracts.$text-light;
         opacity: 1;
         top: 50%;
         font-size: 1rem;
@@ -163,29 +163,29 @@
     @keyframes arrow-2 {
         50% {
             opacity: 1;
-            color: $text-dark;
-            color: $span-gold;
+            color: abstracts.$text-dark;
+            color: abstracts.$span-gold;
         }
     }
 }
 
 // BACK HOME BTN
 .home-button {
-    border: 2px solid $overlay-blue-dark;
+    border: 2px solid abstracts.$overlay-blue-dark;
     border: 2px solid #fff;
     position: fixed;
     bottom: 5vh;
     right: 5vw;
     display: grid;
     place-items: center;
-    background: $overlay-blue-dark;
+    background: abstracts.$overlay-blue-dark;
     background: #000a;
-    border-radius: $border-radius-xsm;
+    border-radius: abstracts.$border-radius-xsm;
     transform: translateY(15vh);
     transition: 1s;
 
     .top-btn {
-        color: $brand;
+        color: abstracts.$brand;
         font-size: 1.05rem;
         padding: .25rem .5rem;
         transition: .25s;
@@ -225,7 +225,7 @@
     // border: 2px solid green;
     padding: .5rem 5vw;
     // padding: .5rem 0;
-    background: $overlay-blue-darkest;
+    background: abstracts.$overlay-blue-darkest;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -233,7 +233,7 @@
     transform: translateY(8vh);
     transition: .5s;
     .item {
-        // border: $border-brand-md;
+        // border: abstracts.$border-brand-md;
         width: 100%;
         a {
             transition: 1s;
@@ -246,7 +246,7 @@
             cursor: default;
             i {
                 font-size: 1.05rem;
-                color: $brand;
+                color: abstracts.$brand;
                 transition: 1s;
             }
 
@@ -257,7 +257,7 @@
         }
     }
     // DESKTOP NAV STYLE
-    @include sm {
+    @include abstracts.sm {
         display: none;
     }
     // FOOTER NAV IO
@@ -274,7 +274,7 @@
     right: 0;
     padding: .5rem 5vw;
     background: #fff;
-    color: $text-dark;
+    color: abstracts.$text-dark;
     z-index: 99;
     border: none;
     text-align: center;
@@ -292,7 +292,7 @@
         width: 10%;
         height: .15rem;
         transition: 1s;
-        background: linear-gradient(90deg, $overlay-blue-dark,skyblue, $overlay-blue-dark);
+        background: linear-gradient(90deg, abstracts.$overlay-blue-dark,skyblue, abstracts.$overlay-blue-dark);
     }
 
     &:focus-visible {
@@ -312,7 +312,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: $overlay-blue-darkest;
+    background-color: abstracts.$overlay-blue-darkest;
     z-index: 100;
     display: grid;
     place-items: center;
@@ -321,20 +321,20 @@
     overflow: hidden;
 
     .box {
-        border: $border-brand-sm;
+        border: abstracts.$border-brand-sm;
         color: #fff;
         // height: 5rem;
         width: max-content;
         padding: .5rem 1rem;
         position: relative;
-        border-radius: $border-radius-sm;
+        border-radius: abstracts.$border-radius-sm;
         isolation: isolate;
         overflow: hidden;
-        font-family: $font-title;
+        font-family: abstracts.$font-title;
         font-size: 1.5rem;
 
         span {
-            color: $brand;
+            color: abstracts.$brand;
         }
 
         &::after, &::before {
@@ -345,7 +345,7 @@
             width: 100%;
             height: 100%;
             // overflow: hidden;
-            // border-radius: $border-radius-sm;
+            // border-radius: abstracts.$border-radius-sm;
             z-index: -1;
         }
         &::before {
@@ -374,7 +374,7 @@
         height: .2rem;
         width: 50%;
         // background-color: #000;
-        border-radius: $border-radius-sm;
+        border-radius: abstracts.$border-radius-sm;
         overflow: hidden;
         position: relative;
         &::after {
@@ -384,8 +384,8 @@
             left: 0;
             height: 100%;
             width: 50%;
-            background: $brand;
-            border-radius: $border-radius-sm;
+            background: abstracts.$brand;
+            border-radius: abstracts.$border-radius-sm;
             animation: bar 1.5s infinite ease-out;
             @keyframes bar {
                 0% {
@@ -409,7 +409,7 @@
         display: grid;
         place-items: center;
         isolation: isolate;
-        color: $overlay-blue-light;
+        color: abstracts.$overlay-blue-light;
         text-transform: capitalize;
         
         .sector {
@@ -423,18 +423,18 @@
             mix-blend-mode: overlay;
 
             &.sector-1 {
-                border-top-color: $span-crimson;
+                border-top-color: abstracts.$span-crimson;
                 animation-duration: 1.5s;
                 animation-timing-function: ease-in-out;
             }
             &.sector-2 {
-                border-right-color: $span-gold;
+                border-right-color: abstracts.$span-gold;
                 animation-duration: 2s;
                 animation-timing-function: ease-in;
 
             }
             &.sector-3 {
-                border-left-color: $overlay-blue-light;
+                border-left-color: abstracts.$overlay-blue-light;
                 animation-duration: 2.5s;
                 animation-timing-function: ease-out;
             }

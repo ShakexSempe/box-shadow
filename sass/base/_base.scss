@@ -1,0 +1,89 @@
+@use '../abstracts';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    // background: abstracts.$bg-primary;
+    width: 100%;
+    position: relative;
+    font-family: abstracts.$font-content;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    // border: 2px solid #fff000;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 200vh;
+    position: relative;
+    // SIDEBAR OVERLAY
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 100%;
+        height: 100%;
+        background: #000a;
+    }
+
+    // ACTIVE SIDEBAR CLASS
+    &.active-container {
+        &::after {
+            left: 0;
+        }
+    }
+    main {
+        min-height: 100vh;
+        width: 100%;
+        border: 2px solid white;
+        border: none;
+
+        section {
+            min-height: 100vh;
+            width: 100%;
+            padding: 7vh 5vw;
+            background: abstracts.$bg-secondary;
+            position: relative;
+
+            .section-title {
+                overflow: hidden;
+                // position: relative;
+                isolation: isolate;
+                @include abstracts.md {
+                    top: 9vh;
+                }
+                h1 {
+                    border: abstracts.$border-dark-sm;
+                    border-color: transparent;
+                    border-radius: abstracts.$border-radius-sm;
+                    text-transform: capitalize;
+                    font-family: abstracts.$font-title;
+                    font-size: 2rem;
+                    font-size: 3rem;
+                    color: abstracts.$overlay-blue-dark;
+                    font-weight: 600;
+                    padding: 0 .5rem;
+                    width: 7rem;
+                    width: max-content;
+                    transition: .5s;
+                    @include abstracts.sm {
+                        font-size: 2.5rem;
+                    }
+                }
+                &.active-title {
+                    h1 {
+                        opacity: .6;
+                    }
+                    &::after {
+                        transform: scaleY(0);
+                    }
+                }
+            }
+        }
+    }
+}

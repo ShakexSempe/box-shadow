@@ -1,10 +1,12 @@
+@use '../abstracts';
+
+
 .contact {
     .contact-container {
-        border: $border-light-sm;
         margin-top: 5vh;
-        border-radius: $border-radius-sm;
+        border-radius: abstracts.$border-radius-sm;
         padding: 1rem 0;
-        @include md {
+        @include abstracts.md {
             // border: 2px solid red;
             margin-top: 10vh;
             display: flex;
@@ -13,10 +15,10 @@
             // background: none;
         }
         .contact-item {
-            // border-bottom: $border-light-sm;
+            // border-bottom: abstracts.$border-light-sm;
             margin: 1rem 0;
             padding: 1rem .5rem;
-            border-radius: $border-radius-sm;
+            border-radius: abstracts.$border-radius-sm;
             // background: hsl(0, 0%, 93%);
             display: flex;
             align-items: center;
@@ -32,19 +34,19 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                box-shadow: $item-shadow;
-                border-radius: $border-radius-sm;
+                box-shadow: abstracts.$item-shadow;
+                border-radius: abstracts.$border-radius-sm;
                 z-index: -1;
                 transition: .25s;
                 opacity: 0;
             }
 
-            @include md {
-                border-radius: $border-radius-sm;
-                border-color: $overlay-blue-dark;
+            @include abstracts.md {
+                border-radius: abstracts.$border-radius-sm;
+                border-color: abstracts.$overlay-blue-dark;
                 padding: 1rem .5rem;
                 margin-bottom: 0;
-                // background: $overlay;
+                // background: abstracts.$overlay;
             }
 
             .contact-icon {
@@ -66,7 +68,7 @@
                     font-size: 1.5rem;
                     font-weight: 900;
                     transition: .5s;
-                    color: $overlay-blue-light;
+                    color: abstracts.$overlay-blue-light;
                 }
                 // PHONE ICONS
                 &.phone-icon {
@@ -107,7 +109,7 @@
                     opacity: 0;
                     font-size: 2rem;
                     font-weight: 600;
-                    color: $overlay-blue-light;
+                    color: abstracts.$overlay-blue-light;
                     
                 }
             }
@@ -120,11 +122,11 @@
                     font-size: 1.15rem;
                     text-transform: capitalize;
                     font-weight: 600;
-                    color: $overlay-blue-dark;
+                    color: abstracts.$overlay-blue-dark;
                     margin-bottom: .25rem;
                     transition: .25s;
 
-                    @include md {
+                    @include abstracts.md {
                         font-size: 1.5rem;
                     }
                 }
@@ -132,8 +134,8 @@
                 a {
                     display: block;
                     text-decoration: none;
-                    color: $text-light;
-                    color: $overlay-blue-darker;
+                    color: abstracts.$text-light;
+                    color: abstracts.$overlay-blue-darker;
                     letter-spacing: .05rem;
                     position: relative;
                     transition: .25s;
@@ -183,14 +185,14 @@
             .form-title {
                 margin-bottom: 1rem;
                 // border: 1px solid red;
-                color: $overlay-blue-dark;
+                color: abstracts.$overlay-blue-dark;
 
                 h1 {
                     text-transform: capitalize;
-                    // font-family: $font-title;
+                    // font-family: abstracts.$font-title;
                     font-size: 1.8rem;
                     // margin-bottom: .25rem;
-                    @include md {
+                    @include abstracts.md {
                         font-size: 2rem;
                     }
                 }
@@ -208,19 +210,19 @@
                 text-transform: capitalize;
                 // border: 2px solid blue;
                 margin-bottom: .5rem;
-                color: $overlay-blue-darker;
+                color: abstracts.$overlay-blue-darker;
                 font-weight: 500;
-                // font-family: $font-title;
+                // font-family: abstracts.$font-title;
 
                 input, textarea {
                     display: block;
                     border-radius: .25rem;
                     padding: .5rem ;
                     width: 100%;
-                    border-color: $overlay-blue-light;
+                    border-color: abstracts.$overlay-blue-light;
                     resize: none;
                     margin-top: .25rem;
-                    font-family: $font-content;
+                    font-family: abstracts.$font-content;
 
                     &::placeholder {
                         opacity: 0;
@@ -234,7 +236,7 @@
                             letter-spacing: normal;
                         }
                     }
-                    @include md {
+                    @include abstracts.md {
                         &:hover {
                             &::placeholder {
                                 opacity: 1;
@@ -251,14 +253,14 @@
                 padding:  1rem;
                 width: 11rem;
                 text-transform: capitalize;
-                font-family: $font-content;
+                font-family: abstracts.$font-content;
                 font-size: 1rem;
-                border-radius: $border-radius-sm;
+                border-radius: abstracts.$border-radius-sm;
                 cursor: pointer;
-                background: $btn-overlay;
-                color: $text-light;
+                background: abstracts.$btn-overlay;
+                color: abstracts.$text-light;
                 border: none;
-                box-shadow: $box-shadow;
+                box-shadow: abstracts.$box-shadow;
                 letter-spacing: .05rem;
                 transition: .25s;
                 text-align: left;
@@ -267,7 +269,7 @@
                 &:active {
                     letter-spacing: normal;
                     transform: scale(.97);
-                    box-shadow: $box-shadow-hover;
+                    box-shadow: abstracts.$box-shadow-hover;
                 }
             }
 
@@ -278,7 +280,7 @@
 
     // DESKTOP FLEX
     .contact-flex-container {
-        @include md {
+        @include abstracts.md {
             display: flex;
             flex-direction: row;
             // border: 2px solid red;

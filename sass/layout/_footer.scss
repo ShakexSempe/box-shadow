@@ -1,10 +1,12 @@
+@use '../abstracts';
+
 footer {
     min-height: 20vh;
     width: 100%;
-    background: $overlay-dark;
+    background: abstracts.$overlay-dark;
     padding: 5vh 5vw 8vh;
     .copyright {
-        // border: 2px solid $brand;
+        // border: 2px solid abstracts.$brand;
         border-radius: 1rem;
         color: #fff;
         height: 50%;
@@ -22,7 +24,7 @@ footer {
 
         a {
             text-decoration: none;
-            color: $brand;
+            color: abstracts.$brand;
             display: block;
         }
     }

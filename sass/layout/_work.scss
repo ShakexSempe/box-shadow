@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 #work {
     background: #f4f4f4;
     .items-container {
@@ -8,7 +10,7 @@
         align-items: center;
         justify-content: space-evenly;
         gap: 10vh;
-        @include md {
+        @include abstracts.md {
             margin-top: 10vh;
             flex-direction: row;
             gap: 1rem;
@@ -17,29 +19,29 @@
             width: 100%;
             padding-bottom: 1rem;
             padding: 1rem;
-            // border-bottom: .25rem solid $brand;
+            // border-bottom: .25rem solid abstracts.$brand;
             display: flex;
             flex-direction: column-reverse;
             // border: 3px solid red;
             background: #fff;
             border-radius: .25rem;
             box-shadow: .125rem .5rem 1rem #0002;
-            @include md {
+            @include abstracts.md {
                 text-align: center;
             }
             .item-title {
-                color: $overlay-blue-darker;
+                color: abstracts.$overlay-blue-darker;
                 text-transform: capitalize;
 
                 h2 {
-                    font-family: $font-title;
+                    font-family: abstracts.$font-title;
                     margin-bottom: .25rem;
                 }
                 h3 {
                     margin-bottom: 1rem;
                 }
                 a {
-                    color: $overlay-blue-dark;
+                    color: abstracts.$overlay-blue-dark;
                     text-transform: none;
                     text-decoration: none;
                     position: relative;
@@ -50,7 +52,7 @@
                         content: '\f35d';
                         font-family: 'Font Awesome 6 Free';
                         font-weight: 600;
-                        color: $span-crimson;
+                        color: abstracts.$span-crimson;
                         opacity: 0;
                         transition: .5s;
                         transform:  scale(1.2) translateX(-.5rem);
@@ -62,16 +64,16 @@
                 // border: 1px solid green;
                 margin: .5rem 0;
                 width: 50%;
-                @include md {
+                @include abstracts.md {
                     display: grid;
                     place-items: center;
                 }
                 figure {
                     width: 100%;
                     height: 100%;
-                    // border: 1px solid $overlay-blue-light;
+                    // border: 1px solid abstracts.$overlay-blue-light;
                     overflow: hidden;
-                    border-radius: $border-radius-sm;
+                    border-radius: abstracts.$border-radius-sm;
 
                     img {
                         background-color: #fff;
@@ -81,7 +83,7 @@
                         object-fit: cover;
                         border-radius: .5rem;
                     }
-                    @include md {
+                    @include abstracts.md {
                         width: auto;
                         height: 40vh;
 

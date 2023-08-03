@@ -1,0 +1,100 @@
+@use '../abstracts';
+
+// FORM
+form {
+    @media (max-width: 768px){
+        min-height: 100vh;
+    }
+    padding: 5vh 0;
+    .form-title {
+        margin-bottom: 1rem;
+        // border: 1px solid red;
+        color: abstracts.$overlay-blue-dark;
+
+        h1 {
+            text-transform: capitalize;
+            // font-family: abstracts.$font-title;
+            font-size: 1.8rem;
+            // margin-bottom: .25rem;
+            @include abstracts.md {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-weight: 500;
+        }
+    }
+    fieldset {
+        margin: 2rem 0 0;
+        border: none;
+    }
+    label {
+        display: block;
+        text-transform: capitalize;
+        // border: 2px solid blue;
+        margin-bottom: .5rem;
+        color: abstracts.$overlay-blue-darker;
+        font-weight: 500;
+        // font-family: abstracts.$font-title;
+
+        input, textarea {
+            display: block;
+            border-radius: .25rem;
+            padding: .5rem ;
+            width: 100%;
+            border-color: abstracts.$overlay-blue-light;
+            resize: none;
+            margin-top: .25rem;
+            font-family: abstracts.$font-content;
+
+            &::placeholder {
+                opacity: 0;
+                letter-spacing: .05rem;
+                transition: .25s;
+            }
+
+            &:focus {
+                &::placeholder {
+                    opacity: 1;
+                    letter-spacing: normal;
+                }
+            }
+            @include abstracts.md {
+                &:hover {
+                    &::placeholder {
+                        opacity: 1;
+                        letter-spacing: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    // SUBMIT BUTTON
+    .submit-btn {
+        margin-top: 1rem;
+        padding:  1rem;
+        width: 11rem;
+        text-transform: capitalize;
+        font-family: abstracts.$font-content;
+        font-size: 1rem;
+        border-radius: abstracts.$border-radius-sm;
+        cursor: pointer;
+        background: abstracts.$btn-overlay;
+        color: abstracts.$text-light;
+        border: none;
+        box-shadow: abstracts.$box-shadow;
+        letter-spacing: .05rem;
+        transition: .25s;
+        text-align: left;
+        position: relative;
+
+        &:active {
+            letter-spacing: normal;
+            transform: scale(.97);
+            box-shadow: abstracts.$box-shadow-hover;
+        }
+    }
+
+}

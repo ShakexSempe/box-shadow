@@ -4,7 +4,7 @@ const links = document.querySelectorAll('header a');
 const header = document.querySelector('.header');
 const container = document.querySelector('.container');
 const headerCta = document.querySelector('.header-cta');
-const footerNav = document.querySelector('.footer-nav');
+const footerNav = document.querySelector('.bottom-nav');
 console.log(links);
 
 // HAMBURGER TOGGLE

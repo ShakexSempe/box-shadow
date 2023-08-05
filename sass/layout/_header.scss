@@ -6,7 +6,7 @@ header {
     top: 0;
     background: abstracts.$overlay-blue-darker;
     height: 7vh;
-    width: 100vw;
+    width: 100%;
     padding: .25rem 5vw;
     z-index: 5;
     @include abstracts.md {

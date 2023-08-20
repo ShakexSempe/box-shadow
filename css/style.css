@@ -1131,7 +1131,7 @@ header .navbar ul li a {
 header .navbar ul li a::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -0.25rem;
   left: 50%;
   width: 25%;
   opacity: 0;
@@ -1141,61 +1141,12 @@ header .navbar ul li a::after {
   transition: 0.25s;
 }
 header .navbar ul li a:hover {
-  color: #ead2a1;
+  color: #cccccc;
   opacity: 1;
 }
 header .navbar ul li a:hover::after {
   width: 70%;
   opacity: 1;
-}
-header .header-cta {
-  transform: translateY(0);
-  transition: 0.5s;
-  background: linear-gradient(0deg, #000 30%, #0a0c0f);
-  border-radius: 0.25rem;
-  border: 0.105rem solid rgba(234, 210, 161, 0.4);
-  text-align: center;
-  transform: translateY(-10vh);
-  transition: 0.5s;
-}
-header .header-cta a {
-  width: 100%;
-  height: 100%;
-  text-transform: capitalize;
-  color: #f4f4f4;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  font-weight: 500;
-}
-header .header-cta a i {
-  padding: 0.25rem 1rem;
-  opacity: 0.8;
-}
-@media (max-width: 820px) {
-  header .header-cta {
-    position: absolute;
-    right: 15vw;
-    padding: 0;
-  }
-  header .header-cta a {
-    width: 100%;
-    font-size: 0.8rem;
-    color: #f4f4f4;
-  }
-}
-header .header-cta:hover {
-  transition: 0.25s;
-}
-header .header-cta:hover a {
-  letter-spacing: normal;
-  transition: 0.25s;
-}
-header .header-cta:hover a i {
-  transition: 0.25s;
-  color: #cccccc;
-}
-header .header-cta.active-cta {
-  transform: translateY(0);
 }
 header.aside-header {
   background: #29323c;
@@ -1208,7 +1159,7 @@ header.hero-header {
 }
 .hero {
   width: 100%;
-  background: linear-gradient(0deg, #000 30%, #0a0c0f);
+  background: #29323c;
 }
 .hero .banner {
   height: 95vh;
@@ -1216,8 +1167,11 @@ header.hero-header {
   padding: 25vh 5vw 5vh;
   overflow: hidden;
   position: relative;
+  background: #29323c;
 }
 .hero .banner .title {
+  background: #0a0c0f;
+  padding: 0.5rem;
   width: 100%;
   color: #f4f4f4;
   text-transform: capitalize;
@@ -1233,46 +1187,28 @@ header.hero-header {
 }
 .hero .banner .title h1 {
   font-size: 2rem;
-  color: #f4f4f4;
+  font-size: clamp(2rem, 5vw, 2.5rem);
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .hero .banner .title h1 {
-    font-size: 2.8rem;
-    margin-bottom: 5vh;
+    margin-bottom: 2rem;
   }
 }
 .hero .banner .title p {
   font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.025rem);
   line-height: 1.6;
   color: #cccccc;
   font-weight: 500;
 }
 .hero .banner .title p a {
-  color: #ead2a1;
   color: #f4f4f4;
   text-decoration: none;
   display: block;
 }
-@media (min-width: 768px) {
-  .hero .banner .title p {
-    font-size: 1.25rem;
-  }
-}
-@media (max-width: 820px) {
-  .hero .banner .btn {
-    position: absolute;
-    bottom: 15vh;
-    left: 5vw;
-  }
-}
-@media (min-width: 820px) {
-  .hero .banner .btn {
-    width: 15rem;
-    font-size: 1.05rem;
-    position: relative;
-    margin: 0;
-  }
+.hero .banner .btn {
+  margin-top: 1rem;
 }
 .hero .banner .btn::before {
   background: linear-gradient(90deg, #0a0c0f, #20262e);

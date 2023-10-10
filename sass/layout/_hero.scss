@@ -1,50 +1,60 @@
 @use '../abstracts';
 
 .hero {
-    // border: 2px solid blue;
-    width: 100%;
     background: abstracts.$overlay-blue-dark;
 
     .banner {
+        display: grid;
+        place-items: center;
+        
         height: 95vh;
         max-width: 100%;
-        padding: 25vh 5vw 5vh;
-        overflow: hidden;
+        padding: 5vh 5vw;
         position: relative;
-        background: abstracts.$overlay-blue-dark;
 
+        background: abstracts.$overlay-blue-darker;
+        overflow: hidden;
+        
+        
         // WEBSITE TITLE
         .title {
-        background: abstracts.$overlay-blue-darkest;
-            // border: 1px solid #fff5;
-            padding: .5rem;
+            // background: abstracts.$overlay-blue-darkest;
+            padding: 1rem;
             width: 100%;
+
             color: abstracts.$text-light;
             text-transform: capitalize;
             border-radius: abstracts.$border-radius-sm;
-            margin-bottom: 1.5rem;
             position: relative;
+
+            // DESKTOP TITLE
             @include abstracts.lg {
-                padding: 5vh .5rem;
-                margin: 10vh 0 0;
+                padding: 0;
             }
 
             h1 {
                 font-size: 2rem;
                 font-size: abstracts.$font-clamp-lg;
                 margin-bottom: 1rem;
+
                 // DESKTOP H1 MARGIN BOTTOM
                 @include abstracts.md {
-                    margin-bottom: 2rem;
+                    margin-bottom: 1.5rem;
                 }
             }
-            
+
             p {
                 font-size: 1rem;
                 font-size: abstracts.$font-clamp-sm;
                 line-height: 1.6;
                 color: abstracts.$brand;
                 font-weight: 500;
+                margin-bottom: 1rem;
+                // DESKTOP TITLE
+                @include abstracts.md {
+                    margin-bottom: 1.5rem;
+                }
+
                 a {
                     color: abstracts.$text-light;
                     text-decoration: none;
@@ -54,7 +64,7 @@
         }
         // HERO CTA BUTTON
         .btn {
-            margin-top: 1rem;
+            // margin-top: 1rem;
             // PSEUDO BACKGROUND
             &::before {
                 background: abstracts.$btn-brand;

@@ -221,12 +221,12 @@ form .submit-btn:active {
   width: 11rem;
   padding: 1rem;
   color: #f4f4f4;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.025rem;
   transition: 0.25s;
   isolation: isolate;
   border: 0.125rem solid transparent;
@@ -1158,31 +1158,29 @@ header.hero-header {
   background: #14181f;
 }
 .hero {
-  width: 100%;
   background: #29323c;
 }
 .hero .banner {
+  display: grid;
+  place-items: center;
   height: 95vh;
   max-width: 100%;
-  padding: 25vh 5vw 5vh;
-  overflow: hidden;
+  padding: 5vh 5vw;
   position: relative;
-  background: #29323c;
+  background: #20262e;
+  overflow: hidden;
 }
 .hero .banner .title {
-  background: #0a0c0f;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 100%;
   color: #f4f4f4;
   text-transform: capitalize;
   border-radius: 0.25rem;
-  margin-bottom: 1.5rem;
   position: relative;
 }
 @media (min-width: 820px) {
   .hero .banner .title {
-    padding: 5vh 0.5rem;
-    margin: 10vh 0 0;
+    padding: 0;
   }
 }
 .hero .banner .title h1 {
@@ -1192,7 +1190,7 @@ header.hero-header {
 }
 @media (min-width: 768px) {
   .hero .banner .title h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 .hero .banner .title p {
@@ -1201,14 +1199,17 @@ header.hero-header {
   line-height: 1.6;
   color: #cccccc;
   font-weight: 500;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .hero .banner .title p {
+    margin-bottom: 1.5rem;
+  }
 }
 .hero .banner .title p a {
   color: #f4f4f4;
   text-decoration: none;
   display: block;
-}
-.hero .banner .btn {
-  margin-top: 1rem;
 }
 .hero .banner .btn::before {
   background: linear-gradient(90deg, #0a0c0f, #20262e);

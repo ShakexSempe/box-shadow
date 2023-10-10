@@ -58,6 +58,7 @@ main section .section-title.active-title h1 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-margin-top: 7vh;
 }
 
 .btn-bg::before, .btn-bg::after {
@@ -221,7 +222,6 @@ form .submit-btn:active {
   width: 11rem;
   padding: 1rem;
   color: #f4f4f4;
-  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
@@ -1185,7 +1185,7 @@ header.hero-header {
 }
 .hero .banner .title h1 {
   font-size: 2rem;
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 2.25rem);
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
@@ -1195,7 +1195,7 @@ header.hero-header {
 }
 .hero .banner .title p {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.025rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.6;
   color: #cccccc;
   font-weight: 500;
@@ -1210,6 +1210,10 @@ header.hero-header {
   color: #f4f4f4;
   text-decoration: none;
   display: block;
+}
+.hero .banner .btn {
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .hero .banner .btn::before {
   background: linear-gradient(90deg, #0a0c0f, #20262e);
@@ -1237,78 +1241,66 @@ header.hero-header {
     opacity: 1;
   }
 }
-.hero .menu {
-  padding: 0 0 0;
-  scroll-margin-top: 5vh;
-}
-.hero .menu .menu-section {
+
+.menu .menu-section {
+  min-height: 100vh;
   position: relative;
   isolation: isolate;
   text-align: center;
-  min-height: 100vh;
   padding: 10vh 5vw;
   background: #0a0c0f;
 }
-.hero .menu .menu-section:nth-of-type(even) {
-  background: green;
+.menu .menu-section:nth-of-type(even) {
   background: #20262e;
 }
-.hero .menu .menu-section .menu-content {
+@media (min-width: 768px) {
+  .menu .menu-section {
+    padding: 20vh 5vw 10vh;
+  }
+}
+.menu .menu-section .menu-content {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 @media (min-width: 820px) {
-  .hero .menu .menu-section .menu-content {
+  .menu .menu-section .menu-content {
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: flex-start;
+    gap: 5vw;
   }
 }
-.hero .menu .menu-section .menu-content.menu-1-content {
-  gap: 5vw;
-}
-.hero .menu .menu-section .menu-title {
+.menu .menu-section .menu-title {
   text-align: left;
+  max-width: 500px;
 }
-@media (min-width: 820px) {
-  .hero .menu .menu-section .menu-title {
-    width: 50%;
-  }
-}
-.hero .menu .menu-section .menu-title h1 {
+.menu .menu-section .menu-title h1 {
   text-transform: capitalize;
   font-size: 1.5rem;
+  font-size: clamp(1.25rem, 4vw, 2rem);
   color: #f4f4f4;
   letter-spacing: 0.025rem;
   margin-bottom: 1rem;
 }
-@media (min-width: 820px) {
-  .hero .menu .menu-section .menu-title h1 {
-    font-size: 2rem;
-  }
-}
-.hero .menu .menu-section .menu-title p {
+.menu .menu-section .menu-title p {
   color: #cccccc;
   font-size: 0.95rem;
-  line-height: 1.6;
-  width: 85%;
+  font-size: clamp(.95rem, 1.5vw, 1.125rem);
+  text-wrap: balance;
+  line-height: 1.8;
 }
-@media (min-width: 576px) {
-  .hero .menu .menu-section .menu-title p {
-    width: 100%;
-  }
-}
-.hero .menu .menu-section .menu-arrow {
+.menu .menu-section .menu-arrow {
   margin-top: 5vh;
 }
 @media (min-width: 820px) {
-  .hero .menu .menu-section .menu-arrow {
+  .menu .menu-section .menu-arrow {
     position: absolute;
-    bottom: 30vh;
+    bottom: 40vh;
     left: 5vw;
   }
 }
-.hero .menu .menu-section .menu-arrow a {
+.menu .menu-section .menu-arrow a {
   color: #cccccc;
   border: 2px solid #fffa;
   display: block;
@@ -1318,7 +1310,7 @@ header.hero-header {
   margin: 0 auto;
   border-radius: 0.5rem;
 }
-.hero .menu .menu-section .menu-arrow a i {
+.menu .menu-section .menu-arrow a i {
   padding: 0.5rem;
   font-size: 1rem;
 }
@@ -1340,26 +1332,22 @@ header.hero-header {
     opacity: 1;
   }
 }
-.hero .menu .menu-section .menu-arrow a:hover {
+.menu .menu-section .menu-arrow a:hover {
   transform: scale(0.9);
 }
-.hero .menu .menu-section .menu-arrow a:hover i {
+.menu .menu-section .menu-arrow a:hover i {
   animation: none;
 }
-.hero .menu .menu-section .device-grid {
-  overflow: hidden;
-  margin-top: 1rem;
-  border-radius: 0.5rem;
+.menu .menu-section .device-grid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
-@media (min-width: 768px) {
-  .hero .menu .menu-section .device-grid {
-    width: 30rem;
-  }
-}
-.hero .menu .menu-section .device-grid .device {
+.menu .menu-section .device-grid .device {
   display: flex;
   gap: 1rem;
   padding: 0.5rem;
@@ -1371,13 +1359,13 @@ header.hero-header {
   border-bottom: 0.105rem solid rgba(255, 255, 255, 0.2);
   border-radius: 0.25rem;
 }
-.hero .menu .menu-section .device-grid .device .device-img {
+.menu .menu-section .device-grid .device .device-img {
   height: 100%;
   width: 5rem;
   position: relative;
   transition: 0.25s;
 }
-.hero .menu .menu-section .device-grid .device .device-img::before, .hero .menu .menu-section .device-grid .device .device-img::after {
+.menu .menu-section .device-grid .device .device-img::before, .menu .menu-section .device-grid .device .device-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1389,114 +1377,104 @@ header.hero-header {
   background-size: contain;
   transition: 0.25s;
 }
-.hero .menu .menu-section .device-grid .device .device-img.sm-img::before {
+.menu .menu-section .device-grid .device .device-img.sm-img::before {
   background-image: url("https://img.icons8.com/color/48/000000/smartphone.png");
   opacity: 1;
 }
-.hero .menu .menu-section .device-grid .device .device-img.sm-img::after {
+.menu .menu-section .device-grid .device .device-img.sm-img::after {
   background-image: url("https://img.icons8.com/dusk/64/000000/touchscreen-smartphone.png");
   opacity: 0;
 }
-.hero .menu .menu-section .device-grid .device .device-img.md-img::before {
+.menu .menu-section .device-grid .device .device-img.md-img::before {
   background-image: url("https://img.icons8.com/color/96/000000/android-tablet.png");
   opacity: 1;
 }
-.hero .menu .menu-section .device-grid .device .device-img.md-img::after {
+.menu .menu-section .device-grid .device .device-img.md-img::after {
   background-image: url("https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-tablet-online-learning-wanicon-lineal-color-wanicon.png");
   opacity: 0;
 }
-.hero .menu .menu-section .device-grid .device .device-img.lg-img::before {
+.menu .menu-section .device-grid .device .device-img.lg-img::before {
   background-image: url("https://img.icons8.com/officel/80/000000/monitor.png");
   opacity: 1;
 }
-.hero .menu .menu-section .device-grid .device .device-img.lg-img::after {
+.menu .menu-section .device-grid .device .device-img.lg-img::after {
   background-image: url("https://img.icons8.com/bubbles/100/000000/cursor.png");
   opacity: 0;
 }
-.hero .menu .menu-section .device-grid .device .device-caption {
+.menu .menu-section .device-grid .device .device-caption {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
   margin: auto 0;
 }
-.hero .menu .menu-section .device-grid .device .device-caption h2 {
+.menu .menu-section .device-grid .device .device-caption h2 {
   color: #f4f4f4;
   font-size: 1rem;
   margin-bottom: 0.2rem;
   font-weight: 500;
   transition: 0.25s;
 }
-.hero .menu .menu-section .device-grid .device .device-caption p {
+.menu .menu-section .device-grid .device .device-caption p {
   color: #bbb;
   font-size: 0.95rem;
   transition: 0.25s;
 }
-.hero .menu .menu-section .device-grid .device.io-item .device-img {
+.menu .menu-section .device-grid .device.io-item .device-img {
   opacity: 0;
   transform: translateX(-0.5rem);
 }
-.hero .menu .menu-section .device-grid .device.io-item .device-caption h2 {
+.menu .menu-section .device-grid .device.io-item .device-caption h2 {
   letter-spacing: 0.05rem;
 }
-.hero .menu .menu-section .device-grid .device.io-item .device-caption p {
+.menu .menu-section .device-grid .device.io-item .device-caption p {
   opacity: 0;
 }
-.hero .menu .menu-section .device-grid .device.active-item .device-caption h2 {
+.menu .menu-section .device-grid .device.active-item .device-caption h2 {
   letter-spacing: normal;
   transition: 0.5s 0.25s;
 }
-.hero .menu .menu-section .device-grid .device.active-item .device-caption p {
+.menu .menu-section .device-grid .device.active-item .device-caption p {
   opacity: 1;
   transition: 0.5s 0.5s;
 }
-.hero .menu .menu-section .device-grid .device.active-item .device-img {
+.menu .menu-section .device-grid .device.active-item .device-img {
   opacity: 1;
   transform: translateX(0);
   transition: 0.5s;
 }
-.hero .menu .menu-section .device-grid .device.active-item:hover .device-caption h2 {
+.menu .menu-section .device-grid .device.active-item:hover .device-caption h2 {
   opacity: 0.5;
   transition: 0.25s 0.25s;
 }
-.hero .menu .menu-section .device-grid .device.active-item:hover .device-caption p {
+.menu .menu-section .device-grid .device.active-item:hover .device-caption p {
   color: #ead2a1;
   transition: 0.25s 0.25s;
 }
-.hero .menu .menu-section .device-grid .device.active-item:hover .device-img::before {
+.menu .menu-section .device-grid .device.active-item:hover .device-img::before {
   opacity: 0;
   transition: 0.5s;
 }
-.hero .menu .menu-section .device-grid .device.active-item:hover .device-img::after {
+.menu .menu-section .device-grid .device.active-item:hover .device-img::after {
   opacity: 1;
   transition: 0.5s;
 }
-.hero .menu .menu-section .css-image {
-  height: 50vh;
-  width: 100%;
-  overflow: hidden;
-  margin: 1rem auto;
+.menu .menu-section .css-image {
+  max-width: 450px;
 }
-@media (min-width: 768px) {
-  .hero .menu .menu-section .css-image {
-    height: 50vh;
-    margin: 10vh auto;
-  }
-}
-.hero .menu .menu-section .css-image img {
+.menu .menu-section .css-image img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
   filter: drop-shadow(0.5rem 0.5rem 0.15rem #000a);
   transition: 0.5s;
 }
-.hero .menu .menu-section .css-image.io-item img {
+.menu .menu-section .css-image.io-item img {
   transform: scale(0.8);
 }
-.hero .menu .menu-section .css-image.active-item img {
+.menu .menu-section .css-image.active-item img {
   transform: scale(1);
   transition: 1s;
 }
-.hero .menu .menu-section .css-image.active-item:hover img {
+.menu .menu-section .css-image.active-item:hover img {
   animation: cssImage 2s infinite;
 }
 @keyframes cssImage {

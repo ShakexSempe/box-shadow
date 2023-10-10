@@ -65,6 +65,8 @@
         // HERO CTA BUTTON
         .btn {
             // margin-top: 1rem;
+            font-size: 1rem;
+            font-size: abstracts.$font-clamp-sm;
             // PSEUDO BACKGROUND
             &::before {
                 background: abstracts.$btn-brand;
@@ -107,353 +109,338 @@
         }
 
     }
-    // MENU 
-    .menu {
-        padding: 0 0 0;
-        scroll-margin-top: 5vh;
+}
 
-        // border: 2px solid yellow;
-        // MENU ITEM
-        .menu-section {
-            position: relative;
-            isolation: isolate;
-            text-align: center;
-            min-height: 100vh;
-            padding: 10vh 5vw;
-            background: abstracts.$overlay-blue-darkest;
-            &:nth-of-type(even) {
-                background: green;
-                background: abstracts.$overlay-blue-darker;
+
+// MENU 
+.menu {
+    
+    // border: 2px solid yellow;
+    // MENU ITEM
+    .menu-section {
+        min-height: 100vh;
+        position: relative;
+        isolation: isolate;
+        text-align: center;
+        padding: 10vh 5vw;
+        background: abstracts.$overlay-blue-darkest;
+        &:nth-of-type(even) {
+            background: abstracts.$overlay-blue-darker;
+        }
+        @include abstracts.md {
+            padding: 20vh 5vw 10vh;
+        }
+        // MENU FLEX CONTAINER
+        .menu-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            // DESKTOP FLEX CONTAINER STYLE
+            @include abstracts.lg {
+                flex-direction: row;
+                align-items: start;
+                justify-content: flex-start;
+                gap: 5vw;
+            }
+        }
+        // MENU TITLE
+        .menu-title {
+            text-align: left;
+            max-width: 500px;
+            h1 {
+                text-transform: capitalize;
+                font-size: 1.5rem;
+                font-size: abstracts.$font-clamp-md;
+                color: abstracts.$text-light;
+                letter-spacing: .025rem;
+                margin-bottom: 1rem;
             }
 
-            // MENU FLEX CONTAINER
-            .menu-content {
-                display: flex;
-                flex-direction: column;
-                @include abstracts.lg {
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: flex-start;
-                }
-
-                &.menu-1-content {
-                    gap: 5vw;
-                }
+            p {
+                color: abstracts.$brand;
+                font-size: .95rem;
+                font-size: abstracts.$font-clamp-xsm;
+                text-wrap: balance;
+                line-height: 1.8;
             }
-            // MENU TITLE
-            .menu-title {
-                text-align: left;
-                @include abstracts.lg {
-                    width: 50%;
-                }
-                h1 {
-                    text-transform: capitalize;
-                    font-size: 1.5rem;
-                    // margin-bottom: .25rem;
-                    // font-family: abstracts.$font-title;
-                    // font-weight: 500;
-                    color: abstracts.$text-light;
-                    letter-spacing: .025rem;
-                    margin-bottom: 1rem;
-                    @include abstracts.lg {
-                        font-size: 2rem;
-                    }
-                }
-
-                p {
-                    color: abstracts.$brand;
-                    font-size: .95rem;
-                    line-height: 1.6;
-                    width: 85%;
-                    @include abstracts.sm {
-                        width: 100%;
-                    }
-                }
+        }
+        
+        // MENU CTA 
+        .menu-arrow {
+            // border: 2px solid yellow;
+            // position: absolute;
+            // bottom: 10vh;
+            // width: 100%;
+            // left: 50%;
+            // transform: translateX(-50%);
+            // width: 100%;
+            // overflow: hidden;
+            margin-top: 5vh;
+            @include abstracts.lg {
+                position: absolute;
+                bottom: 40vh;
+                left: 5vw;
             }
             
-            // MENU CTA 
-            .menu-arrow {
-                // border: 2px solid yellow;
-                // position: absolute;
-                // bottom: 10vh;
-                // width: 100%;
-                // left: 50%;
-                // transform: translateX(-50%);
-                // width: 100%;
-                // overflow: hidden;
-                margin-top: 5vh;
-                @include abstracts.lg {
-                    position: absolute;
-                    bottom: 30vh;
-                    left: 5vw;
-                }
-                
-                a {
-                    color: abstracts.$brand;
-                    border: 2px solid #fffa;
-                    display: block;
-                    text-decoration: none;
-                    transition: .25s;
-                    width: max-content;
-                    margin: 0 auto;
-                    border-radius: .5rem;
-
-                    i {
-                        padding: .5rem;
-                        font-size: 1rem;
-                        // animation: menu-arrow 2s infinite ease-in-out;
-
-                        @keyframes menu-arrow {
-                            0% {
-                                transform: translateY(0);
-                                opacity: 1;
-                            }
-
-                            50% {
-                                transform: translateY(100%);
-                                opacity: 0;
-                            }
-
-                            60% {
-                                transform: translateY(-100%);
-                                opacity: 0;
-                            }
-
-                            100% {
-                                transform: translateY(0);
-                                opacity: 1;
-                            }
-                        }
-                    }
-
-                    &:hover {
-                        transform: scale(.9);
-                        i {
-                            animation: none;
-                        }
-                    }
-                }
-            }
-            // RESPONSIVE DEVICES GRID
-            .device-grid {
-                // border: 2px solid red;
-                overflow: hidden;
-                margin-top: 1rem;
-                // padding: 5vh 0;
+            a {
+                color: abstracts.$brand;
+                border: 2px solid #fffa;
+                display: block;
+                text-decoration: none;
+                transition: .25s;
+                width: max-content;
+                margin: 0 auto;
                 border-radius: .5rem;
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                @include abstracts.sm {
-                    // flex-direction: column;
-                }
-                @include abstracts.md {
-                    // flex-direction: row;
-                    width: 30rem;
-                }
 
-                .device {
-                    // DEVICE = 2 COLUMN FLEX DISPLAY = IMG & CAPTION
-                    display: flex;
-                    gap: 1rem;
+                i {
                     padding: .5rem;
-                    height: 13vh;
-                    width: 100%;
-                    background: abstracts.$overlay-dark-right;
-                    background: abstracts.$overlay-blue-dark;
-                    border-left: abstracts.$border-light-sm;
-                    border-bottom: abstracts.$border-light-sm;
-                    border-radius: abstracts.$border-radius-sm;
-                    // IMAGE CONTAINER = 2 PSEUDO IMAGES TRANSITIONING BETWEEN EACH OTHER
-                    .device-img {
-                        // border: 1px solid yellow;
-                        height: 100%;
-                        width: 5rem;
-                        position: relative;
-                        transition: .25s;
+                    font-size: 1rem;
+                    // animation: menu-arrow 2s infinite ease-in-out;
 
-                        &::before, &::after {
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            transition: .25s;
-                        }
-                        // SMALL SCREEN IMAGES
-                        &.sm-img {
-                            // background-color: green;
-                            &::before {
-                                background-image: url("https://img.icons8.com/color/48/000000/smartphone.png");
-                                opacity: 1;
-                            }
-
-                            &::after {
-                                background-image: url("https://img.icons8.com/dusk/64/000000/touchscreen-smartphone.png");
-                                opacity: 0;
-                            }
-                        }
-                        // MEDIUM SCREEN IMAGES
-                        &.md-img {
-                            // background-color: green;
-                            &::before {
-                                background-image: url("https://img.icons8.com/color/96/000000/android-tablet.png");
-                                opacity: 1;
-                            }
-
-                            &::after {
-                                background-image: url("https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-tablet-online-learning-wanicon-lineal-color-wanicon.png");
-                                opacity: 0;
-                            }
-                        }
-                        // LARGE SCREEN IMAGES
-                        &.lg-img {
-                            // background-color: green;
-                            &::before {
-                                background-image: url("https://img.icons8.com/officel/80/000000/monitor.png");
-                                opacity: 1;
-                            }
-
-                            &::after {
-                                background-image: url("https://img.icons8.com/bubbles/100/000000/cursor.png");
-                                opacity: 0;
-                            }
-                        }
-                    }
-
-                    .device-caption {
-                        // border: 1px solid red;
-                        overflow: hidden;
-                        text-align: left;
-                        text-transform: capitalize;
-                        margin: auto 0;
-
-                        h2 {
-                            color: abstracts.$text-light;
-                            font-size: 1rem;
-                            margin-bottom: .2rem;
-                            font-weight: 500;
-                            transition: .25s;
-                        }
-
-                        p {
-                            color: abstracts.$text-light-trans;
-                            font-size: .95rem;
-                            transition: .25s;
-                        }
-                    }
-
-                    
-
-                    // IO CLASS
-                    &.io-item {
-                        .device-img {
-                            opacity: 0;
-                            transform: translateX(-.5rem);
-                        }
-                        .device-caption {
-                            h2 {
-                                letter-spacing: .05rem;
-                            }
-                            p {
-                                opacity: 0;
-                            }
-                        }
-                    }
-                    // ACTIVE IO
-                    &.active-item {
-                        .device-caption {
-                            h2 {
-                                letter-spacing: normal;
-                                transition: .5s .25s;
-                            }
-                            p {
-                                opacity: 1;
-                                transition: .5s .5s;
-                            }
-                        }
-                        .device-img {
+                    @keyframes menu-arrow {
+                        0% {
+                            transform: translateY(0);
                             opacity: 1;
-                            transform: translateX(0);
-                            transition: .5s;
                         }
-                        // ACTIVE HOVER STATE
-                        &:hover {
-                            .device-caption {
-                                h2 {
-                                    opacity: .5;
-                                    transition: .25s .25s;
-                                }
-                                p {
-                                    color: abstracts.$span-gold;
-                                    transition: .25s .25s;
-                                }
-                            }
-                            .device-img {
-                                &::before {
-                                    opacity: 0;
-                                    transition: .5s;
-                                }
-                                &::after {
-                                    opacity: 1;
-                                    transition: .5s;
-                                }
-                            }
+
+                        50% {
+                            transform: translateY(100%);
+                            opacity: 0;
                         }
+
+                        60% {
+                            transform: translateY(-100%);
+                            opacity: 0;
+                        }
+
+                        100% {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &:hover {
+                    transform: scale(.9);
+                    i {
+                        animation: none;
                     }
                 }
             }
-            // CSS IMAGE 
-            .css-image {
-                // border: 2px solid red;
-                height: 50vh;
+        }
+        // RESPONSIVE DEVICES GRID
+        .device-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            width: 100%;
+            max-width: 450px;
+
+            border-radius: .5rem;
+            overflow: hidden;
+
+            .device {
+                // DEVICE = 2 COLUMN FLEX DISPLAY = IMG & CAPTION
+                display: flex;
+                gap: 1rem;
+                padding: .5rem;
+                height: 13vh;
                 width: 100%;
-                overflow: hidden;
-                margin: 1rem auto;
-                @include abstracts.md {
-                    height: 50vh;
-                    margin: 10vh auto;
-                }
-
-                img {
-                    width: 100%;
+                background: abstracts.$overlay-dark-right;
+                background: abstracts.$overlay-blue-dark;
+                border-left: abstracts.$border-light-sm;
+                border-bottom: abstracts.$border-light-sm;
+                border-radius: abstracts.$border-radius-sm;
+                // IMAGE CONTAINER = 2 PSEUDO IMAGES TRANSITIONING BETWEEN EACH OTHER
+                .device-img {
+                    // border: 1px solid yellow;
                     height: 100%;
-                    object-fit: contain;
-                    filter: drop-shadow(.5rem .5rem .15rem #000a);
-                    transition: .5s;
+                    width: 5rem;
+                    position: relative;
+                    transition: .25s;
+
+                    &::before, &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        transition: .25s;
+                    }
+                    // SMALL SCREEN IMAGES
+                    &.sm-img {
+                        // background-color: green;
+                        &::before {
+                            background-image: url("https://img.icons8.com/color/48/000000/smartphone.png");
+                            opacity: 1;
+                        }
+
+                        &::after {
+                            background-image: url("https://img.icons8.com/dusk/64/000000/touchscreen-smartphone.png");
+                            opacity: 0;
+                        }
+                    }
+                    // MEDIUM SCREEN IMAGES
+                    &.md-img {
+                        // background-color: green;
+                        &::before {
+                            background-image: url("https://img.icons8.com/color/96/000000/android-tablet.png");
+                            opacity: 1;
+                        }
+
+                        &::after {
+                            background-image: url("https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-tablet-online-learning-wanicon-lineal-color-wanicon.png");
+                            opacity: 0;
+                        }
+                    }
+                    // LARGE SCREEN IMAGES
+                    &.lg-img {
+                        // background-color: green;
+                        &::before {
+                            background-image: url("https://img.icons8.com/officel/80/000000/monitor.png");
+                            opacity: 1;
+                        }
+
+                        &::after {
+                            background-image: url("https://img.icons8.com/bubbles/100/000000/cursor.png");
+                            opacity: 0;
+                        }
+                    }
                 }
 
+                .device-caption {
+                    // border: 1px solid red;
+                    overflow: hidden;
+                    text-align: left;
+                    text-transform: capitalize;
+                    margin: auto 0;
+
+                    h2 {
+                        color: abstracts.$text-light;
+                        font-size: 1rem;
+                        margin-bottom: .2rem;
+                        font-weight: 500;
+                        transition: .25s;
+                    }
+
+                    p {
+                        color: abstracts.$text-light-trans;
+                        font-size: .95rem;
+                        transition: .25s;
+                    }
+                }
+
+                
+
+                // IO CLASS
                 &.io-item {
-                    img {
-                        transform: scale(.8);
+                    .device-img {
+                        opacity: 0;
+                        transform: translateX(-.5rem);
+                    }
+                    .device-caption {
+                        h2 {
+                            letter-spacing: .05rem;
+                        }
+                        p {
+                            opacity: 0;
+                        }
                     }
                 }
+                // ACTIVE IO
                 &.active-item {
-                    img {
-                        transform: scale(1);
-                        transition: 1s;
+                    .device-caption {
+                        h2 {
+                            letter-spacing: normal;
+                            transition: .5s .25s;
+                        }
+                        p {
+                            opacity: 1;
+                            transition: .5s .5s;
+                        }
                     }
-
+                    .device-img {
+                        opacity: 1;
+                        transform: translateX(0);
+                        transition: .5s;
+                    }
+                    // ACTIVE HOVER STATE
                     &:hover {
-                        img {
-                            animation: cssImage 2s infinite;
-                            
-                            @keyframes cssImage {
-                                50% {
-                                    transform: rotateY(-10deg);
-                                    filter: drop-shadow(.25rem .25rem .15rem #000);
-                                }
+                        .device-caption {
+                            h2 {
+                                opacity: .5;
+                                transition: .25s .25s;
+                            }
+                            p {
+                                color: abstracts.$span-gold;
+                                transition: .25s .25s;
+                            }
+                        }
+                        .device-img {
+                            &::before {
+                                opacity: 0;
+                                transition: .5s;
+                            }
+                            &::after {
+                                opacity: 1;
+                                transition: .5s;
                             }
                         }
                     }
                 }
             }
         }
+        // CSS IMAGE 
+        .css-image {
+            max-width: 450px;
+            // height: 50vh;
+            // width: 100%;
+            // overflow: hidden;
+            // margin: 1rem auto;
+            @include abstracts.md {
+                // height: 50vh;
+                // margin: 10vh auto;
+            }
 
+            img {
+                width: 100%;
+                // height: 100%;
+                object-fit: contain;
+                filter: drop-shadow(.5rem .5rem .15rem #000a);
+                transition: .5s;
+            }
 
+            &.io-item {
+                img {
+                    transform: scale(.8);
+                }
+            }
+            &.active-item {
+                img {
+                    transform: scale(1);
+                    transition: 1s;
+                }
+
+                &:hover {
+                    img {
+                        animation: cssImage 2s infinite;
+                        
+                        @keyframes cssImage {
+                            50% {
+                                transform: rotateY(-10deg);
+                                filter: drop-shadow(.25rem .25rem .15rem #000);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+
+
 }
